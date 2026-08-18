@@ -1,0 +1,72 @@
+[
+  {
+    "question": "The word 'communication' comes from which Latin word?",
+    "options": ["Communis", "Communicare", "Commune", "Communitas"],
+    "correctAnswer": 0,
+    "explanation": "'Communis' means 'common' — communication is about creating a common understanding between people."
+  },
+  {
+    "question": "In the communication process, what is the step where the sender turns an idea into words or symbols?",
+    "options": ["Decoding", "Feedback", "Encoding", "Channel"],
+    "correctAnswer": 2,
+    "explanation": "Encoding is when the sender converts the idea into words, signs, or symbols so it can be understood."
+  },
+  {
+    "question": "What is 'Noise' in the communication process?",
+    "options": [
+      "The receiver's response",
+      "Anything that disturbs the message, like bad network or language problems",
+      "The medium used to send a message",
+      "The person who starts communication"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Noise refers to any disturbance — bad network, loud sounds, or language problems — that interferes with the message."
+  },
+  {
+    "question": "When is communication considered complete?",
+    "options": [
+      "As soon as the sender sends the message",
+      "When the message is encoded",
+      "When the receiver understands the message and gives feedback",
+      "When the channel is chosen"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Without feedback, the sender cannot confirm the message was understood correctly — feedback completes the loop."
+  },
+  {
+    "question": "Which of these is an example of Non-Verbal Communication?",
+    "options": ["An email", "A phone call", "A handshake", "A speech"],
+    "correctAnswer": 2,
+    "explanation": "A handshake is touch-based, non-verbal communication — it conveys meaning without words."
+  },
+  {
+    "question": "Talking to yourself while planning a decision is an example of which type of communication?",
+    "options": ["Inter-personal", "Intra-personal", "Group", "Mass"],
+    "correctAnswer": 1,
+    "explanation": "Intra-personal communication happens within one's own mind, such as thinking or self-talk."
+  },
+  {
+    "question": "A company memo sent through official channels, using formal language and kept as a record, is an example of:",
+    "options": ["Informal Communication", "Mass Communication", "Formal Communication", "Visual Communication"],
+    "correctAnswer": 2,
+    "explanation": "Formal communication follows official rules, a fixed path, and is usually written and kept as a record."
+  },
+  {
+    "question": "A marketing employee talking directly to a finance manager for a joint project is an example of:",
+    "options": ["Vertical Communication", "Horizontal Communication", "Diagonal Communication", "Mass Communication"],
+    "correctAnswer": 2,
+    "explanation": "Diagonal communication happens between people at different levels and different departments."
+  },
+  {
+    "question": "Which mode of communication gives a permanent, official record but is slower than speaking?",
+    "options": ["Oral Mode", "Written Mode", "Visual Mode", "Audio-Visual Mode"],
+    "correctAnswer": 1,
+    "explanation": "Written mode (letters, emails, reports) is slower to produce but leaves a lasting, official record."
+  },
+  {
+    "question": "Newspapers, television, and social media reaching millions of people at once is an example of:",
+    "options": ["Inter-personal Communication", "Group Communication", "Mass Communication", "Intra-personal Communication"],
+    "correctAnswer": 2,
+    "explanation": "Mass communication involves one sender reaching a very large number of receivers at the same time."
+  }
+]
