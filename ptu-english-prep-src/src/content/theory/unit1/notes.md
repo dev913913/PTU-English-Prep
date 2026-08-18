@@ -47,6 +47,8 @@ Communication is a two-way process, not just one person talking. It needs a send
 
 Communication can happen in many different ways. To understand it easily, the types of communication can be grouped into five main categories: based on words used, based on number of people, based on rules followed, based on medium used, and based on direction in an organization.
 
+![Diagram of types of communication grouped into five main categories: based on words used, based on number of people, based on rules followed, based on medium used, and based on direction in an organization](/diagrams/categories-of-communication.png)
+
 ### Category 1: Based on Use of Words
 
 **1. Verbal Communication**
