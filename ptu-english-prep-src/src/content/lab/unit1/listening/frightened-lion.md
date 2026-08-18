@@ -1,4 +1,9 @@
-<p><strong style="color: #202124; font-family: Roboto, Arial, sans-serif; font-size: 14.6667px;">Instructions:</strong><span face="Roboto, Arial, sans-serif" style="background-color: white; color: #202124; font-size: 14.6667px;">&nbsp;</span><span face="Roboto, Arial, sans-serif" style="background-color: white; color: #202124; font-size: 14.6667px;">Watch the provided video of story "The Frightened Lion" and answer the following multiple-choice questions based on the story. Each question is worth 1 point. Watch the video and answer 20 multiple-choice questions to test your understanding. Please fill in your name and email before proceeding with the quiz.</span></p><p style="background-color: white; color: #202124; font-family: Roboto, Arial, sans-serif; font-size: 14.6667px;"><strong>Total possible score:</strong>&nbsp;20 points. Enjoy!</p><div class="separator" style="clear: both; text-align: left;"><br /></div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rF8GM3NItq0?si=QAuMFLIoBjQnWNiH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Watch the video of "The Frightened Lion," then complete the quiz below.
 
-<iframe frameborder="0" height="6518" marginheight="0" marginwidth="0" src="https://docs.google.com/forms/d/e/1FAIpQLSdoRzJgG1iu0QFaQraIx76mdVxUZdgOuHnVO5C6tWQ9-Rp3ug/viewform?embedded=true" width="640">Loading…</iframe>
+<div class="video-embed">
+<iframe src="https://www.youtube.com/embed/rF8GM3NItq0?si=QAuMFLIoBjQnWNiH" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<div class="form-embed">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdoRzJgG1iu0QFaQraIx76mdVxUZdgOuHnVO5C6tWQ9-Rp3ug/viewform?embedded=true" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
