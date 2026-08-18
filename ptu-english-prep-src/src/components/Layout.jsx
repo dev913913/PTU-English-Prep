@@ -39,7 +39,7 @@ export default function Layout({ children }) {
 
       <footer className="border-t border-ink/10 mt-16">
         <div className="max-w-5xl mx-auto px-5 py-6 text-sm text-ink-soft font-mono">
-          Built by Dev, for the class — content added unit by unit.
+          Built by Mr. Dev Kumar, for the class — content added unit by unit.
         </div>
       </footer>
     </div>
