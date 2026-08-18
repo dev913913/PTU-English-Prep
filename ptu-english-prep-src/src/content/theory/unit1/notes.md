@@ -138,44 +138,80 @@ Communication types can be grouped into five easy categories — based on words,
 
 ---
 
-## Q3: What are the Modes of Communication? Explain each mode with examples.
+## Q3. What are the Modes of Communication? Explain each mode with examples.
 
-### What is a Mode of Communication?
+### Introduction
 
-A mode of communication is the way or method used to send a message from one person to another.
+A **mode of communication** is the method or way through which a message, idea, information, or feeling is communicated from one person to another.
 
-### Types of Modes
+The main modes of communication are **oral, written, non-verbal, visual, and audio-visual communication**.
 
-**1. Oral/Spoken Mode**
-This is when we communicate by speaking.
-- Examples: face-to-face talk, phone calls, speeches, interviews, group discussions
-- Fast and allows instant feedback
-- No written proof unless recorded
+### 1. Oral or Spoken Communication
 
-**2. Written Mode**
-This is when we communicate by writing.
-- Examples: letters, emails, reports, notices, text messages
-- Slower than speaking, but gives a permanent record
-- Useful for official and legal matters
+Oral communication is communication through **spoken words**. It is a quick and direct form of communication.
 
-**3. Visual Mode**
-This uses pictures, symbols, or images to share information.
-- Examples: charts, graphs, diagrams, road signs, posters
-- Easy to understand quickly
-- Good for showing data or warnings
+**Examples:** Face-to-face conversation, telephone calls, speeches, interviews, meetings, and group discussions.
 
-**4. Audio-Visual Mode**
-This is a combination of sound and pictures/video.
-- Examples: video calls, presentations with slides, TV news, YouTube videos
-- Very effective because it uses both hearing and seeing
-- Common in modern digital communication
+**Advantages:** It is quick, allows immediate feedback, and makes it easy to clarify doubts.
 
-### Why are Modes Important?
+**Example:** A teacher explaining a topic to students in a classroom.
 
-- Choosing the right mode makes the message clearer
-- Wrong mode can cause confusion (example: sending a long official complaint through a casual text message)
-- Different situations need different modes (a job application needs written mode, a quick question can use oral mode)
+---
+
+### 2. Written Communication
+
+Written communication is communication through **written words**. It is commonly used for formal and official purposes.
+
+**Examples:** Letters, emails, notices, reports, applications, and messages.
+
+**Advantages:** It provides a permanent record and allows the message to be read again when required.
+
+**Example:** A student writing an application for leave to the principal.
+
+---
+
+### 3. Non-Verbal Communication
+
+Non-verbal communication means communicating **without words**. It includes body language, facial expressions, gestures, eye contact, and posture.
+
+**Examples:** Smiling to show happiness, nodding to show agreement, or shaking the head to show disagreement.
+
+**Advantages:** It expresses feelings and supports spoken communication.
+
+**Example:** A student nodding while listening to the teacher may show understanding.
+
+---
+
+### 4. Visual Communication
+
+Visual communication uses **pictures, signs, symbols, charts, graphs, and diagrams** to convey information.
+
+**Examples:** Road signs, posters, maps, graphs, charts, and diagrams.
+
+**Advantages:** It makes information easy to understand and can present complex information in a simple form.
+
+**Example:** A graph showing the marks obtained by students in different subjects.
+
+---
+
+### 5. Audio-Visual Communication
+
+Audio-visual communication combines **sound and visual elements** such as pictures, videos, animation, and spoken words.
+
+**Examples:** Educational videos, television programmes, YouTube videos, video calls, films, and multimedia presentations.
+
+**Advantages:** It attracts attention and makes learning more interesting and effective.
+
+**Example:** A teacher using an educational video to explain a science topic.
+
+---
+
+### Importance of Choosing the Right Mode
+
+Choosing the correct mode of communication is important for making a message **clear and effective**. Different situations require different modes.
+
+For example, a **job application** is best communicated in written form, while a **quick question** can be asked orally. Similarly, a **graph** is useful for presenting data, while a **video** can be used to demonstrate a process.
 
 ### Conclusion
 
-There are four main modes of communication — oral, written, visual, and audio-visual. Choosing the correct mode based on the situation is very important for effective communication.
+The major modes of communication are **oral, written, non-verbal, visual, and audio-visual**. Each mode has its own importance and is suitable for different situations. Choosing the right mode helps us communicate our ideas clearly and effectively.
