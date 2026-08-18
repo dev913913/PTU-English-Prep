@@ -46,7 +46,7 @@ export default function Home() {
           <p className="text-ink-soft leading-relaxed max-w-2xl">
             Pick a unit, read through the notes, then test yourself with the quiz.
             It's meant to sit alongside class, not replace it — use it to revise
-            before an MST, catch up on a missed topic, or double-check your understanding.
+            before an MST or End Semester Exam, catch up on a missed topic, or double-check your understanding.
           </p>
         </div>
       </section>

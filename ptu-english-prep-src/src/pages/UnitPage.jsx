@@ -1,4 +1,5 @@
 import { useParams, Link } from 'react-router-dom'
+import rehypeRaw from 'rehype-raw'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { theoryUnits, labUnits } from '../content/syllabus'
@@ -50,7 +51,7 @@ export default function UnitPage() {
       {notes ? (
         <div className="notebook-page mt-8">
           <div className="notes-content">
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>{notes}</ReactMarkdown>
+            <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>{notes}</ReactMarkdown>
           </div>
         </div>
       ) : (
