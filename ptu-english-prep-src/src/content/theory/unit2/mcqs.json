@@ -1,0 +1,167 @@
+[
+  {
+    "question": "What is non-verbal communication?",
+    "options": [
+      "Communication using only written words",
+      "Communication without using spoken or written words directly",
+      "Communication through official letters only",
+      "Communication between two people only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Non-verbal communication uses body movements, facial expressions, eye contact, tone, appearance, silence, and other signals rather than relying directly on words."
+  },
+  {
+    "question": "Which of the following is an example of body movement as non-verbal communication?",
+    "options": [
+      "Writing an email",
+      "Reading a report",
+      "Nodding the head to show agreement",
+      "Making a phone call"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Nodding the head is a body movement that can communicate agreement or 'yes' without words."
+  },
+  {
+    "question": "What can appropriate eye contact communicate?",
+    "options": [
+      "Confidence and attention",
+      "Only anger",
+      "A written record",
+      "Technical knowledge"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Eye contact can show confidence, honesty, attention, and interest during communication."
+  },
+  {
+    "question": "Which of the following is NOT listed as a type of non-verbal communication in the notes?",
+    "options": [
+      "Facial expressions",
+      "Silence",
+      "Eye contact",
+      "Business letters"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Business letters are a form of written verbal communication, not non-verbal communication."
+  },
+  {
+    "question": "What is a communication barrier?",
+    "options": [
+      "Anything that makes a message more entertaining",
+      "Anything that stops or disturbs a message from being understood properly",
+      "A method of improving listening skills",
+      "A type of group communication"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A communication barrier is anything that stops, disturbs, or spoils a message from reaching the listener properly."
+  },
+  {
+    "question": "Which of the following is a physical barrier to communication?",
+    "options": [
+      "Lack of confidence",
+      "Ego problems",
+      "Poor internet connection",
+      "Negative thinking"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Poor internet connection is an external or physical barrier that can disturb communication."
+  },
+  {
+    "question": "Using difficult technical words when the receiver cannot understand them is an example of which barrier?",
+    "options": [
+      "Physical barrier",
+      "Language barrier",
+      "Personal barrier",
+      "Time barrier"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Using difficult or technical words can create a language barrier because the receiver may not understand the message."
+  },
+  {
+    "question": "Which of the following is the best way to overcome a communication barrier?",
+    "options": [
+      "Use as many difficult words as possible",
+      "Avoid feedback",
+      "Use simple and clear language",
+      "Interrupt the listener frequently"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Using simple and clear language helps the receiver understand the message and reduces confusion."
+  },
+  {
+    "question": "What is verbal communication?",
+    "options": [
+      "Communication using words through speaking or writing",
+      "Communication using only facial expressions",
+      "Communication through silence only",
+      "Communication through body movements only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Verbal communication means sharing a message using words, either through speaking or writing."
+  },
+  {
+    "question": "Which of the following is an advantage of written verbal communication?",
+    "options": [
+      "It can never be misunderstood",
+      "It provides a record that can be referred to later",
+      "It always gives instant feedback",
+      "It does not require language"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Written communication can be saved, read again, and used as a record or reference later."
+  },
+  {
+    "question": "Which statement correctly describes formal communication?",
+    "options": [
+      "It has no fixed rules or path",
+      "It is used only among friends",
+      "It follows official rules and a proper communication path",
+      "It is always faster than informal communication"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Formal communication follows official rules and a proper communication channel and is commonly used in organizations."
+  },
+  {
+    "question": "Which of the following is an example of informal communication?",
+    "options": [
+      "Official circular",
+      "Business report",
+      "Official email",
+      "Casual conversation with a friend"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Casual conversations with friends are informal because they do not normally follow official rules or a fixed communication path."
+  },
+  {
+    "question": "Which of the following is an important quality of an effective business communicator?",
+    "options": [
+      "Confusion",
+      "Courtesy",
+      "Carelessness",
+      "Incomplete information"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Courtesy means using polite and respectful language, which is an important quality in professional communication."
+  },
+  {
+    "question": "Communication between a manager and an employee about an official work task is generally an example of which type?",
+    "options": [
+      "Formal communication",
+      "Informal communication",
+      "Intra-personal communication",
+      "Non-verbal communication"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Communication about official work through an organizational relationship is generally formal communication."
+  },
+  {
+    "question": "Which level of communication involves three or more people?",
+    "options": [
+      "Intra-personal communication",
+      "Inter-personal communication",
+      "Group communication",
+      "Personal communication"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Group communication takes place among three or more people, such as in a classroom discussion or team meeting."
+  }
+    ]
