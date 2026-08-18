@@ -11,7 +11,17 @@ Unlike the theory paper, the lab is about *doing* — practice matters more than
 ### What is it?
 
 The ability to accurately understand spoken English — catching the meaning, not just the words. In an exam or practical setting, this usually means listening to a short audio/passage and answering questions on it.
+### Watch and Listen
 
+<div class="video-embed">
+<iframe src="https://www.youtube.com/embed/Atkt-vhxFIc?si=pvr9D3AjvK6F9b-l" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+Watch the video above, then test your understanding with the quick check below.
+
+<div class="form-embed">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfBoZaNpkYrhi2XyM_hQMhdc9POpeCVSVDnh417IOQc4rYL0Q/viewform?embedded=true" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
 ### Why It's Tested
 
 Good listening prevents miscommunication. In real life — interviews, meetings, instructions from a senior — mishearing one detail can cause real problems.
