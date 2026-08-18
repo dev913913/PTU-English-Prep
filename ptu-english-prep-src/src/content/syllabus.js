@@ -51,7 +51,7 @@ export const labUnits = [
       'Self Introduction, Group Discussion and Role Play',
       'Common Everyday Situations: Conversations',
     ],
-    status: 'soon',
+    status: 'available',
   },
   {
     id: 'unit2',

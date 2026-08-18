@@ -1,0 +1,112 @@
+[
+  {
+    "question": "Listening comprehension mainly tests your ability to:",
+    "options": [
+      "Write grammatically correct sentences",
+      "Understand the meaning of spoken language accurately",
+      "Read a passage quickly",
+      "Memorize vocabulary lists"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Listening comprehension is about catching the meaning of spoken English, not just hearing the words."
+  },
+  {
+    "question": "Which of these is a recommended strategy while listening to an audio passage?",
+    "options": [
+      "Wait until the end to think about anything",
+      "Note key words like names, numbers, and instructions as you listen",
+      "Focus only on the first sentence",
+      "Ignore the speaker's tone"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Noting key details like names, numbers, and instructions while listening helps you answer questions accurately afterward."
+  },
+  {
+    "question": "A good self-introduction should ideally be:",
+    "options": [
+      "As long and detailed as possible",
+      "Read directly from a written script",
+      "Short, clear, and confident \u2014 around 30\u201345 seconds",
+      "Focused only on your weaknesses"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A self-introduction works best when it's brief, structured, and delivered naturally rather than read out."
+  },
+  {
+    "question": "Which of the following is a common mistake in Indian English self-introductions?",
+    "options": [
+      "Saying 'My name is...'",
+      "Saying 'Myself [Name]' instead of 'My name is [Name]'",
+      "Mentioning your course",
+      "Greeting the audience first"
+    ],
+    "correctAnswer": 1,
+    "explanation": "\"Myself [Name]\" is a commonly used but grammatically incorrect phrase; \"My name is [Name]\" is the correct form."
+  },
+  {
+    "question": "In a Group Discussion, evaluators mainly look for:",
+    "options": [
+      "Who speaks the loudest",
+      "Clarity of thought, listening skills, and respectful contribution",
+      "Who speaks the most number of times",
+      "Only correct grammar"
+    ],
+    "correctAnswer": 1,
+    "explanation": "GDs assess how well you think, listen, and collaborate \u2014 not just how much or how loudly you speak."
+  },
+  {
+    "question": "Which phrase is an appropriate way to build on someone else's point in a GD?",
+    "options": [
+      "\"You're wrong about that.\"",
+      "\"Building on what you said, I'd like to add...\"",
+      "\"That doesn't matter.\"",
+      "\"I wasn't listening, but I disagree.\""
+    ],
+    "correctAnswer": 1,
+    "explanation": "Phrases like \"Building on what you said...\" show active listening and let you contribute constructively."
+  },
+  {
+    "question": "In Role Play, what is most important while staying in character?",
+    "options": [
+      "Reciting memorized lines exactly",
+      "Reacting naturally to what the other person says, using appropriate tone",
+      "Speaking as fast as possible",
+      "Avoiding eye contact"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Role play works best when you react naturally and match your tone and language to the situation, rather than reciting fixed lines."
+  },
+  {
+    "question": "Which of these is a polite way to ask someone to repeat something?",
+    "options": [
+      "\"What?\"",
+      "\"Say that again.\"",
+      "\"Sorry, could you say that again?\"",
+      "\"I didn't hear you.\""
+    ],
+    "correctAnswer": 2,
+    "explanation": "\"Sorry, could you say that again?\" is polite and commonly used in professional and everyday conversation."
+  },
+  {
+    "question": "Which situation is an example of an everyday conversational skill covered in this unit?",
+    "options": [
+      "Writing a formal report",
+      "Asking for directions",
+      "Translating a paragraph",
+      "Making notes from a lecture"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Asking for directions is one of the common everyday conversation situations practiced in the lab component."
+  },
+  {
+    "question": "What is the best way to close a conversation politely?",
+    "options": [
+      "Walk away without saying anything",
+      "\"Thanks so much for your time.\"",
+      "\"Okay bye.\" and turn away immediately",
+      "Interrupt and leave mid-sentence"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A polite closing phrase like \"Thanks so much for your time\" leaves a good impression and ends the conversation smoothly."
+  }
+]

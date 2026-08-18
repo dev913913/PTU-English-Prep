@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 import { theoryUnits, labUnits } from '../content/syllabus'
 import { getNotes, getMcqs } from '../lib/content'
 
@@ -49,7 +50,7 @@ export default function UnitPage() {
       {notes ? (
         <div className="notebook-page mt-8">
           <div className="notes-content">
-            <ReactMarkdown>{notes}</ReactMarkdown>
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{notes}</ReactMarkdown>
           </div>
         </div>
       ) : (

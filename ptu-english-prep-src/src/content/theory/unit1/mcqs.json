@@ -68,5 +68,51 @@
     "options": ["Inter-personal Communication", "Group Communication", "Mass Communication", "Intra-personal Communication"],
     "correctAnswer": 2,
     "explanation": "Mass communication involves one sender reaching a very large number of receivers at the same time."
+  },
+  {
+    "question": "Which step in the communication process directly follows 'Encoding'?",
+    "options": ["Feedback", "Channel", "Decoding", "Noise"],
+    "correctAnswer": 1,
+    "explanation": "After the sender encodes the message, it is sent through a channel (talking, writing, phone, email) to reach the receiver."
+  },
+  {
+    "question": "A classroom discussion among students is an example of which type of communication?",
+    "options": ["Intra-personal", "Inter-personal", "Group Communication", "Mass Communication"],
+    "correctAnswer": 2,
+    "explanation": "A classroom discussion involves three or more people, which makes it Group Communication."
+  },
+  {
+    "question": "Which of these best describes Downward communication?",
+    "options": [
+      "Communication between two colleagues of the same rank",
+      "Communication from a boss/senior to an employee/junior",
+      "Communication from an employee to a senior",
+      "Communication between different departments"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Downward communication is a type of Vertical communication that flows from senior to junior, such as giving instructions."
+  },
+  {
+    "question": "A road sign or an infographic is an example of which category of communication?",
+    "options": ["Verbal Communication", "Visual Communication", "Formal Communication", "Mass Communication"],
+    "correctAnswer": 1,
+    "explanation": "Visual communication uses pictures, charts, symbols, or images \u2014 like road signs and infographics \u2014 to share information."
+  },
+  {
+    "question": "Casual WhatsApp messages between friends are an example of:",
+    "options": ["Formal Communication", "Informal Communication", "Mass Communication", "Vertical Communication"],
+    "correctAnswer": 1,
+    "explanation": "Informal communication is casual, without fixed rules, and commonly used with friends and family."
+  },
+  {
+    "question": "Why is choosing the right mode of communication important?",
+    "options": [
+      "It has no real effect on the message",
+      "The wrong mode can cause confusion, such as sending a complaint via casual text",
+      "All modes work equally well in every situation",
+      "Only written mode should ever be used"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Different situations need different modes; using the wrong one (like texting a formal complaint) can cause confusion."
   }
 ]
