@@ -67,3 +67,5 @@ body {
 .notes-content th { text-align: left; font-family: var(--font-body); font-weight: 700; color: var(--color-board); background: var(--color-paper-dark); padding: 0.5rem 0.75rem; border-bottom: 2px solid var(--color-rule); }
 .notes-content td { padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--color-ink-soft); border-opacity: 0.15; }
 .notes-content blockquote { border-left: 3px solid var(--color-highlight); padding-left: 1rem; margin: 1rem 0; color: var(--color-ink-soft); font-style: italic; }
+
+.notes-content img { max-width: 340px; width: 100%; display: block; margin: 1.5rem auto; }

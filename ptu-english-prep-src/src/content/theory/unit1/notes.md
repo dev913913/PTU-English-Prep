@@ -25,7 +25,10 @@ Communication is not just talking — it is a full process with many steps. Thes
 7. **Feedback** – The receiver's response, which tells the sender if the message was understood correctly.
 8. **Noise** – Anything that disturbs the message, like bad network, loud sounds, or language problems.
 
-**Diagram idea (in words):**
+**The Communication Process:**
+
+![Communication process diagram showing Sender, Encoding, Message, Channel, Noise, Receiver, Decoding, and Feedback loop](/diagrams/communication-process.svg)
+
 Sender → Encodes Message → Sends through Channel → Receiver Decodes Message → Gives Feedback → back to Sender
 
 ### When is Communication Complete?
