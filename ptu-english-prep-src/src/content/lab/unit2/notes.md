@@ -1,0 +1,1 @@
+This unit moves from everyday spoken English into **professional communication** — the kind of English you'll actually use once you're at a workplace or walking into an interview room.

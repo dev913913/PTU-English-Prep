@@ -58,7 +58,7 @@ export const labUnits = [
     number: 2,
     title: 'Workplace Communication',
     topics: ['Dialogues Communication at Workplace', 'Interviews'],
-    status: 'soon',
+    status: 'available',
   },
   {
     id: 'unit3',
