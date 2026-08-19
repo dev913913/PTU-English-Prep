@@ -1,3 +1,9 @@
+### Watch: Interview Example
+
+<div class="video-embed">
+<iframe src="https://www.youtube.com/embed/-pMbxD67GkY?si=1hhBfKNyhhPSH3dq" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 ### Why Interview Skills Matter
 
 An interview is a short window to show not just what you know, but how you communicate under pressure. Strong content delivered poorly often loses to average content delivered clearly and confidently.
