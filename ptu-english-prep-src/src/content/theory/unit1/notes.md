@@ -2,7 +2,7 @@
 
 ## Theory Notes | Preparation for PTU Exams
 
-> **Exam Focus:** These answers are prepared for 10-mark long questions. Students should learn the definitions, headings, explanations, examples, advantages/disadvantages, and conclusions. In the examination, use proper headings and explain each point rather than writing only keywords.
+> **Exam Focus:** These answers are prepared for 10-mark long questions. Students should learn the definitions, diagrams, explanation, examples, advantages/disadvantages, and conclusions. In the examination, use proper headings and explain each point rather than writing only keywords.
 
 ---
 
