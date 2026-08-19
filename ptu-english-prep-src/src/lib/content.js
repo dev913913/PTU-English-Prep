@@ -5,6 +5,7 @@ const notesFiles = import.meta.glob('../content/**/notes.md', { query: '?raw', i
 const mcqFiles = import.meta.glob('../content/**/mcqs.json', { eager: true })
 const listeningConfigs = import.meta.glob('../content/**/listening.js', { eager: true })
 const listeningContentFiles = import.meta.glob('../content/**/listening/*.md', { query: '?raw', import: 'default', eager: true })
+const listeningMcqFiles = import.meta.glob('../content/**/listening/*-mcqs.json', { eager: true })
 const partsConfigs = import.meta.glob('../content/**/parts.js', { eager: true })
 const partContentFiles = import.meta.glob('../content/**/parts/*.md', { query: '?raw', import: 'default', eager: true })
 
@@ -28,6 +29,12 @@ export function getListeningExercises(track, unitId) {
 export function getListeningExerciseContent(track, unitId, exerciseId) {
   const path = `../content/${track}/${unitId}/listening/${exerciseId}.md`
   return listeningContentFiles[path] || null
+}
+
+export function getListeningMcqs(track, unitId, exerciseId) {
+  const path = `../content/${track}/${unitId}/listening/${exerciseId}-mcqs.json`
+  const mod = listeningMcqFiles[path]
+  return mod ? mod.default : []
 }
 
 export function getUnitParts(track, unitId) {

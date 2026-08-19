@@ -3,8 +3,9 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
 import { theoryUnits, labUnits } from '../content/syllabus'
-import { getListeningExercises, getListeningExerciseContent } from '../lib/content'
+import { getListeningExercises, getListeningExerciseContent, getListeningMcqs } from '../lib/content'
 import Breadcrumb from '../components/Breadcrumb'
+import QuizWidget from '../components/QuizWidget'
 
 const TRACK_LABELS = { theory: 'Theory', lab: 'Lab / Practical' }
 
@@ -15,6 +16,7 @@ export default function ListeningExercisePage() {
   const exercises = getListeningExercises(track, unitId)
   const exercise = exercises.find((e) => e.id === exerciseId)
   const content = getListeningExerciseContent(track, unitId, exerciseId)
+  const mcqs = getListeningMcqs(track, unitId, exerciseId)
   const trackLabel = TRACK_LABELS[track]
 
   if (!exercise) {
@@ -46,6 +48,14 @@ export default function ListeningExercisePage() {
           {content || 'Content coming soon.'}
         </ReactMarkdown>
       </div>
+
+      {mcqs.length > 0 ? (
+        <QuizWidget mcqs={mcqs} title={exercise.title} />
+      ) : (
+        <div className="mt-8 bg-board/5 border border-dashed border-ink/20 rounded-lg p-6 text-center">
+          <p className="text-ink-soft text-sm">Quiz for this exercise is being added soon.</p>
+        </div>
+      )}
 
       <Link to={`/${track}/${unitId}/listening`} className="inline-block mt-6 text-rule font-medium hover:underline">
         ← All listening exercises

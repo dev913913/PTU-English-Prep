@@ -1,0 +1,122 @@
+[
+  {
+    "question": "Where does the story take place?",
+    "options": ["In a village", "In the woods", "In a city", "In a castle"],
+    "correctAnswer": 1,
+    "explanation": "The story takes place in the woods, where the fox finds the crow."
+  },
+  {
+    "question": "What is the fox looking for in the woods?",
+    "options": ["Berries", "Cheese", "Apples", "Fish"],
+    "correctAnswer": 1,
+    "explanation": "The fox is looking for something to eat and notices the crow has a piece of cheese."
+  },
+  {
+    "question": "What does the crow have in her beak?",
+    "options": ["A worm", "A piece of bread", "A diamond", "A piece of cheese"],
+    "correctAnswer": 3,
+    "explanation": "The crow is holding a piece of cheese in her beak."
+  },
+  {
+    "question": "What does the fox think when he sees the crow with the cheese?",
+    "options": ["He wants to steal it", "He loves cheese", "He wants to share it", "He is scared of the crow"],
+    "correctAnswer": 0,
+    "explanation": "The fox wants the cheese and thinks of a way to get it from the crow."
+  },
+  {
+    "question": "How does the fox plan to get the cheese from the crow?",
+    "options": ["By climbing the tree", "By scaring the crow", "By making her dance", "By making her talk"],
+    "correctAnswer": 3,
+    "explanation": "The fox plans to make the crow open her beak by getting her to talk or sing."
+  },
+  {
+    "question": "Why does the crow not respond to the fox at first?",
+    "options": ["She is sleeping", "She is angry", "She is suspicious", "She is deaf"],
+    "correctAnswer": 2,
+    "explanation": "The crow is suspicious of the fox and does not respond to him at first."
+  },
+  {
+    "question": "What does the fox compliment the crow on?",
+    "options": ["Her intelligence", "Her flying skills", "Her singing", "Her cooking"],
+    "correctAnswer": 2,
+    "explanation": "The fox flatters the crow by praising her beautiful singing voice."
+  },
+  {
+    "question": "How does the fox describe the crow's beak?",
+    "options": ["Pointy", "Soft", "Long", "Colorful"],
+    "correctAnswer": 0,
+    "explanation": "The fox compliments the crow's appearance, including her pointy beak."
+  },
+  {
+    "question": "Why does the crow finally decide to sing for the fox?",
+    "options": ["She wanted to impress him", "She was happy to see the fox", "She wanted to marry the fox", "She felt flattered by the fox's compliments"],
+    "correctAnswer": 3,
+    "explanation": "The crow is flattered by the fox's compliments and decides to sing for him."
+  },
+  {
+    "question": "What does the crow drop when she opens her mouth to sing?",
+    "options": ["Her nest", "A leaf", "The cheese", "Her beak"],
+    "correctAnswer": 2,
+    "explanation": "When the crow opens her beak to sing, the piece of cheese falls to the ground."
+  },
+  {
+    "question": "What does the fox do after the crow drops the cheese?",
+    "options": ["He flies away", "He gives the cheese back", "He eats the cheese", "He sings with the crow"],
+    "correctAnswer": 2,
+    "explanation": "The fox quickly takes the cheese and eats it."
+  },
+  {
+    "question": "Why did the fox laugh after eating the cheese?",
+    "options": ["He was happy", "He was scared", "He was surprised", "He was angry"],
+    "correctAnswer": 0,
+    "explanation": "The fox laughs because he is pleased with himself after successfully tricking the crow."
+  },
+  {
+    "question": "How was the fox?",
+    "options": ["Dumb", "Rich", "Clever", "Handsome"],
+    "correctAnswer": 2,
+    "explanation": "The fox was clever because he used flattery and trickery to get the cheese."
+  },
+  {
+    "question": "How did the fox get the cheese from the crow?",
+    "options": ["He asked for it nicely", "He stole it", "He tricked the crow with compliments", "He climbed the tree"],
+    "correctAnswer": 2,
+    "explanation": "The fox tricked the crow by flattering her until she opened her beak."
+  },
+  {
+    "question": "What did the fox say to the crow to make her feel good?",
+    "options": ["She was the queen of all birds", "She was the fastest flyer", "She was the smartest", "She was the smallest bird"],
+    "correctAnswer": 0,
+    "explanation": "The fox uses exaggerated praise, telling the crow that she is the queen of all birds."
+  },
+  {
+    "question": "Why did the crow hold the cheese tightly in her beak?",
+    "options": ["She didn't want to share it", "She was afraid of the fox", "She didn't like cheese", "She loved the fox"],
+    "correctAnswer": 0,
+    "explanation": "The crow wanted to keep the cheese for herself and did not want to share it."
+  },
+  {
+    "question": "What did the fox swallow in one gulp?",
+    "options": ["The crow", "The cheese", "The tree", "The sky"],
+    "correctAnswer": 1,
+    "explanation": "The fox quickly swallows the cheese after tricking the crow."
+  },
+  {
+    "question": "How did the crow react when the fox complimented her?",
+    "options": ["She flew away", "She got angry", "She ignored him", "She sang for him"],
+    "correctAnswer": 3,
+    "explanation": "The crow was flattered by the fox's compliments and sang for him."
+  },
+  {
+    "question": "What did the fox say to the crow as he walked away?",
+    "options": ["Have a lovely day", "I will miss you", "Give me more cheese", "Sing again tomorrow"],
+    "correctAnswer": 0,
+    "explanation": "After getting what he wanted, the fox walks away and wishes the crow a lovely day."
+  },
+  {
+    "question": "What is the moral of the story?",
+    "options": ["Beware of flatterers", "Always trust others", "Sing loudly", "Share your food"],
+    "correctAnswer": 0,
+    "explanation": "The story teaches us to be careful of people who use flattering words to trick us."
+  }
+]

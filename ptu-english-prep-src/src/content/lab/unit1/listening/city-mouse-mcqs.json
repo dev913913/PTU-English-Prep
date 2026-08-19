@@ -1,0 +1,222 @@
+[
+  {
+    "question": "Where does the city mouse live?",
+    "options": [
+      "In a cozy nest",
+      "In a big city",
+      "In a treehouse",
+      "In a rural village"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The city mouse lives in a big city."
+  },
+  {
+    "question": "What type of buildings are in the big city?",
+    "options": [
+      "Tall buildings",
+      "Short buildings",
+      "Wooden buildings",
+      "Small houses"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The big city is described as having tall buildings."
+  },
+  {
+    "question": "What does the country mouse cook for dinner?",
+    "options": [
+      "Pizza and soda",
+      "Corn, carrots, and acorns",
+      "Burgers and fries",
+      "Sushi and noodles"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The country mouse prepares a simple dinner of corn, carrots, and acorns from the garden."
+  },
+  {
+    "question": "How many rooms does the city mouse claim his house has?",
+    "options": [
+      "Ten rooms",
+      "Twenty rooms",
+      "Five rooms",
+      "Fifty rooms"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The city mouse tells the country mouse that his house has twenty rooms."
+  },
+  {
+    "question": "What does the city mouse suggest the country mouse must visit?",
+    "options": [
+      "The countryside",
+      "The theater and the museum",
+      "The park",
+      "The shopping mall"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The city mouse tells the country mouse that she should visit places such as the theater and the museum."
+  },
+  {
+    "question": "What does the country mouse dream about after hearing the city mouse's stories?",
+    "options": [
+      "Living in a mansion",
+      "Eating at fancy restaurants",
+      "Wearing fancy hats",
+      "All of the above"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The country mouse becomes excited by the city mouse's stories and dreams about all these wonderful things."
+  },
+  {
+    "question": "Where does the city mouse actually live in his big house?",
+    "options": [
+      "In the attic",
+      "In the basement",
+      "On the top floor",
+      "In the garden"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The city mouse actually lives in the basement of the big house."
+  },
+  {
+    "question": "What disrupts the mice's dinner in the city?",
+    "options": [
+      "A dog barking",
+      "A cat with sharp teeth and claws",
+      "A loud noise",
+      "A mouse trap"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A dangerous cat with sharp teeth and claws interrupts the mice while they are having dinner."
+  },
+  {
+    "question": "Where do the mice hide from the cat?",
+    "options": [
+      "Under the table",
+      "In a hole in the wall",
+      "Behind a door",
+      "In a cupboard"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The mice hide in a hole in the wall to escape from the cat."
+  },
+  {
+    "question": "What happens to the food after the cat leaves?",
+    "options": [
+      "The mice eat it",
+      "The humans eat it",
+      "It gets spoiled",
+      "The cat eats it"
+    ],
+    "correctAnswer": 1,
+    "explanation": "After the cat leaves, the humans eat the food, so the mice cannot enjoy their dinner."
+  },
+  {
+    "question": "Where does the country mouse decide to go after her experience in the city?",
+    "options": [
+      "Stay in the city",
+      "Go back to the country",
+      "Visit another city",
+      "Move to a different house in the city"
+    ],
+    "correctAnswer": 1,
+    "explanation": "After experiencing the dangers of city life, the country mouse decides to return to the country."
+  },
+  {
+    "question": "What does the country mouse ask for to go back home?",
+    "options": [
+      "A taxi",
+      "A train ticket",
+      "A bus ticket",
+      "A car"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The country mouse asks for a taxi so that she can return home."
+  },
+  {
+    "question": "What is the city mouse's home like?",
+    "options": [
+      "It is small and cozy",
+      "It is enormous with twenty rooms",
+      "It is tiny with one room",
+      "It is made of wood"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The city mouse describes his home as enormous and says that it has twenty rooms."
+  },
+  {
+    "question": "What kind of food does the city mouse have at his dining room table?",
+    "options": [
+      "Simple food from the garden",
+      "A feast of cheese, bread, cookies, cakes, lemonade, and Chinese food",
+      "Only Chinese food",
+      "Just bread and cheese"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The city mouse's table has a large variety of food, including cheese, bread, cookies, cakes, lemonade, and Chinese food."
+  },
+  {
+    "question": "What does the city mouse do while the country mouse cooks dinner?",
+    "options": [
+      "Helps in the kitchen",
+      "Talks about his life in the city",
+      "Sleeps",
+      "Goes for a walk"
+    ],
+    "correctAnswer": 1,
+    "explanation": "While the country mouse prepares dinner, the city mouse talks about his exciting life in the city."
+  },
+  {
+    "question": "What is the main reason the country mouse wants to visit the city?",
+    "options": [
+      "To see tall buildings",
+      "To eat at fancy restaurants",
+      "To try Chinese food",
+      "Because of her dreams inspired by the city mouse's stories"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The country mouse becomes interested in city life because the city mouse's stories make her dream about its exciting and luxurious lifestyle."
+  },
+  {
+    "question": "How does the country mouse feel about the city mouse's life after her visit?",
+    "options": [
+      "She loves it and wants to stay",
+      "She finds it isn't as wonderful as she thought and wants to go home",
+      "She wants to explore more",
+      "She is undecided"
+    ],
+    "correctAnswer": 1,
+    "explanation": "After experiencing the dangers and fear of city life, the country mouse realizes that it is not as wonderful as she had imagined."
+  },
+  {
+    "question": "What lesson does the country mouse learn?",
+    "options": [
+      "City life is always better",
+      "Sometimes other people's lives are not as great as they make you believe",
+      "Always trust your friends",
+      "Dreams always come true"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The country mouse learns that another person's description of their life may make it seem better than it really is."
+  },
+  {
+    "question": "What kind of food is mentioned as part of the country mouse's dinner from her garden?",
+    "options": [
+      "Cheese and bread",
+      "Corn, carrots, and acorns",
+      "Cookies and cakes",
+      "Pizza and soda"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The country mouse prepares corn, carrots, and acorns from her garden for dinner."
+  },
+  {
+    "question": "What scares the mice away from their dinner in the city?",
+    "options": [
+      "A loud noise",
+      "A cat with sharp teeth and claws",
+      "The arrival of humans",
+      "A fire alarm"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A cat with sharp teeth and claws frightens the mice and forces them to leave their dinner."
+  }
+]

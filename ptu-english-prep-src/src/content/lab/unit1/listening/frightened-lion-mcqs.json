@@ -1,0 +1,122 @@
+[
+  {
+    "question": "What is Lion doing at the beginning of the story?",
+    "options": ["Eating dinner", "Getting ready for bed", "Playing baseball", "Reading a book"],
+    "correctAnswer": 1,
+    "explanation": "Lion is getting ready for bed when he hears a strange tapping sound."
+  },
+  {
+    "question": "What sound does Lion hear that makes him scared?",
+    "options": ["Roar", "Tap", "Whisper", "Knock"],
+    "correctAnswer": 1,
+    "explanation": "Lion hears a tapping sound that frightens him."
+  },
+  {
+    "question": "Where does Lion think the sound is coming from?",
+    "options": ["The door", "Under the bed", "Outside the window", "The closet"],
+    "correctAnswer": 2,
+    "explanation": "Lion believes the strange tapping sound is coming from outside the window."
+  },
+  {
+    "question": "What does Lion grab for protection?",
+    "options": ["A flashlight", "A baseball bat", "A pillow", "A broom"],
+    "correctAnswer": 1,
+    "explanation": "Lion grabs a baseball bat because he thinks he may need to protect himself."
+  },
+  {
+    "question": "What does Lion put on his head for protection?",
+    "options": ["A hat", "A bucket", "A bicycle helmet", "A scarf"],
+    "correctAnswer": 2,
+    "explanation": "Lion puts a bicycle helmet on his head to protect himself."
+  },
+  {
+    "question": "What does Lion think the sound is?",
+    "options": ["A friend", "A monster", "The wind", "A ghost"],
+    "correctAnswer": 1,
+    "explanation": "Because Lion is frightened, he imagines that the sound might be made by a monster."
+  },
+  {
+    "question": "How does Lion feel when he hears the sound getting closer?",
+    "options": ["Excited", "Calm", "Panicked", "Curious"],
+    "correctAnswer": 2,
+    "explanation": "As the sound gets closer, Lion becomes increasingly frightened and panicked."
+  },
+  {
+    "question": "Where does Lion hide when he gets scared?",
+    "options": ["In the closet", "Under the bed", "Behind the door", "In the bathroom"],
+    "correctAnswer": 1,
+    "explanation": "Lion hides under the bed because he thinks he is in danger."
+  },
+  {
+    "question": "What does Lion pull over his head while hiding?",
+    "options": ["A pillow", "A blanket", "A towel", "A sheet"],
+    "correctAnswer": 1,
+    "explanation": "Lion pulls a blanket over his head while hiding under the bed."
+  },
+  {
+    "question": "What animal is making the tapping sound?",
+    "options": ["A bird", "A squirrel", "A frog", "A mouse"],
+    "correctAnswer": 2,
+    "explanation": "The mysterious tapping sound is being made by a frog outside the window."
+  },
+  {
+    "question": "What is the frog wearing?",
+    "options": ["A hat", "A tutu and tap shoes", "A bow tie", "Sunglasses"],
+    "correctAnswer": 1,
+    "explanation": "The frog is dressed in a tutu and tap shoes because she wants to dance."
+  },
+  {
+    "question": "What does the frog want to show Lion?",
+    "options": ["A new book", "A dance", "A song", "A drawing"],
+    "correctAnswer": 1,
+    "explanation": "The frog wants to show Lion her dance."
+  },
+  {
+    "question": "How does the frog get Lion's attention?",
+    "options": ["By knocking on the door", "By calling his name", "By tapping on the window", "By singing a song"],
+    "correctAnswer": 2,
+    "explanation": "The frog taps on the window to get Lion's attention."
+  },
+  {
+    "question": "What does the frog say when she sees Lion hiding?",
+    "options": ["Why are you hiding?", "Can I come in?", "You look busy.", "Are you okay?"],
+    "correctAnswer": 0,
+    "explanation": "The frog is surprised to see Lion hiding and asks why he is hiding."
+  },
+  {
+    "question": "How does Lion feel when the frog sees him hiding?",
+    "options": ["Happy", "Proud", "Ridiculous", "Angry"],
+    "correctAnswer": 2,
+    "explanation": "Lion realizes that he has been frightened by something harmless and feels ridiculous."
+  },
+  {
+    "question": "What does the frog do after talking to Lion?",
+    "options": ["Stays and dances", "Hops away", "Goes inside", "Calls for help"],
+    "correctAnswer": 0,
+    "explanation": "The frog stays and shows Lion her dance."
+  },
+  {
+    "question": "What does Lion hold tightly in his hands while hiding?",
+    "options": ["A flashlight", "A baseball bat", "A toy", "A book"],
+    "correctAnswer": 1,
+    "explanation": "Lion holds tightly onto the baseball bat while he hides."
+  },
+  {
+    "question": "How does the frog leave the window?",
+    "options": ["Hops down and dances away", "Flies away", "Runs away", "Walks away"],
+    "correctAnswer": 0,
+    "explanation": "The frog hops down from the window and dances away."
+  },
+  {
+    "question": "What is the moral of the story?",
+    "options": ["Always be brave", "Don't talk to strangers", "Sometimes our imaginations make things scarier than they really are", "Always keep a baseball bat nearby"],
+    "correctAnswer": 2,
+    "explanation": "The story shows that our imagination can make harmless things seem much scarier than they really are."
+  },
+  {
+    "question": "What does Lion realize at the end of the story?",
+    "options": ["The sound was just a frog", "The monster was real", "He is not afraid anymore", "The window was broken"],
+    "correctAnswer": 0,
+    "explanation": "Lion discovers that the frightening tapping sound was simply a frog outside his window."
+  }
+]

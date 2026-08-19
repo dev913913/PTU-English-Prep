@@ -1,0 +1,55 @@
+import { jsPDF } from 'jspdf'
+
+// questions: [{ question, options, selectedIndex, correctIndex, explanation }]
+export function downloadQuizResultPdf({ title, score, total, questions }) {
+  const doc = new jsPDF({ unit: 'pt', format: 'a4' })
+  const pageWidth = doc.internal.pageSize.getWidth()
+  const margin = 48
+  const maxWidth = pageWidth - margin * 2
+  let y = margin
+
+  function ensureSpace(lineHeight) {
+    if (y + lineHeight > doc.internal.pageSize.getHeight() - margin) {
+      doc.addPage()
+      y = margin
+    }
+  }
+
+  function writeLines(text, fontSize, style = 'normal', color = '#1E293B', lineGap = 4) {
+    doc.setFont('helvetica', style)
+    doc.setFontSize(fontSize)
+    doc.setTextColor(color)
+    const lines = doc.splitTextToSize(text, maxWidth)
+    lines.forEach((line) => {
+      ensureSpace(fontSize + lineGap)
+      doc.text(line, margin, y)
+      y += fontSize + lineGap
+    })
+  }
+
+  writeLines(title, 18, 'bold', '#1F3D2B', 6)
+  writeLines(`Score: ${score} / ${total}`, 13, 'normal', '#C9502C', 6)
+  y += 10
+
+  questions.forEach((q, i) => {
+    ensureSpace(30)
+    writeLines(`${i + 1}. ${q.question}`, 12, 'bold', '#1E293B', 4)
+
+    q.options.forEach((opt, idx) => {
+      const isCorrect = idx === q.correctIndex
+      const isSelected = idx === q.selectedIndex
+      let prefix = '   '
+      if (isCorrect) prefix = ' ✓ '
+      else if (isSelected) prefix = ' ✗ '
+      const color = isCorrect ? '#166534' : isSelected ? '#C9502C' : '#4B5563'
+      writeLines(`${prefix}${opt}`, 11, 'normal', color, 3)
+    })
+
+    if (q.explanation) {
+      writeLines(`Explanation: ${q.explanation}`, 10, 'italic', '#4B5563', 3)
+    }
+    y += 10
+  })
+
+  doc.save(`${title.replace(/[^a-z0-9]+/gi, '-').toLowerCase()}-result.pdf`)
+}
