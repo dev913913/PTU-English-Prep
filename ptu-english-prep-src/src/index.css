@@ -43,11 +43,6 @@ body {
   position: relative;
   padding-left: 1.25rem;
 }
-@media (min-width: 640px) {
-  .notebook-page {
-    padding-left: 2rem;
-  }
-}
 .notebook-page::before {
   content: "";
   position: absolute;
