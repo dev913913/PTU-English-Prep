@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import Layout from './components/Layout'
 import Home from './pages/Home'
 import TrackPage from './pages/TrackPage'
@@ -11,6 +12,7 @@ import LabPartPage from './pages/LabPartPage'
 export default function App() {
   return (
     <Layout>
+      <Analytics />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/:track" element={<TrackPage />} />
