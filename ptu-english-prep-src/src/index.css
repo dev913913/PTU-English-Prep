@@ -41,7 +41,12 @@ body {
 
 .notebook-page {
   position: relative;
-  padding-left: 2rem;
+  padding-left: 1.25rem;
+}
+@media (min-width: 640px) {
+  .notebook-page {
+    padding-left: 2rem;
+  }
 }
 .notebook-page::before {
   content: "";
