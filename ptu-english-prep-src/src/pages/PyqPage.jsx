@@ -18,6 +18,11 @@ export default function PyqPage() {
     setOpenId((prev) => (prev === id ? null : id))
   }
 
+  function viewerUrl(file) {
+    const absoluteUrl = `${window.location.origin}${file}`
+    return `https://docs.google.com/viewer?url=${encodeURIComponent(absoluteUrl)}&embedded=true`
+  }
+
   return (
     <div className="max-w-3xl mx-auto px-5 py-10">
       <Breadcrumb items={[{ label: 'Home', to: '/' }, { label: 'PYQ Papers' }]} />
@@ -65,7 +70,7 @@ export default function PyqPage() {
                         Download PDF
                       </a>
                       <a
-                        href={paper.file}
+                        href={viewerUrl(paper.file)}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="border border-ink/20 px-4 py-2 rounded-md text-sm hover:bg-ink/5 transition-colors"
@@ -75,14 +80,14 @@ export default function PyqPage() {
                     </div>
                     <div className="rounded-md overflow-hidden border border-ink/10">
                       <iframe
-                        src={paper.file}
+                        src={viewerUrl(paper.file)}
                         title={`${paper.subject} — ${paper.session}`}
                         className="w-full"
                         style={{ height: '70vh' }}
                       />
                     </div>
                     <p className="text-xs text-ink-soft mt-2">
-                      If the preview doesn't load on your device, use "Open in new tab" or "Download PDF" above instead.
+                      If the preview doesn't load, use "Open in new tab" or "Download PDF" above instead.
                     </p>
                   </div>
                 )}
