@@ -50,7 +50,11 @@ export default function ListeningExercisePage() {
       </div>
 
       {mcqs.length > 0 ? (
-        <QuizWidget mcqs={mcqs} title={exercise.title} />
+        <QuizWidget
+          mcqs={mcqs}
+          title={exercise.title}
+          storageKey={`quiz-progress:${track}:${unitId}:listening:${exerciseId}`}
+        />
       ) : (
         <div className="mt-8 bg-board/5 border border-dashed border-ink/20 rounded-lg p-6 text-center">
           <p className="text-ink-soft text-sm">Quiz for this exercise is being added soon.</p>
@@ -60,6 +64,9 @@ export default function ListeningExercisePage() {
       <Link to={`/${track}/${unitId}/listening`} className="inline-block mt-6 text-rule font-medium hover:underline">
         ← All listening exercises
       </Link>
+      {mcqs.length > 0 && (
+        <p className="text-xs text-ink-soft mt-1">Your progress is saved — safe to leave and come back anytime.</p>
+      )}
     </div>
   )
 }
