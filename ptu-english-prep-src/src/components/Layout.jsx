@@ -28,9 +28,10 @@ export default function Layout({ children }) {
             <span className="font-mono text-[11px] text-highlight-soft/80 hidden sm:inline">AECC · BTHU103/104</span>
           </Link>
           <nav className="flex items-center gap-1">
-            {navLink('/', 'Home')}
+           {navLink('/', 'Home')}
             {navLink('/theory', 'Theory')}
             {navLink('/lab', 'Lab')}
+            {navLink('/pyq', 'PYQ')}
           </nav>
         </div>
       </header>

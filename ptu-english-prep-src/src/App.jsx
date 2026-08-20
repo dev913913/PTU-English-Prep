@@ -8,6 +8,7 @@ import QuizPage from './pages/QuizPage'
 import ListeningHub from './pages/ListeningHub'
 import ListeningExercisePage from './pages/ListeningExercisePage'
 import LabPartPage from './pages/LabPartPage'
+import PyqPage from './pages/PyqPage'
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <Analytics />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/pyq" element={<PyqPage />} />
         <Route path="/:track" element={<TrackPage />} />
         <Route path="/:track/:unitId" element={<UnitPage />} />
         <Route path="/:track/:unitId/quiz" element={<QuizPage />} />
