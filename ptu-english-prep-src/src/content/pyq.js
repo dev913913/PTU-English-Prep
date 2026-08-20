@@ -10,4 +10,11 @@ export const pyqPapers = [
     date: '2025-01-04',
     file: '/pyq/english-jan-2025.pdf',
   },
+  {
+    id: 'jan-2023',
+    subject: 'English (AECC) — BTHU103-18',
+    session: 'January 2023',
+    date: '2023-01-19',
+    file: '/pyq/english-jan-2023.pdf',
+  },
 ]
