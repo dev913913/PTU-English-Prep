@@ -3,12 +3,11 @@
 // Sorted newest-first automatically by "date" (YYYY-MM-DD format).
 
 export const pyqPapers = [
-  // Example entry — replace with real papers, remove this once you add your first one:
-  // {
-  //   id: 'dec-2023',
-  //   subject: 'English (AECC)',
-  //   session: 'December 2023',
-  //   date: '2023-12-18',
-  //   file: '/pyq/english-dec-2023.pdf',
-  // },
+  {
+    id: 'jan-2025',
+    subject: 'English (AECC) — BTHU103-18',
+    session: 'January 2025',
+    date: '2025-01-04',
+    file: '/pyq/english-jan-2025.pdf',
+  },
 ]
