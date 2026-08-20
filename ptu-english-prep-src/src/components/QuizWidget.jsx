@@ -141,9 +141,12 @@ export default function QuizWidget({ mcqs, title, storageKey }) {
 
   return (
     <div className="mt-8 bg-white/40 border border-ink/10 rounded-lg p-6">
-      <div className="flex items-center justify-between mb-3 font-mono text-xs text-ink-soft">
-        <span>Question {current + 1} of {mcqs.length}</span>
-        {storageKey && <span className="text-ink-soft/60">Progress saves automatically</span>}
+      <div className="mb-3">
+        <p className="font-mono text-xs text-ink-soft">Question {current + 1} of {mcqs.length}</p>
+        {storageKey && (
+          <p className="font-mono text-[10px] text-ink-soft/50 mt-0.5">Progress saves automatically</p>
+        )}
+      </div>
       </div>
 
       {resumed && current === Math.min(answers.length, mcqs.length - 1) && (
