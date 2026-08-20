@@ -37,11 +37,16 @@ export default function QuizPage() {
       </p>
       <h1 className="font-display text-2xl font-semibold text-board mb-2">{unit.title} — Quiz</h1>
 
-      <QuizWidget mcqs={mcqs} title={`${trackLabel} Unit ${unit.number} — ${unit.title}`} />
+      <QuizWidget
+        mcqs={mcqs}
+        title={`${trackLabel} Unit ${unit.number} — ${unit.title}`}
+        storageKey={`quiz-progress:${track}:${unitId}`}
+      />
 
       <Link to={`/${track}/${unitId}`} className="inline-block mt-6 text-rule font-medium hover:underline">
         ← Back to notes
       </Link>
+      <p className="text-xs text-ink-soft mt-1">Your progress is saved — safe to leave and come back anytime.</p>
     </div>
   )
 }
