@@ -1,13 +1,49 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { downloadQuizResultPdf } from '../lib/generatePdf'
 
-export default function QuizWidget({ mcqs, title }) {
-  const [current, setCurrent] = useState(0)
-  const [selected, setSelected] = useState(null)
-  const [answers, setAnswers] = useState([])
-  const [finished, setFinished] = useState(false)
+function loadProgress(key) {
+  if (!key) return null
+  try {
+    const raw = sessionStorage.getItem(key)
+    return raw ? JSON.parse(raw) : null
+  } catch {
+    return null
+  }
+}
 
+function saveProgress(key, data) {
+  if (!key) return
+  try {
+    sessionStorage.setItem(key, JSON.stringify(data))
+  } catch {
+    // storage unavailable (private browsing etc) — quiz still works, just without persistence
+  }
+}
+
+function clearProgress(key) {
+  if (!key) return
+  try {
+    sessionStorage.removeItem(key)
+  } catch {
+    // ignore
+  }
+}
+
+export default function QuizWidget({ mcqs, title, storageKey }) {
   if (!mcqs || mcqs.length === 0) return null
+
+  const saved = loadProgress(storageKey)
+  const validSaved = saved && Array.isArray(saved.answers) && saved.answers.length <= mcqs.length
+
+  const [answers, setAnswers] = useState(validSaved ? saved.answers : [])
+  const [finished, setFinished] = useState(validSaved ? !!saved.finished : false)
+  const [current, setCurrent] = useState(validSaved ? Math.min(saved.answers.length, mcqs.length - 1) : 0)
+  const [selected, setSelected] = useState(null)
+  const [resumed] = useState(validSaved && saved.answers.length > 0 && !saved.finished)
+
+  useEffect(() => {
+    saveProgress(storageKey, { answers, finished })
+  }, [answers, finished, storageKey])
 
   const q = mcqs[current]
   const score = answers.filter((a) => a.correct).length
@@ -33,6 +69,7 @@ export default function QuizWidget({ mcqs, title }) {
     setSelected(null)
     setAnswers([])
     setFinished(false)
+    clearProgress(storageKey)
   }
 
   function handleDownload() {
@@ -106,7 +143,14 @@ export default function QuizWidget({ mcqs, title }) {
     <div className="mt-8 bg-white/40 border border-ink/10 rounded-lg p-6">
       <div className="flex items-center justify-between mb-3 font-mono text-xs text-ink-soft">
         <span>Question {current + 1} of {mcqs.length}</span>
+        {storageKey && <span className="text-ink-soft/60">Progress saves automatically</span>}
       </div>
+
+      {resumed && current === Math.min(answers.length, mcqs.length - 1) && (
+        <div className="mb-4 bg-highlight/20 border border-highlight/40 rounded-md px-3 py-2 text-xs text-board">
+          Resumed your previous attempt — picking up at question {current + 1}.
+        </div>
+      )}
 
       <div className="w-full h-1.5 bg-ink/10 rounded-full overflow-hidden mb-6">
         <div
