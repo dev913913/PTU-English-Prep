@@ -1,26 +1,102 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { downloadQuizResultPdf } from '../lib/generatePdf'
 
-export default function QuizWidget({ mcqs, title }) {
-  const [current, setCurrent] = useState(0)
+function loadProgress(key) {
+  if (!key) return null
+  try {
+    const raw = sessionStorage.getItem(key)
+    return raw ? JSON.parse(raw) : null
+  } catch {
+    return null
+  }
+}
+
+function saveProgress(key, data) {
+  if (!key) return
+  try {
+    sessionStorage.setItem(key, JSON.stringify(data))
+  } catch {
+    // storage unavailable (private browsing etc) — quiz still works, just without persistence
+  }
+}
+
+function clearProgress(key) {
+  if (!key) return
+  try {
+    sessionStorage.removeItem(key)
+  } catch {
+    // ignore
+  }
+}
+
+// A restored answer is only trusted if it points at a real option for that question.
+function isValidAnswer(answer, question) {
+  return (
+    answer &&
+    typeof answer.selected === 'number' &&
+    Number.isInteger(answer.selected) &&
+    question &&
+    Array.isArray(question.options) &&
+    answer.selected >= 0 &&
+    answer.selected < question.options.length &&
+    typeof answer.correct === 'boolean'
+  )
+}
+
+function isValidSavedAnswers(answers, mcqs) {
+  if (!Array.isArray(answers) || answers.length > mcqs.length) return false
+  return answers.every((a, i) => isValidAnswer(a, mcqs[i]))
+}
+
+export default function QuizWidget({ mcqs, title, storageKey }) {
+  const safeMcqs = Array.isArray(mcqs) ? mcqs : []
+
+  const saved = loadProgress(storageKey)
+  const validSaved = !!(saved && isValidSavedAnswers(saved.answers, safeMcqs))
+  if (saved && !validSaved) {
+    // Corrupted or stale entry (e.g. mismatched question set) — wipe it so it doesn't keep failing.
+    clearProgress(storageKey)
+  }
+
+  const initialAnswers = validSaved ? saved.answers : []
+  const initialFinished = validSaved ? (!!saved.finished || initialAnswers.length >= safeMcqs.length) : false
+  const initialCurrent = validSaved ? Math.min(initialAnswers.length, Math.max(safeMcqs.length - 1, 0)) : 0
+  const wasResumedMidway = validSaved && initialAnswers.length > 0 && !initialFinished
+
+  // Hooks always run, in the same order, regardless of whether mcqs is empty —
+  // the empty-state check happens after every hook below, not before.
+  const [answers, setAnswers] = useState(initialAnswers)
+  const [finished, setFinished] = useState(initialFinished)
+  const [current, setCurrent] = useState(initialCurrent)
   const [selected, setSelected] = useState(null)
-  const [answers, setAnswers] = useState([])
-  const [finished, setFinished] = useState(false)
+  const [resumed] = useState(wasResumedMidway)
+  const [resumedAtIndex] = useState(initialCurrent)
+  const suppressNextSave = useRef(false)
 
-  if (!mcqs || mcqs.length === 0) return null
+  useEffect(() => {
+    if (suppressNextSave.current) {
+      suppressNextSave.current = false
+      clearProgress(storageKey)
+      return
+    }
+    saveProgress(storageKey, { answers, finished })
+  }, [answers, finished, storageKey])
 
-  const q = mcqs[current]
+  if (safeMcqs.length === 0) return null
+
+  const q = safeMcqs[current]
   const score = answers.filter((a) => a.correct).length
 
   function handleSelect(idx) {
     if (selected !== null) return
+    if (answers.length >= safeMcqs.length) return // safety net: never record more answers than questions
     const correct = idx === q.correctAnswer
     setSelected(idx)
     setAnswers([...answers, { selected: idx, correct }])
   }
 
   function handleNext() {
-    if (current + 1 < mcqs.length) {
+    if (current + 1 < safeMcqs.length) {
       setCurrent(current + 1)
       setSelected(null)
     } else {
@@ -29,6 +105,7 @@ export default function QuizWidget({ mcqs, title }) {
   }
 
   function handleRestart() {
+    suppressNextSave.current = true
     setCurrent(0)
     setSelected(null)
     setAnswers([])
@@ -39,8 +116,8 @@ export default function QuizWidget({ mcqs, title }) {
     downloadQuizResultPdf({
       title,
       score,
-      total: mcqs.length,
-      questions: mcqs.map((mq, i) => ({
+      total: safeMcqs.length,
+      questions: safeMcqs.map((mq, i) => ({
         question: mq.question,
         options: mq.options,
         selectedIndex: answers[i].selected,
@@ -56,12 +133,12 @@ export default function QuizWidget({ mcqs, title }) {
         <div className="bg-white/60 border border-ink/10 rounded-lg p-8 text-center">
           <p className="font-mono text-xs text-rule tracking-widest mb-2">QUIZ COMPLETE</p>
           <p className="font-display text-4xl font-semibold text-board">
-            {score} / {mcqs.length}
+            {score} / {safeMcqs.length}
           </p>
           <p className="text-ink-soft mt-2">
-            {score === mcqs.length
+            {score === safeMcqs.length
               ? 'Perfect score — great work!'
-              : score / mcqs.length >= 0.6
+              : score / safeMcqs.length >= 0.6
               ? 'Solid work. Review the ones you missed below.'
               : 'Worth going through it again before your next attempt.'}
           </p>
@@ -82,8 +159,9 @@ export default function QuizWidget({ mcqs, title }) {
         </div>
 
         <div className="mt-8 space-y-4">
-          {mcqs.map((mq, i) => {
+          {safeMcqs.map((mq, i) => {
             const a = answers[i]
+            if (!a) return null
             return (
               <div key={i} className="bg-white/50 border border-ink/10 rounded-lg p-4">
                 <p className="font-medium text-ink">{i + 1}. {mq.question}</p>
@@ -104,14 +182,31 @@ export default function QuizWidget({ mcqs, title }) {
 
   return (
     <div className="mt-8 bg-white/40 border border-ink/10 rounded-lg p-6">
-      <div className="flex items-center justify-between mb-3 font-mono text-xs text-ink-soft">
-        <span>Question {current + 1} of {mcqs.length}</span>
+      <div className="mb-3 flex items-start justify-between gap-3">
+        <div>
+          <p className="font-mono text-xs text-ink-soft">Question {current + 1} of {safeMcqs.length}</p>
+          {storageKey && (
+            <p className="font-mono text-[10px] text-ink-soft/50 mt-0.5">Progress saved in this browser tab</p>
+          )}
+        </div>
+        <button
+          onClick={handleRestart}
+          className="font-mono text-[10px] text-rule underline hover:no-underline shrink-0"
+        >
+          Restart quiz
+        </button>
       </div>
+
+      {resumed && current === resumedAtIndex && (
+        <div className="mb-4 bg-highlight/20 border border-highlight/40 rounded-md px-3 py-2 text-xs text-board">
+          Resumed your previous attempt — picking up at question {current + 1}.
+        </div>
+      )}
 
       <div className="w-full h-1.5 bg-ink/10 rounded-full overflow-hidden mb-6">
         <div
           className="h-full bg-highlight transition-all duration-300"
-          style={{ width: `${((current + (selected !== null ? 1 : 0)) / mcqs.length) * 100}%` }}
+          style={{ width: `${((current + (selected !== null ? 1 : 0)) / safeMcqs.length) * 100}%` }}
         />
       </div>
 
@@ -147,7 +242,7 @@ export default function QuizWidget({ mcqs, title }) {
             onClick={handleNext}
             className="mt-3 bg-highlight text-board font-semibold px-5 py-2 rounded-md hover:bg-highlight-soft transition-colors"
           >
-            {current + 1 < mcqs.length ? 'Next question' : 'See results'}
+            {current + 1 < safeMcqs.length ? 'Next question' : 'See results'}
           </button>
         </div>
       )}
