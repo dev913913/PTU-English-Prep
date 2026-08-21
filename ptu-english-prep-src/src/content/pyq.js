@@ -17,4 +17,11 @@ export const pyqPapers = [
     date: '2023-01-19',
     file: '/pyq/english-jan-2023.pdf',
   },
+  {
+  id: 'jan-2026',
+  subject: 'English — BCom/BA/BSc/BVoc/BTTM/BBA 1st Sem',
+  session: 'January 2026',
+  date: '2026-01-01',
+  file: '/pyq/english-jan-2026.pdf',
+},
 ]
