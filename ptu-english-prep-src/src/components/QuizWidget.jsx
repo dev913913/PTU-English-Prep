@@ -35,11 +35,20 @@ export default function QuizWidget({ mcqs, title, storageKey }) {
   const saved = loadProgress(storageKey)
   const validSaved = saved && Array.isArray(saved.answers) && saved.answers.length <= mcqs.length
 
-  const [answers, setAnswers] = useState(validSaved ? saved.answers : [])
-  const [finished, setFinished] = useState(validSaved ? !!saved.finished : false)
-  const [current, setCurrent] = useState(validSaved ? Math.min(saved.answers.length, mcqs.length - 1) : 0)
+  // If every question was already answered (even if the user left before tapping
+  // "See results"), treat it as finished on load — otherwise the last question would
+  // render again as unanswered, and selecting it a second time would double-count it.
+  const initialAnswers = validSaved ? saved.answers : []
+  const initialFinished = validSaved ? (!!saved.finished || initialAnswers.length >= mcqs.length) : false
+  const initialCurrent = validSaved ? Math.min(initialAnswers.length, mcqs.length - 1) : 0
+  const wasResumedMidway = validSaved && initialAnswers.length > 0 && !initialFinished
+
+   const [answers, setAnswers] = useState(initialAnswers)
+  const [finished, setFinished] = useState(initialFinished)
+  const [current, setCurrent] = useState(initialCurrent)
   const [selected, setSelected] = useState(null)
-  const [resumed] = useState(validSaved && saved.answers.length > 0 && !saved.finished)
+  const [resumed] = useState(wasResumedMidway)
+  const [resumedAtIndex] = useState(initialCurrent)
 
   useEffect(() => {
     saveProgress(storageKey, { answers, finished })
@@ -50,6 +59,7 @@ export default function QuizWidget({ mcqs, title, storageKey }) {
 
   function handleSelect(idx) {
     if (selected !== null) return
+    if (answers.length >= mcqs.length) return // safety net: never record more answers than questions
     const correct = idx === q.correctAnswer
     setSelected(idx)
     setAnswers([...answers, { selected: idx, correct }])
@@ -121,6 +131,7 @@ export default function QuizWidget({ mcqs, title, storageKey }) {
         <div className="mt-8 space-y-4">
           {mcqs.map((mq, i) => {
             const a = answers[i]
+            if (!a) return null
             return (
               <div key={i} className="bg-white/50 border border-ink/10 rounded-lg p-4">
                 <p className="font-medium text-ink">{i + 1}. {mq.question}</p>
@@ -147,9 +158,8 @@ export default function QuizWidget({ mcqs, title, storageKey }) {
           <p className="font-mono text-[10px] text-ink-soft/50 mt-0.5">Progress saves automatically</p>
         )}
       </div>
-      </div>
 
-      {resumed && current === Math.min(answers.length, mcqs.length - 1) && (
+          {resumed && current === resumedAtIndex && (
         <div className="mb-4 bg-highlight/20 border border-highlight/40 rounded-md px-3 py-2 text-xs text-board">
           Resumed your previous attempt — picking up at question {current + 1}.
         </div>
