@@ -10,6 +10,21 @@ unit-3-theory
 
 Do not merge this branch into `main` until the content has been reviewed.
 
+## Guidance for future AI work
+
+When continuing Unit 3, work on `unit-3-theory` or a new branch created from it. Keep `main` unchanged until the work is reviewed and intentionally merged.
+
+Preserve the repository's existing ecosystem:
+
+- Add learning material under `src/content/` using Markdown, JSON, and the existing `parts.js` pattern.
+- Reuse the existing `QuizWidget`, loaders, routes, and page components before creating new abstractions.
+- Do not add dependencies, replace the quiz system, or change the framework for normal content additions.
+- Keep the Unit 3 syllabus topics and available parts synchronized.
+- Read the current files before editing because the branch may contain newer review fixes than this document describes.
+- Run `npm run build` from `ptu-english-prep-src` after content or loader changes.
+
+The existing part-level MCQ support was added specifically so quizzes can appear below each part's passage. It should be reused for future Unit 3 sections rather than duplicated.
+
 ## Goal
 
 Unit 3 prepares students for the reading and understanding tasks that repeatedly appear in PTU English previous-year questions:
