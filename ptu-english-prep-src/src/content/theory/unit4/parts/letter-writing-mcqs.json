@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What is the main difference between a formal and an informal letter?",
+    "options": ["Formal letters use an official structure and tone", "Informal letters cannot have paragraphs", "Formal letters never have a subject", "Informal letters must use technical language"],
+    "correctAnswer": 0,
+    "explanation": "Formal letters follow a fixed structure and use an official tone, while informal letters are personal."
+  },
+  {
+    "question": "Which item normally appears in a formal letter?",
+    "options": ["Subject", "A joke only", "A poem title", "A character list"],
+    "correctAnswer": 0,
+    "explanation": "A subject line briefly states the purpose of a formal letter."
+  },
+  {
+    "question": "A letter about keeping the environment clean should be addressed in a:",
+    "options": ["Personal and friendly tone if written to a friend", "Scientific formula only", "Hostile tone", "Completely blank format"],
+    "correctAnswer": 0,
+    "explanation": "The intended reader is a friend, so the letter should be personal while presenting practical ideas."
+  },
+  {
+    "question": "Which measure can help reduce road accidents?",
+    "options": ["Using helmets and seat belts", "Driving while distracted", "Ignoring speed limits", "Removing traffic signs"],
+    "correctAnswer": 0,
+    "explanation": "Helmets and seat belts reduce injury risk, while safe driving and enforcement reduce accidents."
+  },
+  {
+    "question": "What should the closing paragraph of a formal letter usually include?",
+    "options": ["Expected action or thanks", "A new unrelated topic", "Only the sender's nickname", "A list of jokes"],
+    "correctAnswer": 0,
+    "explanation": "The closing paragraph can state the requested action, express thanks, or indicate the expected response."
+  },
+  {
+    "question": "Which greeting is suitable for an informal letter to a friend?",
+    "options": ["Dear Aman,", "To whom it may concern,", "Respected Hiring Committee only", "Subject:"],
+    "correctAnswer": 0,
+    "explanation": "A friendly salutation such as 'Dear Aman' suits a personal letter."
+  },
+  {
+    "question": "Which item is generally required in a formal letter but not a friendly letter?",
+    "options": ["A subject line", "A date", "A closing", "A reason for writing"],
+    "correctAnswer": 0,
+    "explanation": "A formal letter normally includes a subject line to state its purpose quickly."
+  },
+  {
+    "question": "Why should a letter about road accidents mention traffic-law enforcement?",
+    "options": ["It is a practical measure for improving road safety", "It makes the letter informal", "It replaces the greeting", "It is unrelated to accidents"],
+    "correctAnswer": 0,
+    "explanation": "Enforcing speed, helmet, seat-belt, and distracted-driving rules can help reduce accidents."
+  },
+  {
+    "question": "Which closing is appropriate for a letter to a friend?",
+    "options": ["With love", "Yours faithfully, Municipal Commissioner", "Officially submitted", "By order"],
+    "correctAnswer": 0,
+    "explanation": "A warm closing such as 'With love' matches the personal relationship."
+  },
+  {
+    "question": "In a formal letter to the Municipal Commissioner, the writer should:",
+    "options": ["Make a respectful request and state the problem clearly", "Use only jokes", "Avoid explaining the issue", "Write as if addressing a close friend"],
+    "correctAnswer": 0,
+    "explanation": "A formal civic letter should clearly explain the problem and make a respectful, actionable request."
+  }
+]

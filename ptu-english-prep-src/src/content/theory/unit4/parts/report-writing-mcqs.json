@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What is a report?",
+    "options": ["A formal account of an event, survey, or investigation", "A casual conversation", "A poem only", "A private greeting"],
+    "correctAnswer": 0,
+    "explanation": "A report is an organised and usually formal account of information gathered about a subject."
+  },
+  {
+    "question": "Which section presents the important facts and observations?",
+    "options": ["Findings", "Salutation", "Signature", "Greeting"],
+    "correctAnswer": 0,
+    "explanation": "The findings section presents the main facts and observations collected during the research."
+  },
+  {
+    "question": "What should recommendations do?",
+    "options": ["Suggest practical next steps", "Repeat the title", "Add unrelated stories", "Hide the conclusion"],
+    "correctAnswer": 0,
+    "explanation": "Recommendations turn the report's findings into useful proposed actions."
+  },
+  {
+    "question": "What tone should normally be used in a report?",
+    "options": ["Formal and objective", "Angry and exaggerated", "Very personal", "Humorous throughout"],
+    "correctAnswer": 0,
+    "explanation": "Reports should present information objectively in a formal and clear style."
+  },
+  {
+    "question": "A market research report should examine:",
+    "options": ["Demand, competitors, price, and customers", "Only the writer's favourite colour", "The writer's family history", "Unrelated poems"],
+    "correctAnswer": 0,
+    "explanation": "Market potential depends on customer demand, competition, pricing, features, and sales possibilities."
+  },
+  {
+    "question": "Which section explains how information was collected?",
+    "options": ["Method", "Conclusion", "Title", "Signature"],
+    "correctAnswer": 0,
+    "explanation": "The method section describes surveys, interviews, observations, or other research procedures."
+  },
+  {
+    "question": "What should a conclusion do in a report?",
+    "options": ["Explain what the findings show", "Introduce an unrelated topic", "Repeat every questionnaire answer", "Use only emotional language"],
+    "correctAnswer": 0,
+    "explanation": "The conclusion interprets the findings and states the overall result of the report."
+  },
+  {
+    "question": "Which finding is most useful in a product market report?",
+    "options": ["Most respondents preferred a price between Rs. 400 and Rs. 600", "The writer likes blue", "The office was noisy", "The report was typed"],
+    "correctAnswer": 0,
+    "explanation": "A specific customer response directly helps the company make a pricing decision."
+  },
+  {
+    "question": "Why should a report separate findings from recommendations?",
+    "options": ["To distinguish evidence from proposed action", "To make it confusing", "To remove the conclusion", "To avoid using headings"],
+    "correctAnswer": 0,
+    "explanation": "Findings report what the research shows, while recommendations suggest what should happen next."
+  },
+  {
+    "question": "A limited trial launch is recommended because it can:",
+    "options": ["Test the product before wider distribution", "Guarantee every sale", "Remove the need for research", "Avoid customer feedback"],
+    "correctAnswer": 0,
+    "explanation": "A trial launch allows the company to learn from real customers before committing to a larger launch."
+  }
+]

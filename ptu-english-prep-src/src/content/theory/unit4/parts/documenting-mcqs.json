@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What is the main purpose of documenting information?",
+    "options": ["To hide information", "To record and present information for later use", "To make every text informal", "To remove all details"],
+    "correctAnswer": 1,
+    "explanation": "Documentation records information so another person can understand, use, verify, or refer to it later."
+  },
+  {
+    "question": "Which quality means that facts, names, and dates are correct?",
+    "options": ["Accuracy", "Decoration", "Length", "Humour"],
+    "correctAnswer": 0,
+    "explanation": "Accuracy means that the information in a document is correct."
+  },
+  {
+    "question": "Which document normally records a meeting?",
+    "options": ["Minutes", "A poster", "A personal diary", "A greeting card"],
+    "correctAnswer": 0,
+    "explanation": "Minutes are the formal record of the proceedings and decisions of a meeting."
+  },
+  {
+    "question": "Which format is most suitable for announcing a college cleanliness drive?",
+    "options": ["Notice", "Private diary", "Novel", "Personal message only"],
+    "correctAnswer": 0,
+    "explanation": "A notice communicates an announcement clearly to a group of people."
+  },
+  {
+    "question": "Why are headings and numbering useful in a document?",
+    "options": ["They make information harder to find", "They improve organisation and scanning", "They replace all facts", "They make the tone personal"],
+    "correctAnswer": 1,
+    "explanation": "Headings and numbering organise information and help readers locate important points quickly."
+  },
+  {
+    "question": "Which detail is essential in the cleanliness-drive notice?",
+    "options": ["The organiser's favourite activity", "Date, time, venue, and instructions", "A long personal story", "An unrelated quotation"],
+    "correctAnswer": 1,
+    "explanation": "A useful notice gives readers the practical information needed to attend or act."
+  },
+  {
+    "question": "What is the main purpose of a memo?",
+    "options": ["To give short internal information", "To entertain the public", "To record a novel", "To replace meeting minutes always"],
+    "correctAnswer": 0,
+    "explanation": "A memo is commonly used to communicate a short internal instruction or update."
+  },
+  {
+    "question": "What do meeting minutes preserve?",
+    "options": ["Personal emotions", "Decisions and actions agreed in a meeting", "Only the meeting room colour", "Unverified rumours"],
+    "correctAnswer": 1,
+    "explanation": "Minutes create a record of what was discussed, decided, and assigned."
+  },
+  {
+    "question": "Which sentence is clearest for an official document?",
+    "options": ["Come sometime and do the thing", "Submit the volunteer list by 4:00 p.m. on 16 August", "You know what to do", "Maybe perhaps send it later"],
+    "correctAnswer": 1,
+    "explanation": "The second sentence gives a precise action and deadline without ambiguity."
+  },
+  {
+    "question": "Which quality prevents unnecessary repetition in a document?",
+    "options": ["Conciseness", "Decoration", "Informality", "Suspense"],
+    "correctAnswer": 0,
+    "explanation": "Conciseness means expressing the required information without repetition or irrelevant detail."
+  }
+]
