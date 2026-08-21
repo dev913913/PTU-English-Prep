@@ -27,4 +27,11 @@ export const unitParts = [
     type: 'notes',
     blurb: 'Explain themes, arguments, tone, evidence, and implied meaning.',
   },
+  {
+    id: 'translation',
+    number: 5,
+    title: 'Translation Practice',
+    type: 'notes',
+    blurb: 'Translate everyday Hindi and Punjabi ideas accurately into English and back.',
+  },
 ]
