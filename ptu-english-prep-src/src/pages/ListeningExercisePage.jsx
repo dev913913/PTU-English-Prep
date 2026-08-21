@@ -50,7 +50,8 @@ export default function ListeningExercisePage() {
       </div>
 
       {mcqs.length > 0 ? (
-        <QuizWidget
+              <QuizWidget
+          key={`quiz-progress:${track}:${unitId}:listening:${exerciseId}`}
           mcqs={mcqs}
           title={exercise.title}
           storageKey={`quiz-progress:${track}:${unitId}:listening:${exerciseId}`}
@@ -65,7 +66,7 @@ export default function ListeningExercisePage() {
         ← All listening exercises
       </Link>
       {mcqs.length > 0 && (
-        <p className="text-xs text-ink-soft mt-1">Your progress is saved — safe to leave and come back anytime.</p>
+             <p className="text-xs text-ink-soft mt-1">Your progress is saved in this browser tab — safe to go back and resume, but it won't carry over if you close the tab or switch devices.</p>
       )}
     </div>
   )
