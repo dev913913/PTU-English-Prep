@@ -62,7 +62,7 @@ export default function PyqPage() {
                 {isOpen && (
                   <div className="px-5 pb-5 border-t border-ink/10 pt-4">
                     <div className="flex flex-wrap gap-3 mb-3">
-                      <a
+                      
                         href={viewerUrl(paper.file)}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -70,7 +70,7 @@ export default function PyqPage() {
                       >
                         Open in new tab
                       </a>
-                      <a
+                      
                         href={paper.file}
                         download
                         className="border border-ink/20 px-4 py-2 rounded-md text-sm hover:bg-ink/5 transition-colors"
