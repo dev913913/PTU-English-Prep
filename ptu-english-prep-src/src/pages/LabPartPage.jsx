@@ -3,8 +3,9 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
 import { theoryUnits, labUnits } from '../content/syllabus'
-import { getUnitParts, getPartContent } from '../lib/content'
+import { getUnitParts, getPartContent, getPartMcqs } from '../lib/content'
 import Breadcrumb from '../components/Breadcrumb'
+import QuizWidget from '../components/QuizWidget'
 
 const TRACK_LABELS = { theory: 'Theory', lab: 'Lab / Practical' }
 
@@ -15,6 +16,7 @@ export default function LabPartPage() {
   const parts = getUnitParts(track, unitId) || []
   const part = parts.find((p) => p.id === partId)
   const content = part ? getPartContent(track, unitId, part.id) : null
+  const mcqs = part ? getPartMcqs(track, unitId, part.id) : []
   const trackLabel = TRACK_LABELS[track]
 
   if (!unit || !part) {
@@ -46,6 +48,15 @@ export default function LabPartPage() {
           </ReactMarkdown>
         </div>
       </div>
+
+      {mcqs.length > 0 && (
+        <QuizWidget
+          key={`quiz-progress:${track}:${unitId}:part:${part.id}`}
+          mcqs={mcqs}
+          title={`${unit.title}: ${part.title}`}
+          storageKey={`quiz-progress:${track}:${unitId}:part:${part.id}`}
+        />
+      )}
 
       <Link to={`/${track}/${unitId}`} className="inline-block mt-8 text-rule font-medium hover:underline">
         ← Back to Unit {unit.number}
