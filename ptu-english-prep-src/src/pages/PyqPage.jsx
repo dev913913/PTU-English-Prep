@@ -18,9 +18,9 @@ export default function PyqPage() {
     setOpenId((prev) => (prev === id ? null : id))
   }
 
-  function viewerUrl(file) {
+  function viewerUrl(file, embedded = true) {
     const absoluteUrl = `${window.location.origin}${file}`
-    return `https://docs.google.com/viewer?url=${encodeURIComponent(absoluteUrl)}&embedded=true`
+    return `https://docs.google.com/viewer?url=${encodeURIComponent(absoluteUrl)}${embedded ? '&embedded=true' : ''}`
   }
 
   return (
@@ -69,8 +69,8 @@ export default function PyqPage() {
                       >
                         Download PDF
                       </a>
-                      <a
-                        href={viewerUrl(paper.file)}
+                      <a              
+                        href={viewerUrl(paper.file, false)}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="border border-ink/20 px-4 py-2 rounded-md text-sm hover:bg-ink/5 transition-colors"
