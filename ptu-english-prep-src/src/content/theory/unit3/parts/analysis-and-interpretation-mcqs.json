@@ -1,0 +1,32 @@
+[
+  {
+    "question": "What does analysis do?",
+    "options": ["Breaks a passage into its ideas and evidence", "Removes the central idea", "Copies the title only", "Changes all the facts"],
+    "correctAnswer": 0,
+    "explanation": "Analysis examines the ideas, evidence, structure, and language of a passage."
+  },
+  {
+    "question": "Why is Afghanistan geographically important in the passage?",
+    "options": ["It is isolated from Asia", "It connects several Asian regions and old trade routes", "It has no trade routes", "It is outside Asia"],
+    "correctAnswer": 1,
+    "explanation": "The passage places Afghanistan at the junction of Central, South, and East Asia and ancient trading routes."
+  },
+  {
+    "question": "According to the passage, development in Afghanistan is unsustainable without:",
+    "options": ["More traffic", "Peace", "Less cooperation", "Closed borders"],
+    "correctAnswer": 1,
+    "explanation": "The passage states that development cannot be sustainable without peace."
+  },
+  {
+    "question": "What does the passage present as necessary for Afghanistan's future?",
+    "options": ["Regional cooperation", "Avoiding every neighbour", "Stopping trade", "Ignoring terrorism"],
+    "correctAnswer": 0,
+    "explanation": "The concluding idea is that the Heart of Asia process is critical for cooperation and Afghanistan's potential as an Asian hub."
+  },
+  {
+    "question": "Which question helps identify a passage's tone?",
+    "options": ["How many letters are in the title?", "Is the writer hopeful, critical, or concerned?", "Who printed the paper?", "How long is each word?"],
+    "correctAnswer": 1,
+    "explanation": "Identifying the writer's attitude, such as hopeful or concerned, helps interpret the tone."
+  }
+]

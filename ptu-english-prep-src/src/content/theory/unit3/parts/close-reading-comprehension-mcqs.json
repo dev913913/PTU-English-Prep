@@ -1,0 +1,32 @@
+[
+  {
+    "question": "According to the passage, a true leader is someone whose position others would want to:",
+    "options": ["avoid", "emulate", "question", "replace"],
+    "correctAnswer": 1,
+    "explanation": "The passage says that a true leader is one whom others would want to emulate, or follow as an example."
+  },
+  {
+    "question": "A sympathetic or democratic leader understands the problems of:",
+    "options": ["competitors", "customers only", "people at the workplace", "government officials"],
+    "correctAnswer": 2,
+    "explanation": "The passage describes such a leader as understanding workplace problems and encouraging colleagues."
+  },
+  {
+    "question": "In today's competitive world, advancement depends mainly on:",
+    "options": ["age", "years served", "actual performance and results", "social position"],
+    "correctAnswer": 2,
+    "explanation": "The passage contrasts performance and results with merely completing many years of service."
+  },
+  {
+    "question": "What can make a person a leader in the true sense?",
+    "options": ["Outstanding work", "Popularity", "Wealth", "Long working hours"],
+    "correctAnswer": 0,
+    "explanation": "Outstanding work raises a person's stature and makes others want to follow their example."
+  },
+  {
+    "question": "How can a person aspire to become a leader according to the passage?",
+    "options": ["By putting effort in the right direction", "By waiting for seniority", "By avoiding responsibility", "By copying every other person"],
+    "correctAnswer": 0,
+    "explanation": "The passage encourages each person to use firm determination and effort in the right direction while following their own path."
+  }
+]

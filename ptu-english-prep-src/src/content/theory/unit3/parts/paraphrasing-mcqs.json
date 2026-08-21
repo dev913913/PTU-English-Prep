@@ -1,0 +1,32 @@
+[
+  {
+    "question": "What does paraphrasing mean?",
+    "options": ["Changing the meaning", "Expressing the same meaning in different language", "Shortening every passage to one line", "Translating without understanding"],
+    "correctAnswer": 1,
+    "explanation": "A paraphrase uses different words and structures while preserving the original meaning."
+  },
+  {
+    "question": "What must remain unchanged in a correct paraphrase?",
+    "options": ["Every word", "The message and essential facts", "The number of sentences", "The punctuation only"],
+    "correctAnswer": 1,
+    "explanation": "The message, facts, tone, and essential ideas must not be changed."
+  },
+  {
+    "question": "Which is an example of a sustainable practice from the passage?",
+    "options": ["Increasing waste", "Ignoring energy use", "Recycling and composting", "Using only finite resources"],
+    "correctAnswer": 2,
+    "explanation": "The passage lists recycling, composting, energy conservation, and eco-friendly transport."
+  },
+  {
+    "question": "Why should a writer understand the whole passage before paraphrasing?",
+    "options": ["To add new arguments", "To preserve its complete meaning", "To make it unrelated", "To avoid reading it twice"],
+    "correctAnswer": 1,
+    "explanation": "Understanding the whole passage helps the writer preserve all important ideas accurately."
+  },
+  {
+    "question": "Which method is usually useful when paraphrasing?",
+    "options": ["Changing suitable words and sentence structure", "Replacing every word randomly", "Deleting all facts", "Copying the passage exactly"],
+    "correctAnswer": 0,
+    "explanation": "Accurate synonyms and changed sentence structures can express the same idea freshly."
+  }
+]

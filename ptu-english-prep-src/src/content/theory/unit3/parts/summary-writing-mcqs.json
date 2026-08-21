@@ -1,0 +1,32 @@
+[
+  {
+    "question": "What is the main purpose of a summary?",
+    "options": ["To copy every sentence", "To present the main ideas briefly", "To add personal opinions", "To make the passage longer"],
+    "correctAnswer": 1,
+    "explanation": "A summary is a brief version of a longer passage that keeps its central ideas and important supporting points."
+  },
+  {
+    "question": "Which detail should normally be removed from a summary?",
+    "options": ["The central idea", "A necessary cause", "Repeated examples", "The main conclusion"],
+    "correctAnswer": 2,
+    "explanation": "Repeated examples and unnecessary details should be removed to keep the summary concise."
+  },
+  {
+    "question": "Why do some people avoid big cities in the practice passage?",
+    "options": ["They have no roads", "Housing is expensive and city life is crowded", "There are no jobs", "The countryside is more expensive"],
+    "correctAnswer": 1,
+    "explanation": "The passage mentions expensive housing, traffic, overcrowding, stress, and unsafe areas."
+  },
+  {
+    "question": "A good summary should be written mainly in:",
+    "options": ["The writer's exact sentences", "The student's own words", "Questions only", "Unconnected keywords"],
+    "correctAnswer": 1,
+    "explanation": "A summary should express the original meaning clearly in the student's own concise language."
+  },
+  {
+    "question": "What is the suggested length of the practice summary?",
+    "options": ["One word", "Two paragraphs", "Four sentences", "Ten pages"],
+    "correctAnswer": 2,
+    "explanation": "The practice task specifically asks for a summary and paraphrase in four sentences."
+  }
+]

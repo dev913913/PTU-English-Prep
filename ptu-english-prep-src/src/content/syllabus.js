@@ -30,7 +30,7 @@ export const theoryUnits = [
       'Translation (Hindi/Punjabi to English and vice-versa)',
       'Literary/Knowledge Texts',
     ],
-    status: 'soon',
+    status: 'available',
   },
   {
     id: 'unit4',
