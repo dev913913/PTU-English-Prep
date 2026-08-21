@@ -122,7 +122,7 @@ export default function QuizWidget({ mcqs, title, storageKey }) {
     setFinished(false)
   }
 
-   function handleDownload() {
+  function handleDownload() {
     downloadQuizResultPdf({
       title,
       score,
