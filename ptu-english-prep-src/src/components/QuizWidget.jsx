@@ -152,11 +152,19 @@ export default function QuizWidget({ mcqs, title, storageKey }) {
 
   return (
     <div className="mt-8 bg-white/40 border border-ink/10 rounded-lg p-6">
-      <div className="mb-3">
-        <p className="font-mono text-xs text-ink-soft">Question {current + 1} of {mcqs.length}</p>
-        {storageKey && (
-          <p className="font-mono text-[10px] text-ink-soft/50 mt-0.5">Progress saves automatically</p>
-        )}
+           <div className="mb-3 flex items-start justify-between gap-3">
+        <div>
+          <p className="font-mono text-xs text-ink-soft">Question {current + 1} of {safeMcqs.length}</p>
+          {storageKey && (
+            <p className="font-mono text-[10px] text-ink-soft/50 mt-0.5">Progress saved in this browser tab</p>
+          )}
+        </div>
+        <button
+          onClick={handleRestart}
+          className="font-mono text-[10px] text-rule underline hover:no-underline shrink-0"
+        >
+          Restart quiz
+        </button>
       </div>
 
           {resumed && current === resumedAtIndex && (
