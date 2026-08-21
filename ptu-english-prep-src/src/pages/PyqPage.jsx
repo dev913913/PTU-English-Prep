@@ -18,9 +18,9 @@ export default function PyqPage() {
     setOpenId((prev) => (prev === id ? null : id))
   }
 
-  function viewerUrl(file, embedded = true) {
+  function viewerUrl(file) {
     const absoluteUrl = `${window.location.origin}${file}`
-    return `https://docs.google.com/viewer?url=${encodeURIComponent(absoluteUrl)}${embedded ? '&embedded=true' : ''}`
+    return `https://mozilla.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent(absoluteUrl)}`
   }
 
   return (
@@ -63,19 +63,19 @@ export default function PyqPage() {
                   <div className="px-5 pb-5 border-t border-ink/10 pt-4">
                     <div className="flex flex-wrap gap-3 mb-3">
                       <a
-                        href={paper.file}
-                        download
-                        className="bg-highlight text-board font-semibold px-4 py-2 rounded-md text-sm hover:bg-highlight-soft transition-colors"
-                      >
-                        Download PDF
-                      </a>
-                      <a              
-                        href={viewerUrl(paper.file, false)}
+                        href={viewerUrl(paper.file)}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="border border-ink/20 px-4 py-2 rounded-md text-sm hover:bg-ink/5 transition-colors"
+                        className="bg-highlight text-board font-semibold px-4 py-2 rounded-md text-sm hover:bg-highlight-soft transition-colors"
                       >
                         Open in new tab
+                      </a>
+                      <a
+                        href={paper.file}
+                        download
+                        className="border border-ink/20 px-4 py-2 rounded-md text-sm hover:bg-ink/5 transition-colors"
+                      >
+                        Download PDF
                       </a>
                     </div>
                     <div className="rounded-md overflow-hidden border border-ink/10">
