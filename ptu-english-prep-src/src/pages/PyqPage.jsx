@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { pyqPapers } from '../content/pyq'
 import Breadcrumb from '../components/Breadcrumb'
 
+/** Formats an ISO date for display in the paper list. */
 function formatDate(dateStr) {
   if (!dateStr) return ''
   const d = new Date(dateStr)
@@ -22,12 +23,17 @@ export default function PyqPage() {
 
   const papers = [...pyqPapers].sort((a, b) => (b.date || '').localeCompare(a.date || ''))
 
+  /** Returns the device-appropriate URL for viewing a PDF. */
   function viewerUrl(file) {
     if (!isMobile) return file
-    const absoluteUrl = `${window.location.origin}${file}`
+    const origin = window.location.origin === 'https://ptu-english.vercel.app'
+      ? 'https://ptuenglish.vercel.app'
+      : window.location.origin
+    const absoluteUrl = `${origin}${file}`
     return `https://mozilla.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent(absoluteUrl)}`
   }
 
+  /** Opens or closes a paper preview. */
   function toggle(id) {
     setOpenId((prev) => (prev === id ? null : id))
   }
@@ -92,7 +98,6 @@ export default function PyqPage() {
                         src={viewerUrl(paper.file)}
                         title={`${paper.subject} — ${paper.session}`}
                         className="w-full"
-                        type="application/pdf"
                         style={{ height: '70vh' }}
                       />
                     </div>
