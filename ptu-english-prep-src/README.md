@@ -6,6 +6,14 @@ Live site: https://ptu-english.vercel.app
 
 ---
 
+## PYQ PDF viewer
+
+- On desktop, PYQ papers use the browser's native PDF renderer for reliable inline and new-tab viewing.
+- On mobile, the inline viewer and new-tab link use Mozilla PDF.js because many mobile browsers do not render PDFs inside an iframe.
+- The Download PDF link remains available on every device as an offline fallback.
+
+---
+
 ## How this site works (in plain terms)
 
 - The site has two "tracks": **Theory** and **Lab**, each with 4 units.

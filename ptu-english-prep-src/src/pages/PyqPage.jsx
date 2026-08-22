@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { pyqPapers } from '../content/pyq'
 import Breadcrumb from '../components/Breadcrumb'
 
@@ -11,16 +11,25 @@ function formatDate(dateStr) {
 
 export default function PyqPage() {
   const [openId, setOpenId] = useState(null)
+  const [isMobile, setIsMobile] = useState(() => window.matchMedia('(max-width: 767px)').matches)
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 767px)')
+    const updateDevice = () => setIsMobile(mediaQuery.matches)
+    mediaQuery.addEventListener('change', updateDevice)
+    return () => mediaQuery.removeEventListener('change', updateDevice)
+  }, [])
 
   const papers = [...pyqPapers].sort((a, b) => (b.date || '').localeCompare(a.date || ''))
 
-  function toggle(id) {
-    setOpenId((prev) => (prev === id ? null : id))
-  }
-
   function viewerUrl(file) {
+    if (!isMobile) return file
     const absoluteUrl = `${window.location.origin}${file}`
     return `https://mozilla.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent(absoluteUrl)}`
+  }
+
+  function toggle(id) {
+    setOpenId((prev) => (prev === id ? null : id))
   }
 
   return (
@@ -83,6 +92,7 @@ export default function PyqPage() {
                         src={viewerUrl(paper.file)}
                         title={`${paper.subject} — ${paper.session}`}
                         className="w-full"
+                        type="application/pdf"
                         style={{ height: '70vh' }}
                       />
                     </div>
