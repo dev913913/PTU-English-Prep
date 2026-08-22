@@ -6,7 +6,7 @@ export default function UnitCard({ track, unit }) {
 
   const content = (
     <div
-      className={`group relative bg-white/60 border rounded-lg p-5 transition-all ${
+      className={`group relative bg-white/60 border rounded-lg p-5 mb-4 break-inside-avoid transition-all ${
         available
           ? 'border-ink/10 hover:border-highlight hover:shadow-md cursor-pointer'
           : 'border-ink/5 opacity-60'
