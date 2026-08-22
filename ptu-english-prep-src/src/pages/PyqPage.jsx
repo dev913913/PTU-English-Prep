@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { pyqPapers } from '../content/pyq'
 import Breadcrumb from '../components/Breadcrumb'
 
+/** Formats an ISO date for display in the paper list. */
 function formatDate(dateStr) {
   if (!dateStr) return ''
   const d = new Date(dateStr)
@@ -11,16 +12,30 @@ function formatDate(dateStr) {
 
 export default function PyqPage() {
   const [openId, setOpenId] = useState(null)
+  const [isMobile, setIsMobile] = useState(() => window.matchMedia('(max-width: 767px)').matches)
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 767px)')
+    const updateDevice = () => setIsMobile(mediaQuery.matches)
+    mediaQuery.addEventListener('change', updateDevice)
+    return () => mediaQuery.removeEventListener('change', updateDevice)
+  }, [])
 
   const papers = [...pyqPapers].sort((a, b) => (b.date || '').localeCompare(a.date || ''))
 
-  function toggle(id) {
-    setOpenId((prev) => (prev === id ? null : id))
+  /** Returns the device-appropriate URL for viewing a PDF. */
+  function viewerUrl(file) {
+    if (!isMobile) return file
+    const origin = window.location.origin === 'https://ptu-english.vercel.app'
+      ? 'https://ptuenglish.vercel.app'
+      : window.location.origin
+    const absoluteUrl = `${origin}${file}`
+    return `https://mozilla.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent(absoluteUrl)}`
   }
 
-  function viewerUrl(file) {
-    const absoluteUrl = `${window.location.origin}${file}`
-    return `https://mozilla.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent(absoluteUrl)}`
+  /** Opens or closes a paper preview. */
+  function toggle(id) {
+    setOpenId((prev) => (prev === id ? null : id))
   }
 
   return (
