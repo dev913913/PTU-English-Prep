@@ -37,7 +37,7 @@ export const theoryUnits = [
     number: 4,
     title: 'Writing Skills',
     topics: ['Documenting', 'Report Writing', 'Making Notes', 'Letter Writing'],
-    status: 'soon',
+    status: 'available',
   },
 ]
 

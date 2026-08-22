@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What is the purpose of making notes?",
+    "options": ["To copy a passage completely", "To reduce important information into an organised form", "To add unrelated opinions", "To remove the main idea"],
+    "correctAnswer": 1,
+    "explanation": "Notes reduce a passage to its essential ideas in a brief and logical structure."
+  },
+  {
+    "question": "Which language is most suitable for notes?",
+    "options": ["Long complete paragraphs", "Short phrases and keywords", "Only quotations", "Unrelated sentences"],
+    "correctAnswer": 1,
+    "explanation": "Notes use concise phrases and keywords rather than full, lengthy sentences."
+  },
+  {
+    "question": "Which is a benefit of social media mentioned in the practice passage?",
+    "options": ["Maintaining relationships", "Always improving sleep", "Removing privacy concerns", "Ending all face-to-face contact"],
+    "correctAnswer": 0,
+    "explanation": "The passage says social media helps young people maintain relationships and join communities."
+  },
+  {
+    "question": "Why is a key included in note-making?",
+    "options": ["To explain uncommon abbreviations", "To add a new conclusion", "To decorate the page", "To replace headings"],
+    "correctAnswer": 0,
+    "explanation": "A key explains abbreviations used in the notes, such as SM for social media."
+  },
+  {
+    "question": "Which is a risk of excessive social media use in the passage?",
+    "options": ["Improved concentration", "Reduced sleep and concentration", "Better privacy automatically", "More time outdoors"],
+    "correctAnswer": 1,
+    "explanation": "The passage identifies reduced sleep, concentration, and face-to-face interaction as risks."
+  },
+  {
+    "question": "Why should related ideas be grouped under one heading?",
+    "options": ["To show their connection and improve revision", "To hide the main idea", "To increase repetition", "To avoid reading the passage"],
+    "correctAnswer": 0,
+    "explanation": "Grouping related points creates a logical structure that makes the notes easier to understand and revise."
+  },
+  {
+    "question": "Which version is most suitable for notes?",
+    "options": ["Exercise improves strength, flexibility, heart health, and sleep.", "Exercise -> strength; flexibility; heart health; sleep", "I think exercise is very good for everyone", "The complete original paragraph"],
+    "correctAnswer": 1,
+    "explanation": "Notes prefer short keywords and symbols instead of full explanatory sentences."
+  },
+  {
+    "question": "What should be avoided while making notes?",
+    "options": ["Logical numbering", "Unexplained abbreviations", "Headings", "Keywords"],
+    "correctAnswer": 1,
+    "explanation": "Unexplained abbreviations make notes difficult for the reader to understand."
+  },
+  {
+    "question": "Which symbol can show a relationship between two ideas in notes?",
+    "options": ["An arrow", "A full stop only", "A signature", "A salutation"],
+    "correctAnswer": 0,
+    "explanation": "Arrows can concisely show relationships such as cause, effect, or development."
+  },
+  {
+    "question": "How are notes different from a summary?",
+    "options": ["Notes use an outline and keywords; a summary uses connected sentences", "Notes are always longer", "A summary has no main idea", "There is no difference"],
+    "correctAnswer": 0,
+    "explanation": "Notes are structured for quick revision, while a summary is usually a connected short paragraph."
+  }
+]
