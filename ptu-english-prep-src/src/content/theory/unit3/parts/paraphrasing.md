@@ -18,7 +18,7 @@ In recent years, individuals and communities have increasingly adopted sustainab
 
 ### Model paraphrase
 
-More people and communities are now choosing environmentally responsible lifestyles to lessen the harm they cause to nature. They recycle, compost, save energy, use greener transport, and explore renewable energy such as solar and wind power. They also support locally produced food and try to create less waste. These practices protect the environment while supporting better health, efficient use of resources, and a stronger economy.
+More people and communities are now choosing environmentally responsible lifestyles to lessen the harm they cause to nature. They recycle, compost, save energy, use greener transport, and explore renewable energy such as solar and wind power. They also support locally produced food and try to create less waste. These practices protect the environment, improve public health, and strengthen economic resilience by using resources efficiently and reducing dependence on finite supplies.
 
 ## Useful transformations
 

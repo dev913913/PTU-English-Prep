@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What is the main purpose of translation?",
+    "options": ["To change the message", "To express the same message in another language", "To translate every word mechanically", "To remove the tone"],
+    "correctAnswer": 1,
+    "explanation": "Translation expresses a message in another language while preserving its meaning, tone, and purpose."
+  },
+  {
+    "question": "What should a student do before translating a sentence?",
+    "options": ["Read only the last word", "Understand the complete sentence", "Ignore the tense", "Change the subject"],
+    "correctAnswer": 1,
+    "explanation": "Understanding the complete sentence prevents changes to the intended meaning."
+  },
+  {
+    "question": "What is the natural translation of 'Swachhata hamari samuhik zimmedari hai'?",
+    "options": ["Cleanliness is our collective responsibility", "Clean is our group answer", "Our responsibility cleans collectively", "Cleanliness was a person"],
+    "correctAnswer": 0,
+    "explanation": "The sentence means that cleanliness is a responsibility shared by everyone."
+  },
+  {
+    "question": "What is the natural translation of 'Sanu paani di sambhaal karni chahidi hai'?",
+    "options": ["We should conserve water", "We water should do", "Water conserved us", "We should waste water"],
+    "correctAnswer": 0,
+    "explanation": "The Punjabi sentence expresses advice to conserve or use water carefully."
+  },
+  {
+    "question": "Why should idioms not be translated word by word?",
+    "options": ["Their meaning may be different from the individual words", "They have no meaning", "They always become questions", "Their tense disappears"],
+    "correctAnswer": 0,
+    "explanation": "An idiom communicates a complete expression or idea, so its meaning should be translated naturally."
+  },
+  {
+    "question": "Which grammatical feature must be checked during translation?",
+    "options": ["Tense", "Page colour", "Font size", "Paper weight"],
+    "correctAnswer": 0,
+    "explanation": "Checking tense ensures that present, past, future, and completed actions remain accurate."
+  },
+  {
+    "question": "What does 'Hamein paryavaran ka samman karna chahiye' mean?",
+    "options": ["We must respect the environment", "We should destroy the environment", "The environment respects us", "We visited the environment"],
+    "correctAnswer": 0,
+    "explanation": "The Hindi sentence expresses the duty to respect the environment."
+  },
+  {
+    "question": "Which translation is natural English?",
+    "options": ["The students completed their work on time", "Students their work completed on time did", "The work completed students", "On time their students work"],
+    "correctAnswer": 0,
+    "explanation": "A natural English sentence uses clear subject, verb, object, and time-expression order."
+  },
+  {
+    "question": "What should remain unchanged in a good translation?",
+    "options": ["The original word order only", "The meaning and purpose", "Every individual word", "The original punctuation only"],
+    "correctAnswer": 1,
+    "explanation": "Word order may change between languages, but the meaning and purpose must remain the same."
+  },
+  {
+    "question": "Which is a common translation difficulty?",
+    "options": ["Different word order between languages", "Identical grammar in every language", "No need to check negatives", "All idioms being literal"],
+    "correctAnswer": 0,
+    "explanation": "Hindi, Punjabi, and English may arrange words differently, so translation requires attention to sentence structure."
+  }
+]

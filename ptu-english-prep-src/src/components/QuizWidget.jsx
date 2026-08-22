@@ -48,11 +48,21 @@ function isValidSavedAnswers(answers, mcqs) {
   return answers.every((a, i) => isValidAnswer(a, mcqs[i]))
 }
 
+// A record marked "finished" must have exactly one answer per current question.
+// If it doesn't (e.g. the question set changed since this record was saved,
+// or the tab closed mid-way through an unusual state), it's stale — treat the
+// whole record as invalid rather than rendering a "finished" screen with gaps.
+function isValidSavedRecord(saved, mcqs) {
+  if (!saved || !isValidSavedAnswers(saved.answers, mcqs)) return false
+  if (saved.finished && saved.answers.length !== mcqs.length) return false
+  return true
+}
+
 export default function QuizWidget({ mcqs, title, storageKey }) {
   const safeMcqs = Array.isArray(mcqs) ? mcqs : []
 
   const saved = loadProgress(storageKey)
-  const validSaved = !!(saved && isValidSavedAnswers(saved.answers, safeMcqs))
+  const validSaved = !!(saved && isValidSavedRecord(saved, safeMcqs))
   if (saved && !validSaved) {
     // Corrupted or stale entry (e.g. mismatched question set) — wipe it so it doesn't keep failing.
     clearProgress(storageKey)
@@ -117,13 +127,19 @@ export default function QuizWidget({ mcqs, title, storageKey }) {
       title,
       score,
       total: safeMcqs.length,
-      questions: safeMcqs.map((mq, i) => ({
-        question: mq.question,
-        options: mq.options,
-        selectedIndex: answers[i].selected,
-        correctIndex: mq.correctAnswer,
-        explanation: mq.explanation,
-      })),
+      questions: safeMcqs
+        .map((mq, i) => {
+          const a = answers[i]
+          if (!a) return null // defensive: skip any question without a recorded answer
+          return {
+            question: mq.question,
+            options: mq.options,
+            selectedIndex: a.selected,
+            correctIndex: mq.correctAnswer,
+            explanation: mq.explanation,
+          }
+        })
+        .filter(Boolean),
     })
   }
 

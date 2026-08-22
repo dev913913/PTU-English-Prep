@@ -10,6 +10,7 @@ Unit III develops the skills needed to understand an unseen passage and express 
 - Short and four-sentence summaries
 - Paraphrasing passages without changing their meaning
 - Analysis and interpretation of literary and knowledge-based passages
+- Translation between Hindi/Punjabi and English
 
 ### A simple exam method
 

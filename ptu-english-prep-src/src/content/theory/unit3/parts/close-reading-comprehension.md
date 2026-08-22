@@ -22,7 +22,7 @@ Close reading means examining a passage carefully rather than reading only for i
 2. Why should a leader be sympathetic and understanding?
 3. How can a person become a leader?
 4. What is the role of outstanding performance in an organisation?
-5. How can success be achieved?
+5. How can a person aspire to become a leader?
 
 ### Answer check
 
@@ -30,6 +30,6 @@ Close reading means examining a passage carefully rather than reading only for i
 - Understanding other people's problems helps a leader support and encourage the team.
 - Leadership can be developed through determined effort, good direction, and personal example.
 - Outstanding performance improves an employee's position and inspires others.
-- Success requires firm determination and sustained effort.
+- A person can aspire to become a leader by putting firm effort in the right direction and developing their own way of achieving things.
 
 > **Remember:** A comprehension answer should come from the passage. Do not add unrelated personal opinions unless the question asks for them.
