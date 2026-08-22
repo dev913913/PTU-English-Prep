@@ -29,7 +29,7 @@ export default function TrackPage() {
       <h1 className="font-display text-3xl font-semibold text-board">{meta.title}</h1>
       <p className="text-ink-soft mt-2 max-w-xl">{meta.blurb}</p>
 
-      <div className="sm:columns-2 sm:gap-4 mt-8">
+      <div className="sm:columns-2 sm:gap-4 mt-8 [column-fill:_balance]">
         {meta.units.map((unit) => (
           <UnitCard key={unit.id} track={track} unit={unit} />
         ))}
