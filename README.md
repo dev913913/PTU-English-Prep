@@ -2,7 +2,7 @@
 
 Supplementary study site for AECC English — Theory (BTHU103/18) and Lab (BTHU104/18) — built for my students so nobody's left behind if they miss a class or want to revise before an MST.
 
-Live site: https://ptu-english.vercel.app
+Live site: https://ptuenglish.vercel.app
 
 ---
 
