@@ -18,7 +18,7 @@ export const theoryUnits = [
       'Personal, Social and Business Barriers and Strategies',
       'Intra-personal, Inter-personal and Group communication',
     ],
-    status: 'soon',
+    status: 'available',
   },
   {
     id: 'unit3',
