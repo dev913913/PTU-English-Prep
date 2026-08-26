@@ -1,8 +1,25 @@
-# English Communication — Unit I
+# English Communication — Unit I: Introduction
 
 ## Theory Notes | Preparation for PTU Exams
 
 > **Exam Focus:** These answers are prepared for 10-mark long questions. Students should learn the definitions, diagrams, explanation, examples, advantages/disadvantages, and conclusions. In the examination, use proper headings and explain each point rather than writing only keywords.
+
+> **Syllabus Scope (Unit I — Introduction):**
+> - Theory of Communication
+> - Types and Modes of Communication
+
+## How This Unit Is Actually Tested
+
+Across university papers from Dec 2018 to Jan 2026, Q1 of the exam most often (though not every single year) draws from Unit 1:
+
+| Exam | Question Asked | Maps To |
+|---|---|---|
+| Dec 2018 | Describe the types of communication in detail | Q2 (Types of Communication) |
+| Jan 2025 | What is Communication? Explain in detail the types and modes of Communication | Q1 + Q2 + Q3 (combined — see the exam tip at the end of Q3) |
+| Jan 2026 | Define Communication. Discuss in detail, the theory of Communication | Q1 (Theory of Communication) |
+| May 2019 | Importance of clarity, adequacy, and feedback in communication | Borderline question — brief version in Q1 below; full answer (with body language) is in **Unit 2, Q7** |
+
+**Note:** in some years, Q1 of the paper is drawn from Unit 2 topics instead — for example, 2019 asked about communication being vital for an organization, and 2023 asked to differentiate Intra-personal, Inter-personal and Group Communication. Those are covered in the Unit 2 notes. Between the two units, virtually every past Q1/Q2 combination is accounted for.
 
 ---
 
@@ -42,6 +59,16 @@ Sender → Encodes Message → Sends through Channel → Receiver Decodes Messag
 ### When is Communication Complete?
 
 Communication is only complete when the receiver understands the message correctly and gives feedback. Without feedback, the sender cannot know if the message reached properly.
+
+### Principles That Make the Theory Work in Practice
+
+The eight-step process above describes *what happens* during communication. A closely related exam question asks *what makes that process succeed* — this is usually phrased as "importance of clarity, adequacy, and feedback." In brief:
+
+- **Clarity** — the sender's message (step 2–3 above) must be simple and unambiguous, or decoding fails.
+- **Adequacy (Completeness)** — the message must carry enough information for the receiver to act on, neither too little nor too much.
+- **Feedback** — as step 7 already shows, feedback is what confirms the loop is complete; without it, the sender never knows whether communication actually succeeded.
+
+> For the full version of this answer — including the role of body language — see **Unit 2, Q7 (Principles of Effective Communication)**, since that question is usually asked together with non-verbal communication.
 
 ### Conclusion
 
@@ -150,6 +177,8 @@ Communication types can be grouped into five easy categories — based on words,
 
 ## Q3. What are the Modes of Communication? Explain each mode with examples.
 
+> **Types vs. Modes — why they look similar:** "Types" classify communication by *characteristic* (how many people are involved, how formal it is, whether words are used at all). "Modes" classify communication by the *channel or medium* actually used to carry the message. This is why "Verbal Communication" appears as a type in Q2, while its two channels — "Oral" and "Written" — appear again here as modes. This overlap is expected and correct; PTU papers ask about it from both angles.
+
 ### Introduction
 
 A **mode of communication** is the method or way through which a message, idea, information, or feeling is communicated from one person to another.
@@ -225,3 +254,50 @@ For example, a **job application** is best communicated in written form, while a
 ### Conclusion
 
 The major modes of communication are **oral, written, non-verbal, visual, and audio-visual**. Each mode has its own importance and is suitable for different situations. Choosing the right mode helps us communicate our ideas clearly and effectively.
+
+### Exam Tip: When "Types and Modes" Are Asked Together
+
+Jan 2025's paper asked "What is Communication? Explain in detail the types and modes of Communication" as a **single** 10-mark question — not two separate ones. Writing the full Q2 and Q3 answers back to back would run far too long for the time available. For a combined question like this, structure the answer as:
+
+1. **Definition** (2–3 lines from Q1)
+2. **Types** — pick 4–5 major types with one line each: Verbal & Non-verbal, Formal & Informal, Intra-personal/Inter-personal/Group/Mass (one line naming all four is enough)
+3. **Modes** — pick 3–4 major modes with one line and one example each: Oral, Written, Visual, Audio-visual
+4. **Conclusion** — one line tying types and modes together
+
+Use the full Q2 and Q3 above for *revision and understanding* — but when the exam asks for both together, answer in this shorter, blended form so the full question fits within a reasonable 10-mark length.
+
+---
+
+# Quick Revision: Unit I at a Glance
+
+| Question | Main Areas to Remember |
+|---|---|
+| Q1. Theory of Communication | Definition + importance + 8-step process (Sender to Noise) + diagram + clarity/adequacy/feedback + conclusion |
+| Q2. Types of Communication | 5 categories (words, people, rules, medium, direction) covering 13 types total + conclusion |
+| Q3. Modes of Communication | Oral, Written, Non-verbal, Visual, Audio-visual — each with example + importance of choosing the right mode + conclusion |
+
+---
+
+# Exam Writing Tip
+
+For a 10-mark question, a good answer should generally follow this structure:
+
+1. Definition / Introduction
+2. Main headings
+3. Explanation of each point
+4. Examples wherever possible
+5. Diagram, where relevant (the communication process diagram is worth reproducing for Q1)
+6. Conclusion
+
+> **Remember:** Do not write only one-line definitions or keywords for a 10-mark question. Explain each major point in 2–4 sentences wherever appropriate. Clear headings make a long answer easier for both the student and the examiner to follow.
+
+---
+
+# Appendix: Previous Year Question Map
+
+| Year | Question as Asked | Answer Location |
+|---|---|---|
+| Dec 2018 | Describe the types of communication in detail | Q2 |
+| May 2019 | Importance of clarity, adequacy, feedback (+ body language) | Q1 (brief) → full answer in Unit 2, Q7 |
+| Jan 2025 | What is Communication? Types and modes | Q1 + Q2 + Q3 (see the "types and modes together" exam tip) |
+| Jan 2026 | Define Communication; theory of communication | Q1 |
