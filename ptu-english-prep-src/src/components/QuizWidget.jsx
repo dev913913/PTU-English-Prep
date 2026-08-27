@@ -1,6 +1,11 @@
 import { useState, useEffect, useRef } from 'react'
 import { downloadQuizResultPdf } from '../lib/generatePdf'
 
+/**
+ * Loads quiz progress from session storage.
+ * @param {string} key - The storage key to retrieve progress from
+ * @returns {Object|null} The saved progress data, or null if not found or invalid
+ */
 function loadProgress(key) {
   if (!key) return null
   try {
@@ -11,6 +16,11 @@ function loadProgress(key) {
   }
 }
 
+/**
+ * Saves quiz progress to session storage.
+ * @param {string} key - The storage key to save progress to
+ * @param {Object} data - The progress data to save
+ */
 function saveProgress(key, data) {
   if (!key) return
   try {
@@ -20,6 +30,10 @@ function saveProgress(key, data) {
   }
 }
 
+/**
+ * Clears quiz progress from session storage.
+ * @param {string} key - The storage key to clear
+ */
 function clearProgress(key) {
   if (!key) return
   try {
@@ -29,7 +43,13 @@ function clearProgress(key) {
   }
 }
 
-// A restored answer is only trusted if it points at a real option for that question.
+/**
+ * Validates if a restored answer is valid for the given question.
+ * A restored answer is only trusted if it points at a real option for that question.
+ * @param {Object} answer - The answer object to validate
+ * @param {Object} question - The question object to validate against
+ * @returns {boolean} True if the answer is valid, false otherwise
+ */
 function isValidAnswer(answer, question) {
   return (
     answer &&
@@ -43,21 +63,41 @@ function isValidAnswer(answer, question) {
   )
 }
 
+/**
+ * Validates if all saved answers are valid for the given MCQ set.
+ * @param {Array} answers - The array of saved answers
+ * @param {Array} mcqs - The array of multiple choice questions
+ * @returns {boolean} True if all answers are valid, false otherwise
+ */
 function isValidSavedAnswers(answers, mcqs) {
   if (!Array.isArray(answers) || answers.length > mcqs.length) return false
   return answers.every((a, i) => isValidAnswer(a, mcqs[i]))
 }
 
-// A record marked "finished" must have exactly one answer per current question.
-// If it doesn't (e.g. the question set changed since this record was saved,
-// or the tab closed mid-way through an unusual state), it's stale — treat the
-// whole record as invalid rather than rendering a "finished" screen with gaps.
+/**
+ * Validates if a saved quiz record is valid and complete.
+ * A record marked "finished" must have exactly one answer per current question.
+ * If it doesn't (e.g. the question set changed since this record was saved,
+ * or the tab closed mid-way through an unusual state), it's stale — treat the
+ * whole record as invalid rather than rendering a "finished" screen with gaps.
+ * @param {Object} saved - The saved quiz record
+ * @param {Array} mcqs - The array of multiple choice questions
+ * @returns {boolean} True if the saved record is valid, false otherwise
+ */
 function isValidSavedRecord(saved, mcqs) {
   if (!saved || !isValidSavedAnswers(saved.answers, mcqs)) return false
   if (saved.finished && saved.answers.length !== mcqs.length) return false
   return true
 }
 
+/**
+ * Interactive quiz widget component with progress tracking, instant feedback, and PDF export.
+ * @param {Object} props - Component props
+ * @param {Array<Object>} props.mcqs - Array of multiple choice question objects
+ * @param {string} props.title - The title of the quiz
+ * @param {string} [props.storageKey] - Optional key for storing quiz progress in session storage
+ * @returns {JSX.Element|null} The quiz widget component, or null if no questions provided
+ */
 export default function QuizWidget({ mcqs, title, storageKey }) {
   const safeMcqs = Array.isArray(mcqs) ? mcqs : []
 

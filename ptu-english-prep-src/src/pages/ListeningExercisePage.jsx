@@ -9,6 +9,10 @@ import QuizWidget from '../components/QuizWidget'
 
 const TRACK_LABELS = { theory: 'Theory', lab: 'Lab / Practical' }
 
+/**
+ * Listening exercise page component displaying video content and quiz for a specific exercise.
+ * @returns {JSX.Element} The listening exercise page component
+ */
 export default function ListeningExercisePage() {
   const { track, unitId, exerciseId } = useParams()
   const units = track === 'theory' ? theoryUnits : labUnits

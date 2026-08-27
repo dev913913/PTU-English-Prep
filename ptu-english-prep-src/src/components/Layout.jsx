@@ -1,5 +1,11 @@
 import { Link, useLocation } from 'react-router-dom'
 
+/**
+ * Main layout component providing navigation header and footer for all pages.
+ * @param {Object} props - Component props
+ * @param {React.ReactNode} props.children - Child components to render in the main content area
+ * @returns {JSX.Element} The layout component with header, main content, and footer
+ */
 export default function Layout({ children }) {
   const location = useLocation()
 

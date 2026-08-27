@@ -2,7 +2,14 @@ import { jsPDF } from 'jspdf'
 
 const OPTION_LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
 
-// questions: [{ question, options, selectedIndex, correctIndex, explanation }]
+/**
+ * Generates and downloads a PDF document containing quiz results with answers and explanations.
+ * @param {Object} params - The quiz result parameters
+ * @param {string} params.title - The title of the quiz
+ * @param {number} params.score - The number of correct answers
+ * @param {number} params.total - The total number of questions
+ * @param {Array<Object>} params.questions - Array of question objects with question, options, selectedIndex, correctIndex, and explanation
+ */
 export function downloadQuizResultPdf({ title, score, total, questions }) {
   const doc = new jsPDF({ unit: 'pt', format: 'a4' })
   const pageWidth = doc.internal.pageSize.getWidth()
@@ -10,6 +17,10 @@ export function downloadQuizResultPdf({ title, score, total, questions }) {
   const maxWidth = pageWidth - margin * 2
   let y = margin
 
+  /**
+   * Ensures there is enough vertical space on the current page, adds a new page if needed.
+   * @param {number} lineHeight - The height required for the next content
+   */
   function ensureSpace(lineHeight) {
     if (y + lineHeight > doc.internal.pageSize.getHeight() - margin) {
       doc.addPage()
@@ -17,6 +28,15 @@ export function downloadQuizResultPdf({ title, score, total, questions }) {
     }
   }
 
+  /**
+   * Writes text to the PDF with specified formatting and wrapping.
+   * @param {string} text - The text to write
+   * @param {number} fontSize - Font size in points
+   * @param {string} [style='normal'] - Font style (normal, bold, italic)
+   * @param {string} [color='#1E293B'] - Text color in hex format
+   * @param {number} [lineGap=4] - Vertical spacing between lines
+   * @param {number} [indent=0] - Left indentation in points
+   */
   function writeLines(text, fontSize, style = 'normal', color = '#1E293B', lineGap = 4, indent = 0) {
     doc.setFont('helvetica', style)
     doc.setFontSize(fontSize)

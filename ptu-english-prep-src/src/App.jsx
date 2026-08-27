@@ -10,6 +10,10 @@ import ListeningExercisePage from './pages/ListeningExercisePage'
 import LabPartPage from './pages/LabPartPage'
 import PyqPage from './pages/PyqPage'
 
+/**
+ * Main application component that sets up routing and analytics.
+ * @returns {JSX.Element} The application root component with all routes configured
+ */
 export default function App() {
   return (
     <Layout>

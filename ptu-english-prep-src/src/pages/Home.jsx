@@ -1,6 +1,10 @@
 import { Link } from 'react-router-dom'
 import { theoryUnits, labUnits } from '../content/syllabus'
 
+/**
+ * Home page component displaying the welcome section and usage instructions.
+ * @returns {JSX.Element} The home page component
+ */
 export default function Home() {
   const availableCount = [...theoryUnits, ...labUnits].filter((u) => u.status === 'available').length
   const totalCount = theoryUnits.length + labUnits.length
