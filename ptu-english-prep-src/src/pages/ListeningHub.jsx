@@ -5,6 +5,10 @@ import Breadcrumb from '../components/Breadcrumb'
 
 const TRACK_LABELS = { theory: 'Theory', lab: 'Lab / Practical' }
 
+/**
+ * Listening hub page component displaying a list of available listening exercises for a unit.
+ * @returns {JSX.Element} The listening hub page component
+ */
 export default function ListeningHub() {
   const { track, unitId } = useParams()
   const units = track === 'theory' ? theoryUnits : labUnits

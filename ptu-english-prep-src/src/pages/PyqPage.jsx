@@ -2,7 +2,11 @@ import { useEffect, useState } from 'react'
 import { pyqPapers } from '../content/pyq'
 import Breadcrumb from '../components/Breadcrumb'
 
-/** Formats an ISO date for display in the paper list. */
+/**
+ * Formats an ISO date for display in the paper list.
+ * @param {string} dateStr - ISO date string to format
+ * @returns {string} Formatted date string in Indian locale, or original string if invalid
+ */
 function formatDate(dateStr) {
   if (!dateStr) return ''
   const d = new Date(dateStr)
@@ -10,6 +14,10 @@ function formatDate(dateStr) {
   return d.toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })
 }
 
+/**
+ * Previous year question papers page with PDF preview and download functionality.
+ * @returns {JSX.Element} The PYQ page component
+ */
 export default function PyqPage() {
   const [openId, setOpenId] = useState(null)
   const [isMobile, setIsMobile] = useState(() => window.matchMedia('(max-width: 767px)').matches)
@@ -23,7 +31,12 @@ export default function PyqPage() {
 
   const papers = [...pyqPapers].sort((a, b) => (b.date || '').localeCompare(a.date || ''))
 
-  /** Returns the device-appropriate URL for viewing a PDF. */
+  /**
+   * Returns the device-appropriate URL for viewing a PDF.
+   * Uses PDF.js viewer for mobile devices to ensure compatibility.
+   * @param {string} file - The file path to the PDF
+   * @returns {string} The viewer URL for the PDF
+   */
   function viewerUrl(file) {
     if (!isMobile) return file
     const origin = window.location.origin === 'https://ptu-english.vercel.app'
@@ -33,7 +46,10 @@ export default function PyqPage() {
     return `https://mozilla.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent(absoluteUrl)}`
   }
 
-  /** Opens or closes a paper preview. */
+  /**
+   * Toggles the open state of a paper preview.
+   * @param {string} id - The paper ID to toggle
+   */
   function toggle(id) {
     setOpenId((prev) => (prev === id ? null : id))
   }

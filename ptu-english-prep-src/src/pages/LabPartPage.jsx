@@ -9,6 +9,10 @@ import QuizWidget from '../components/QuizWidget'
 
 const TRACK_LABELS = { theory: 'Theory', lab: 'Lab / Practical' }
 
+/**
+ * Lab part page component displaying content and quiz for a specific part within a lab unit.
+ * @returns {JSX.Element} The lab part page component
+ */
 export default function LabPartPage() {
   const { track, unitId, partId } = useParams()
   const units = track === 'theory' ? theoryUnits : labUnits

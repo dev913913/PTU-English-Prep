@@ -8,6 +8,14 @@ import Breadcrumb from '../components/Breadcrumb'
 
 const TRACK_LABELS = { theory: 'Theory', lab: 'Lab / Practical' }
 
+/**
+ * Callout component that prompts users to take a quiz.
+ * @param {Object} props - Component props
+ * @param {string} props.track - The track identifier
+ * @param {string} props.unitId - The unit identifier
+ * @param {number} props.count - Number of questions in the quiz
+ * @returns {JSX.Element} The quiz callout component
+ */
 function QuizCallout({ track, unitId, count }) {
   return (
     <div className="bg-board rounded-lg p-6 flex items-center justify-between flex-wrap gap-4">
@@ -25,6 +33,11 @@ function QuizCallout({ track, unitId, count }) {
   )
 }
 
+/**
+ * Unit page component displaying notes and quiz options for a unit.
+ * Handles both standard units (with full notes) and parts-based units (with sections).
+ * @returns {JSX.Element} The unit page component
+ */
 export default function UnitPage() {
   const { track, unitId } = useParams()
   const units = track === 'theory' ? theoryUnits : labUnits

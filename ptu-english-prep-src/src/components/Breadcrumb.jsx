@@ -1,6 +1,12 @@
 import { Link } from 'react-router-dom'
 
-// items: [{ label, to }] — the last item should omit `to` (it's the current page, not a link)
+/**
+ * Breadcrumb navigation component showing the current page's location in the site hierarchy.
+ * The last item should omit the 'to' property (it represents the current page, not a link).
+ * @param {Object} props - Component props
+ * @param {Array<Object>} props.items - Array of breadcrumb items with label and optional 'to' path
+ * @returns {JSX.Element} The breadcrumb navigation component
+ */
 export default function Breadcrumb({ items }) {
   return (
     <nav className="font-mono text-xs text-ink-soft mb-4 flex flex-wrap items-center gap-1">

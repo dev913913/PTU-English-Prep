@@ -1,5 +1,12 @@
 import { Link } from 'react-router-dom'
 
+/**
+ * Card component displaying a unit's information with title, topics, and availability status.
+ * @param {Object} props - Component props
+ * @param {string} props.track - The track identifier (e.g., 'theory', 'lab')
+ * @param {Object} props.unit - The unit object containing id, number, title, topics, and status
+ * @returns {JSX.Element} The unit card component, linked if available, static otherwise
+ */
 export default function UnitCard({ track, unit }) {
   const available = unit.status === 'available'
   const href = `/${track}/${unit.id}`

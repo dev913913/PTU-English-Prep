@@ -1,5 +1,11 @@
 import { Link, useLocation } from 'react-router-dom'
 
+/**
+ * Main layout component providing navigation header and footer for all pages.
+ * @param {Object} props - Component props
+ * @param {React.ReactNode} props.children - Child components to render in the main content area
+ * @returns {JSX.Element} The layout component with header, main content, and footer
+ */
 export default function Layout({ children }) {
   const location = useLocation()
 
@@ -40,7 +46,7 @@ export default function Layout({ children }) {
 
       <footer className="border-t border-ink/10 mt-16">
         <div className="max-w-5xl mx-auto px-5 py-6 text-sm text-ink-soft font-mono">
-          Built by Mr. Dev Kumar, for the class — content added unit by unit.
+          Built by <a href="https://dev-portfolio-3000.vercel.app/" target="_blank" rel="noopener noreferrer"><u><b>Mr. Dev Kumar</b></u></a>, for the class — content added unit by unit.
         </div>
       </footer>
     </div>

@@ -17,6 +17,10 @@ const TRACK_META = {
   },
 }
 
+/**
+ * Track page component displaying all units for a specific track (theory or lab).
+ * @returns {JSX.Element|null} The track page component, or null if track not found
+ */
 export default function TrackPage() {
   const { track } = useParams()
   const meta = TRACK_META[track]
