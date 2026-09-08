@@ -9,21 +9,24 @@ import ListeningHub from './pages/ListeningHub'
 import ListeningExercisePage from './pages/ListeningExercisePage'
 import LabPartPage from './pages/LabPartPage'
 import PyqPage from './pages/PyqPage'
+import ErrorBoundary from './components/ErrorBoundary'
 
 export default function App() {
   return (
     <Layout>
       <Analytics />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/pyq" element={<PyqPage />} />
-        <Route path="/:track" element={<TrackPage />} />
-        <Route path="/:track/:unitId" element={<UnitPage />} />
-        <Route path="/:track/:unitId/quiz" element={<QuizPage />} />
-        <Route path="/:track/:unitId/listening" element={<ListeningHub />} />
-        <Route path="/:track/:unitId/listening/:exerciseId" element={<ListeningExercisePage />} />
-        <Route path="/:track/:unitId/:partId" element={<LabPartPage />} />
-      </Routes>
+      <ErrorBoundary>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/pyq" element={<PyqPage />} />
+          <Route path="/:track" element={<TrackPage />} />
+          <Route path="/:track/:unitId" element={<UnitPage />} />
+          <Route path="/:track/:unitId/quiz" element={<QuizPage />} />
+          <Route path="/:track/:unitId/listening" element={<ListeningHub />} />
+          <Route path="/:track/:unitId/listening/:exerciseId" element={<ListeningExercisePage />} />
+          <Route path="/:track/:unitId/:partId" element={<LabPartPage />} />
+        </Routes>
+      </ErrorBoundary>
     </Layout>
   )
 }
