@@ -11,6 +11,11 @@ import LabPartPage from './pages/LabPartPage'
 import PyqPage from './pages/PyqPage'
 import ErrorBoundary from './components/ErrorBoundary'
 
+/**
+ * Root application component. Sets up the page layout, analytics, and all
+ * client-side routes, wrapped in an error boundary so a crash on one page
+ * doesn't take down the whole site.
+ */
 export default function App() {
   return (
     <Layout>

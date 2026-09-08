@@ -1,9 +1,12 @@
 import { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-// If ANY page or component below this crashes while rendering, this catches it
-// and shows a friendly message instead of a blank white screen. This is a React
-// requirement: error boundaries must be class components, not function components.
+/**
+ * Catches any render-time error in its child component tree and shows a
+ * friendly recovery message instead of leaving a blank white screen.
+ * Error boundaries must be class components — React does not yet support
+ * this behavior in function components with hooks.
+ */
 export default class ErrorBoundary extends Component {
   constructor(props) {
     super(props)
