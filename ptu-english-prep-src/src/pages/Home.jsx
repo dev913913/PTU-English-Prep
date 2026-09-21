@@ -17,7 +17,7 @@ export default function Home() {
           </h1>
           <p className="mt-4 text-paper/75 max-w-xl leading-relaxed">
             Notes, reading practice, and self-tests for the PTU English AECC syllabus —
-            Theory (BTHU103) and Lab (BTHU104). Built unit by unit by <b>Mr. Dev Kumar</b>— visit anytime if you want to revise or practice English Communication.
+            Theory (BTHU103) and Lab (BTHU104). Built unit by unit by <a href="https://dev-portfolio-3000.vercel.app/" target="_blank" rel="noopener noreferrer"><b>Mr. Dev Kumar</b></a> — visit anytime if you want to revise or practice English Communication.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <Link
