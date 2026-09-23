@@ -11,104 +11,22 @@
 
 ## How This Unit Is Actually Tested
 
-Looking at university papers from Dec 2018 through Jan 2026, Unit 2 topics have appeared as **Q1 and Q2 of every single paper** (10 marks each — 20 of the total 60 marks). That makes this one of the most predictable, high-value units in the whole syllabus. Here's the pattern:
+Looking at university papers from Dec 2018 through Jan 2026, Unit 2 topics have appeared in **at least one of Q1/Q2 of every single paper** (10 marks each). The table below shows both questions from each paper — but note that Q1 is often actually a **Unit 1** question (theory of communication, or types and modes of communication), not Unit 2. Those are flagged below so you don't go looking for them in the wrong notes.
 
 | Exam | Q1 (10 marks) | Q2 (10 marks) |
 |---|---|---|
-| Dec 2018 (Paper A) | Describe the types of communication in detail | Importance of communication at personal, social, and business levels |
-| Dec 2018 (Paper B) | Importance of effective communication in business world | — |
-| May 2019 | Communication is the most vital part of any organization | Importance of clarity, adequacy, feedback + role of body language |
-| Jan 2023 | Differentiate Intra-personal, Inter-personal, Group Communication | Explain barriers to communication |
-| Jan 2025 | What is Communication? Types and modes | Verbal vs Non-verbal + importance of non-verbal communication |
-| Jan 2026 | Define Communication; theory of communication | Notes on (a) Personal, Social, Business communication (b) Intra/Inter/Group communication |
+| Dec 2018 (Paper A) | *Types of communication — this is a Unit 1 topic; see Unit 1 notes* | Importance of communication at personal, social, and business levels → **Q4** |
+| Dec 2018 (Paper B) | Importance of effective communication in business world → **Q4** | — |
+| May 2019 | Communication vital for any organization → **Q4** | Importance of clarity, adequacy, feedback + role of body language → **Q6** |
+| Jan 2023 | Differentiate Intra-personal, Inter-personal, Group Communication → **Q7** | Explain barriers to communication → **Q5** |
+| Jan 2025 | *What is Communication? Types and modes — this is a Unit 1 topic; see Unit 1 notes* | Verbal vs Non-verbal + importance of non-verbal communication → **Q2** |
+| Jan 2026 | *Define Communication; theory of communication — this is a Unit 1 topic; see Unit 1 notes* | Notes on (a) Personal, Social, Business communication (b) Intra/Inter/Group communication → **Q4 + Q7** |
 
-**Takeaway for students:** almost every year, one of the two Unit-2 questions is a "define + types/modes" question, and the other rotates between barriers, levels (intra/inter/group), personal-social-business, or verbal-vs-non-verbal. Learn all sections below and you're covered for any combination.
-
----
-
-# Q1. What is Communication? Explain Its Process and Types/Modes.
-
-## What is Communication?
-
-Communication is the process of sharing information, ideas, thoughts, or feelings between two or more people so that the message is understood in the way it was intended.
-
-The word "communication" comes from the Latin word *communis*, meaning "common" or "shared." Communication is successful only when the receiver understands the message in the same sense the sender meant it.
-
-## The Process of Communication
-
-Communication is not a single act — it is a process made up of several connected steps.
-
-### 1. Sender
-
-The sender is the person who starts the communication by having an idea or a message to share.
-
-### 2. Encoding
-
-Encoding means converting the idea into words, symbols, gestures, or another form that can be sent to the receiver.
-
-### 3. Message
-
-The message is the actual information, idea, or feeling that the sender wants to share.
-
-### 4. Channel / Medium
-
-The channel is the path through which the message travels — for example, speech, a letter, a phone call, email, or a gesture.
-
-### 5. Receiver
-
-The receiver is the person who receives the message.
-
-### 6. Decoding
-
-Decoding means the receiver interpreting or understanding the message that has been sent.
-
-### 7. Feedback
-
-Feedback is the receiver's response back to the sender. It tells the sender whether the message was understood correctly.
-
-### 8. Noise
-
-Noise refers to anything that disturbs or blocks the message at any stage — for example, background sound, poor network, wrong language, or distraction. (Noise is discussed in more detail as "barriers" later in this unit.)
-
-**Example:** A teacher (sender) explains a topic (encoding into words) in class (message) using speech (channel). Students (receiver) listen and understand (decoding), and then ask questions or nod (feedback). If there is noise outside the classroom, it may disturb this process.
-
-## Types / Modes of Communication
-
-Communication can be classified in more than one way. Each of the following is explained in full detail later in this unit — this section gives the overview a "types of communication" question expects.
-
-### By the Medium Used
-
-- **Verbal Communication** — communication through words, either spoken or written (explained in Q3).
-- **Non-verbal Communication** — communication through body language, facial expressions, tone, gestures, and appearance, without depending on words (explained in Q2).
-
-### By the Level of Formality
-
-- **Formal Communication** — follows official rules and a set channel (explained in Q4).
-- **Informal Communication** — casual communication with no fixed rules (explained in Q4).
-
-### By the Number of People Involved
-
-- **Intra-personal Communication** — communication within one's own mind.
-- **Inter-personal Communication** — communication between two people.
-- **Group Communication** — communication among three or more people.
-
-(These three are explained in detail with examples in Q8.)
-
-### By the Area of Life
-
-- **Personal Communication** — communication in one's private and family life.
-- **Social Communication** — communication within a community or social circle.
-- **Business Communication** — communication related to work in an organization.
-
-(These three are explained in detail in Q5.)
-
-## Conclusion
-
-Communication is a continuous process involving a sender, a message, a channel, a receiver, and feedback, and it can be classified in several ways — by medium, formality, number of participants, and area of life. Understanding this process helps us identify exactly where communication can break down and how to make it more effective.
+**Takeaway for students:** when Q1 asks you to define communication, explain its theory/process, or explain its types and modes — that's Unit 1, and the full answer is in those notes. When Q1 or Q2 instead asks about barriers, levels (intra/inter/group), personal-social-business, or verbal-vs-non-verbal — that's this unit. Between the two sets of notes, every past combination is covered.
 
 ---
 
-# Q2. What is Non-Verbal Communication? Explain Its Types.
+# Q1. What is Non-Verbal Communication? Explain Its Types.
 
 ## What is Non-Verbal Communication?
 
@@ -232,7 +150,7 @@ Body movements, facial expressions, eye contact, tone, space, touch, time, appea
 
 ---
 
-# Q3. What is Verbal Communication? Explain Its Types, Features, Advantages and Disadvantages.
+# Q2. What is Verbal Communication? Explain Its Types, Features, Advantages and Disadvantages.
 
 ## What is Verbal Communication?
 
@@ -367,7 +285,7 @@ It may be spoken or written. However, verbal communication becomes more effectiv
 
 ---
 
-# Q4. Differentiate Between Formal and Informal Communication with Examples.
+# Q3. Differentiate Between Formal and Informal Communication with Examples.
 
 ## What is Formal Communication?
 
@@ -451,7 +369,7 @@ A good communicator should know when to use formal communication and when inform
 
 ---
 
-# Q5. Write Notes on Personal, Social and Business Communication. Discuss Their Importance.
+# Q4. Write Notes on Personal, Social and Business Communication. Discuss Their Importance.
 
 *(This answers both "notes on personal, social and business communication" and "importance of communication at personal, social and business levels" — the two most common phrasings this question takes.)*
 
@@ -560,7 +478,7 @@ Communication is essential at every level of life. At the personal level, it bui
 
 ---
 
-# Q6. What are the Barriers to Communication? Explain the Types and How to Solve Them.
+# Q5. What are the Barriers to Communication? Explain the Types and How to Solve Them.
 
 ## What is a Communication Barrier?
 
@@ -682,7 +600,7 @@ By using simple language, listening carefully, choosing the right communication 
 
 ---
 
-# Q7. What are the Principles of Effective Communication? Explain the Role of Clarity, Adequacy, and Feedback, and the Role of Body Language.
+# Q6. What are the Principles of Effective Communication? Explain the Role of Clarity, Adequacy, and Feedback, and the Role of Body Language.
 
 *(This directly answers "Explain the importance of clarity, adequacy and feedback in any type of communication. Also discuss the role of body language in communication.")*
 
@@ -717,7 +635,7 @@ Feedback is the receiver's response that tells the sender whether the message wa
 
 ## The Role of Body Language in Communication
 
-Body language — a form of non-verbal communication covered in detail in Q2 — plays a major role in making communication effective:
+Body language — a form of non-verbal communication covered in detail in Q1 — plays a major role in making communication effective:
 
 1. **Reinforces the spoken message** — a confident tone paired with steady eye contact makes a message more convincing than words alone.
 2. **Reveals true feelings** — body language often shows what a person really feels, even if their words say something different.
@@ -731,7 +649,7 @@ Clarity, adequacy, and feedback together ensure that a message is understood cor
 
 ---
 
-# Q8. What Do You Mean by Intra-personal, Inter-personal and Group Communication? Explain Each with Examples.
+# Q7. What Do You Mean by Intra-personal, Inter-personal and Group Communication? Explain Each with Examples.
 
 ## What are Levels of Communication?
 
@@ -838,14 +756,15 @@ Intra-personal communication helps a person think and plan clearly, inter-person
 
 | Question | Main Areas to Remember |
 |---|---|
-| Q1. What is Communication? | Definition + process (sender to feedback) + overview of types/modes + conclusion |
-| Q2. Non-Verbal Communication | Meaning + 9 types + importance + conclusion |
-| Q3. Verbal Communication | Meaning + 2 types + features + advantages + disadvantages + verbal vs non-verbal table + conclusion |
-| Q4. Formal vs Informal Communication | Meaning + examples + features + difference table + conclusion |
-| Q5. Personal, Social, Business Communication | Meaning of each + business internal/external + importance at all 3 levels + qualities of communicator + conclusion |
-| Q6. Barriers to Communication | Meaning + 6 barriers (mapped to personal/social/business) + 12 solutions + conclusion |
-| Q7. Principles of Effective Communication | Clarity + adequacy + feedback + 7 Cs + role of body language + conclusion |
-| Q8. Levels of Communication | Intra-personal + inter-personal + group + examples + importance + comparison + conclusion |
+| Q1. Non-Verbal Communication | Meaning + 9 types + importance + conclusion |
+| Q2. Verbal Communication | Meaning + 2 types + features + advantages + disadvantages + verbal vs non-verbal table + conclusion |
+| Q3. Formal vs Informal Communication | Meaning + examples + features + difference table + conclusion |
+| Q4. Personal, Social, Business Communication | Meaning of each + business internal/external + importance at all 3 levels + qualities of communicator + conclusion |
+| Q5. Barriers to Communication | Meaning + 6 barriers (mapped to personal/social/business) + 12 solutions + conclusion |
+| Q6. Principles of Effective Communication | Clarity + adequacy + feedback + 7 Cs + role of body language + conclusion |
+| Q7. Levels of Communication | Intra-personal + inter-personal + group + examples + importance + comparison + conclusion |
+
+*(Definition, process, and types/modes overview of communication itself are covered in the Unit 1 notes.)*
 
 ---
 
@@ -870,15 +789,15 @@ Use this table to see exactly where in these notes to find the answer to any pas
 
 | Year | Question as Asked | Answer Location |
 |---|---|---|
-| Dec 2018 | Describe the types of communication in detail | Q1 (overview) + Q3 + Q2 + Q4 |
-| Dec 2018 | Importance of communication at personal, social, business levels | Q5 |
-| Dec 2018 (alt) | Importance of effective communication in business world | Q5 (Business Communication → Importance) |
-| May 2019 | Communication is the most vital part of any organization | Q5 (Business Communication → Importance) |
-| May 2019 | Importance of clarity, adequacy, feedback + role of body language | Q7 |
-| Jan 2023 | Differentiate Intra-personal, Inter-personal, Group Communication | Q8 |
-| Jan 2023 | Explain barriers to communication | Q6 |
-| Jan 2025 | What is Communication? Types and modes | Q1 |
-| Jan 2025 | Verbal vs Non-verbal + importance of non-verbal | Q3 (comparison table) + Q2 |
-| Jan 2026 | Define Communication; theory of communication | Q1 |
-| Jan 2026 | Notes on Personal, Social, Business communication | Q5 |
-| Jan 2026 | Notes on Intra-personal, Inter-personal, Group Communication | Q8 |
+| Dec 2018 | Describe the types of communication in detail | **Unit 1 notes** (Q2 — Types of Communication) |
+| Dec 2018 | Importance of communication at personal, social, business levels | Q4 |
+| Dec 2018 (alt) | Importance of effective communication in business world | Q4 (Business Communication → Importance) |
+| May 2019 | Communication is the most vital part of any organization | Q4 (Business Communication → Importance) |
+| May 2019 | Importance of clarity, adequacy, feedback + role of body language | Q6 |
+| Jan 2023 | Differentiate Intra-personal, Inter-personal, Group Communication | Q7 |
+| Jan 2023 | Explain barriers to communication | Q5 |
+| Jan 2025 | What is Communication? Types and modes | **Unit 1 notes** (Q1 + Q2 + Q3) |
+| Jan 2025 | Verbal vs Non-verbal + importance of non-verbal | Q2 (comparison table) + Q1 |
+| Jan 2026 | Define Communication; theory of communication | **Unit 1 notes** (Q1 — Theory of Communication) |
+| Jan 2026 | Notes on Personal, Social, Business communication | Q4 |
+| Jan 2026 | Notes on Intra-personal, Inter-personal, Group Communication | Q7 |
