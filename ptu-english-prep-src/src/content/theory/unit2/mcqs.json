@@ -8,7 +8,7 @@
       "Communication through letters only",
       "Communication without a receiver"
     ],
-    "answer": 1,
+    "correctAnswer": 1,
     "explanation": "Non-verbal communication conveys meaning through cues such as facial expressions, gestures, posture, eye contact, tone, appearance, space, touch and silence."
   },
   {
@@ -20,7 +20,7 @@
       "Reading a notice",
       "Sending a text message"
     ],
-    "answer": 1,
+    "correctAnswer": 1,
     "explanation": "Nodding is a body movement that can communicate agreement or understanding."
   },
   {
@@ -32,7 +32,7 @@
       "Only sadness",
       "Only disagreement"
     ],
-    "answer": 1,
+    "correctAnswer": 1,
     "explanation": "Eye contact can show attention, confidence, interest and involvement, although its meaning can depend on the situation and culture."
   },
   {
@@ -44,7 +44,7 @@
       "Business letter",
       "Eye contact"
     ],
-    "answer": 2,
+    "correctAnswer": 2,
     "explanation": "A business letter communicates primarily through written words, so it is verbal communication."
   },
   {
@@ -56,7 +56,7 @@
       "It is used only in formal communication",
       "It removes the need for feedback"
     ],
-    "answer": 0,
+    "correctAnswer": 0,
     "explanation": "Non-verbal cues can support, reinforce or sometimes contradict what a person says."
   },
   {
@@ -68,7 +68,7 @@
       "Rate",
       "Pause"
     ],
-    "answer": 1,
+    "correctAnswer": 1,
     "explanation": "Pitch refers to how high or low a voice sounds."
   },
   {
@@ -80,7 +80,7 @@
       "Always using a very low pitch",
       "Speaking without variation"
     ],
-    "answer": 0,
+    "correctAnswer": 0,
     "explanation": "A slightly higher pitch can help communicate excitement, enthusiasm or surprise."
   },
   {
@@ -92,7 +92,7 @@
       "Rate",
       "Pause"
     ],
-    "answer": 1,
+    "correctAnswer": 1,
     "explanation": "Volume refers to the loudness or softness of the voice."
   },
   {
@@ -104,7 +104,7 @@
       "Whisper throughout",
       "Avoid pauses completely"
     ],
-    "answer": 1,
+    "correctAnswer": 1,
     "explanation": "Slowing down can make difficult information easier for listeners to understand and follow."
   },
   {
@@ -116,7 +116,7 @@
       "Pause",
       "Barrier"
     ],
-    "answer": 2,
+    "correctAnswer": 2,
     "explanation": "A pause is a short break in speech that can create emphasis or give listeners time to process information."
   },
   {
@@ -128,7 +128,7 @@
       "Posture",
       "Silence"
     ],
-    "answer": 1,
+    "correctAnswer": 1,
     "explanation": "Verbal communication uses words and can be spoken or written."
   },
   {
@@ -140,7 +140,7 @@
       "It can be spoken or written",
       "It never uses technology"
     ],
-    "answer": 2,
+    "correctAnswer": 2,
     "explanation": "Verbal communication uses words and may be spoken (oral) or written."
   },
   {
@@ -152,7 +152,7 @@
       "It cannot be misunderstood",
       "It does not require a receiver"
     ],
-    "answer": 1,
+    "correctAnswer": 1,
     "explanation": "Spoken communication often allows the receiver to respond immediately and ask for clarification."
   },
   {
@@ -164,7 +164,7 @@
       "It never requires careful wording",
       "It cannot be formal"
     ],
-    "answer": 1,
+    "correctAnswer": 1,
     "explanation": "Written communication is useful when information needs to be recorded and referred to later."
   },
   {
@@ -176,7 +176,7 @@
       "A casual conversation during lunch",
       "Talking about a movie with classmates"
     ],
-    "answer": 1,
+    "correctAnswer": 1,
     "explanation": "An official college notice follows a formal organizational purpose and channel."
   },
   {
@@ -188,7 +188,7 @@
       "A casual conversation between colleagues",
       "An official appointment letter"
     ],
-    "answer": 2,
+    "correctAnswer": 2,
     "explanation": "Casual conversations between colleagues generally do not follow formal organizational channels."
   },
   {
@@ -200,7 +200,7 @@
       "Only social media",
       "No recognizable purpose"
     ],
-    "answer": 1,
+    "correctAnswer": 1,
     "explanation": "Formal communication normally follows established organizational structures and official channels."
   },
   {
@@ -212,7 +212,7 @@
       "A casual WhatsApp conversation between friends",
       "Departmental circular"
     ],
-    "answer": 2,
+    "correctAnswer": 2,
     "explanation": "A casual conversation between friends is informal communication."
   },
   {
@@ -224,7 +224,7 @@
       "Only government notices",
       "Only advertisements"
     ],
-    "answer": 0,
+    "correctAnswer": 0,
     "explanation": "Personal communication is related to an individual's personal life, needs, thoughts and relationships."
   },
   {
@@ -236,7 +236,7 @@
       "Writing a job application",
       "Sending an official office memo"
     ],
-    "answer": 1,
+    "correctAnswer": 1,
     "explanation": "Social communication takes place to interact with others in social or community situations."
   },
   {
@@ -248,7 +248,7 @@
       "Only entertainment",
       "Only personal diaries"
     ],
-    "answer": 0,
+    "correctAnswer": 0,
     "explanation": "Business communication supports professional and organizational activities such as coordination, customers, employees and decision-making."
   },
   {
@@ -260,7 +260,7 @@
       "Personal communication",
       "Self-communication"
     ],
-    "answer": 1,
+    "correctAnswer": 1,
     "explanation": "Communication with customers outside the organization is external business communication."
   },
   {
@@ -272,7 +272,7 @@
       "Only physical distance",
       "Only a language difference"
     ],
-    "answer": 1,
+    "correctAnswer": 1,
     "explanation": "A communication barrier is anything that interferes with sending, receiving or understanding a message."
   },
   {
@@ -284,7 +284,7 @@
       "Personal relationship",
       "Social communication"
     ],
-    "answer": 0,
+    "correctAnswer": 0,
     "explanation": "Poor internet connectivity can physically or technically interrupt communication."
   },
   {
@@ -296,7 +296,7 @@
       "Visual advantage",
       "Feedback loop"
     ],
-    "answer": 0,
+    "correctAnswer": 0,
     "explanation": "Unfamiliar words, jargon or technical language can create a language barrier."
   },
   {
@@ -308,7 +308,7 @@
       "Speak without considering the receiver",
       "Avoid explaining unfamiliar terms"
     ],
-    "answer": 1,
+    "correctAnswer": 1,
     "explanation": "Using clear, simple language and explaining unfamiliar terms can reduce language barriers."
   },
   {
@@ -320,7 +320,7 @@
       "Formal channel",
       "Physical medium"
     ],
-    "answer": 0,
+    "correctAnswer": 0,
     "explanation": "Differences in culture, values, customs or social expectations can create social or cultural barriers."
   },
   {
@@ -332,7 +332,7 @@
       "Rejecting a message before listening because of prejudice",
       "Using a microphone"
     ],
-    "answer": 2,
+    "correctAnswer": 2,
     "explanation": "Prejudice, assumptions, selective listening and negative attitudes can interfere with understanding."
   },
   {
@@ -344,7 +344,7 @@
       "Assume everyone understands",
       "Avoid clarification"
     ],
-    "answer": 1,
+    "correctAnswer": 1,
     "explanation": "Clear language and feedback help identify and reduce misunderstandings."
   },
   {
@@ -356,7 +356,7 @@
       "Giving as much information as possible",
       "Speaking as quickly as possible"
     ],
-    "answer": 1,
+    "correctAnswer": 1,
     "explanation": "Clarity means expressing the message in a way that the receiver can understand easily."
   },
   {
@@ -368,7 +368,7 @@
       "It removes the need for feedback",
       "It guarantees agreement"
     ],
-    "answer": 0,
+    "correctAnswer": 0,
     "explanation": "Adequacy or completeness means providing enough relevant information for the receiver to understand and act on the message."
   },
   {
@@ -380,7 +380,7 @@
       "Whether communication can happen without a receiver",
       "Whether the message should always be longer"
     ],
-    "answer": 0,
+    "correctAnswer": 0,
     "explanation": "Feedback helps the sender determine whether the message has been understood and whether clarification is needed."
   },
   {
@@ -392,7 +392,7 @@
       "Complication",
       "Contradiction"
     ],
-    "answer": 1,
+    "correctAnswer": 1,
     "explanation": "Conciseness is commonly included among the 7 Cs of effective communication."
   },
   {
@@ -404,7 +404,7 @@
       "It is always more important than words",
       "It is used only in public speaking"
     ],
-    "answer": 1,
+    "correctAnswer": 1,
     "explanation": "Body language can support, reinforce or influence how spoken communication is interpreted."
   },
   {
@@ -416,7 +416,7 @@
       "Intra-personal communication",
       "Mass communication"
     ],
-    "answer": 2,
+    "correctAnswer": 2,
     "explanation": "Intra-personal communication takes place within an individual."
   },
   {
@@ -428,7 +428,7 @@
       "Mass communication",
       "Group communication"
     ],
-    "answer": 1,
+    "correctAnswer": 1,
     "explanation": "Inter-personal communication takes place between two or more individuals, commonly referring to direct interaction between people."
   },
   {
@@ -440,7 +440,7 @@
       "Personal communication only",
       "Self-communication"
     ],
-    "answer": 1,
+    "correctAnswer": 1,
     "explanation": "Communication among members of a group for discussion or a common purpose is group communication."
   },
   {
@@ -452,7 +452,7 @@
       "Intra-personal communication",
       "Public communication"
     ],
-    "answer": 0,
+    "correctAnswer": 0,
     "explanation": "Direct communication between a teacher and an individual student is inter-personal communication."
   },
   {
@@ -464,7 +464,7 @@
       "Speaking very softly so the audience must concentrate harder",
       "Using the same speed and volume regardless of the situation"
     ],
-    "answer": 1,
+    "correctAnswer": 1,
     "explanation": "Effective speakers adjust rate, volume and pauses according to the audience, situation and importance of the message."
   },
   {
@@ -476,7 +476,7 @@
       "Facial expressions are always more truthful than words",
       "Tone has no role in communication"
     ],
-    "answer": 0,
+    "correctAnswer": 0,
     "explanation": "Non-verbal cues can provide clues about feelings and attitudes and may sometimes conflict with spoken words."
   }
 ]
