@@ -1,343 +1,482 @@
 [
   {
+    "id": 1,
     "question": "What is non-verbal communication?",
     "options": [
       "Communication using only written words",
-      "Communication without using spoken or written words directly",
-      "Communication through official letters only",
-      "Communication between two people only"
+      "Communication through cues other than the actual words being used",
+      "Communication through letters only",
+      "Communication without a receiver"
     ],
-    "correctAnswer": 1,
-    "explanation": "Non-verbal communication uses body movements, facial expressions, eye contact, tone, appearance, silence, and other signals rather than relying directly on words."
+    "answer": 1,
+    "explanation": "Non-verbal communication conveys meaning through cues such as facial expressions, gestures, posture, eye contact, tone, appearance, space, touch and silence."
   },
   {
-    "question": "Which of the following is an example of body movement as non-verbal communication?",
+    "id": 2,
+    "question": "Which of the following is an example of body movement used in non-verbal communication?",
     "options": [
       "Writing an email",
-      "Reading a report",
-      "Nodding the head to show agreement",
-      "Making a phone call"
+      "Nodding the head",
+      "Reading a notice",
+      "Sending a text message"
     ],
-    "correctAnswer": 2,
-    "explanation": "Nodding the head is a body movement that can communicate agreement or 'yes' without words."
+    "answer": 1,
+    "explanation": "Nodding is a body movement that can communicate agreement or understanding."
   },
   {
-    "question": "What can appropriate eye contact communicate?",
+    "id": 3,
+    "question": "Eye contact can communicate:",
     "options": [
-      "Confidence and attention",
       "Only anger",
-      "A written record",
-      "Technical knowledge"
+      "Attention, confidence or interest",
+      "Only sadness",
+      "Only disagreement"
     ],
-    "correctAnswer": 0,
-    "explanation": "Eye contact can show confidence, honesty, attention, and interest during communication."
+    "answer": 1,
+    "explanation": "Eye contact can show attention, confidence, interest and involvement, although its meaning can depend on the situation and culture."
   },
   {
-    "question": "Which of the following is NOT listed as a type of non-verbal communication in the notes?",
+    "id": 4,
+    "question": "Which of the following is NOT normally considered a form of non-verbal communication?",
     "options": [
-      "Facial expressions",
-      "Silence",
-      "Eye contact",
-      "Business letters"
+      "Facial expression",
+      "Posture",
+      "Business letter",
+      "Eye contact"
     ],
-    "correctAnswer": 3,
-    "explanation": "Business letters are a form of written verbal communication, not non-verbal communication."
+    "answer": 2,
+    "explanation": "A business letter communicates primarily through written words, so it is verbal communication."
   },
   {
-    "question": "What is a communication barrier?",
+    "id": 5,
+    "question": "Why can non-verbal communication be important during a conversation?",
     "options": [
-      "Anything that makes a message more entertaining",
-      "Anything that stops or disturbs a message from being understood properly",
-      "A method of improving listening skills",
-      "A type of group communication"
+      "It can support or sometimes contradict spoken words",
+      "It always replaces spoken communication",
+      "It is used only in formal communication",
+      "It removes the need for feedback"
     ],
-    "correctAnswer": 1,
-    "explanation": "A communication barrier is anything that stops, disturbs, or spoils a message from reaching the listener properly."
+    "answer": 0,
+    "explanation": "Non-verbal cues can support, reinforce or sometimes contradict what a person says."
   },
   {
-    "question": "Which of the following is a physical barrier to communication?",
+    "id": 6,
+    "question": "Which feature of the voice refers to how high or low the voice sounds?",
     "options": [
-      "Lack of confidence",
-      "Ego problems",
-      "Poor internet connection",
-      "Negative thinking"
+      "Volume",
+      "Pitch",
+      "Rate",
+      "Pause"
     ],
-    "correctAnswer": 2,
-    "explanation": "Poor internet connection is an external or physical barrier that can disturb communication."
+    "answer": 1,
+    "explanation": "Pitch refers to how high or low a voice sounds."
   },
   {
-    "question": "Using difficult technical words when the receiver cannot understand them is an example of which barrier?",
+    "id": 7,
+    "question": "Which use of pitch is generally appropriate when expressing excitement?",
     "options": [
-      "Physical barrier",
-      "Language barrier",
-      "Personal barrier",
-      "Time barrier"
+      "A slightly higher pitch",
+      "Complete silence",
+      "Always using a very low pitch",
+      "Speaking without variation"
     ],
-    "correctAnswer": 1,
-    "explanation": "Using difficult or technical words can create a language barrier because the receiver may not understand the message."
+    "answer": 0,
+    "explanation": "A slightly higher pitch can help communicate excitement, enthusiasm or surprise."
   },
   {
-    "question": "Which of the following is the best way to overcome a communication barrier?",
+    "id": 8,
+    "question": "Which feature of the voice refers to how loud or soft we speak?",
     "options": [
-      "Use as many difficult words as possible",
-      "Avoid feedback",
-      "Use simple and clear language",
-      "Interrupt the listener frequently"
+      "Pitch",
+      "Volume",
+      "Rate",
+      "Pause"
     ],
-    "correctAnswer": 2,
-    "explanation": "Using simple and clear language helps the receiver understand the message and reduces confusion."
+    "answer": 1,
+    "explanation": "Volume refers to the loudness or softness of the voice."
   },
   {
-    "question": "What is verbal communication?",
+    "id": 9,
+    "question": "When explaining a difficult concept to students, a speaker should generally:",
     "options": [
-      "Communication using words through speaking or writing",
-      "Communication using only facial expressions",
-      "Communication through silence only",
-      "Communication through body movements only"
+      "Speak as fast as possible",
+      "Slow down and speak clearly",
+      "Whisper throughout",
+      "Avoid pauses completely"
     ],
-    "correctAnswer": 0,
-    "explanation": "Verbal communication means sharing a message using words, either through speaking or writing."
+    "answer": 1,
+    "explanation": "Slowing down can make difficult information easier for listeners to understand and follow."
   },
   {
-    "question": "Which of the following is an advantage of written verbal communication?",
+    "id": 10,
+    "question": "A deliberate break in speech used for emphasis is called a:",
     "options": [
-      "It can never be misunderstood",
-      "It provides a record that can be referred to later",
-      "It always gives instant feedback",
-      "It does not require language"
+      "Pitch",
+      "Volume",
+      "Pause",
+      "Barrier"
     ],
-    "correctAnswer": 1,
-    "explanation": "Written communication can be saved, read again, and used as a record or reference later."
+    "answer": 2,
+    "explanation": "A pause is a short break in speech that can create emphasis or give listeners time to process information."
   },
   {
-    "question": "Which statement correctly describes formal communication?",
+    "id": 11,
+    "question": "Verbal communication primarily uses:",
     "options": [
-      "It has no fixed rules or path",
-      "It is used only among friends",
-      "It follows official rules and a proper communication path",
-      "It is always faster than informal communication"
+      "Gestures",
+      "Words",
+      "Posture",
+      "Silence"
     ],
-    "correctAnswer": 2,
-    "explanation": "Formal communication follows official rules and a proper communication channel and is commonly used in organizations."
+    "answer": 1,
+    "explanation": "Verbal communication uses words and can be spoken or written."
   },
   {
+    "id": 12,
+    "question": "Which statement about verbal communication is correct?",
+    "options": [
+      "It includes only speaking",
+      "It includes only writing",
+      "It can be spoken or written",
+      "It never uses technology"
+    ],
+    "answer": 2,
+    "explanation": "Verbal communication uses words and may be spoken (oral) or written."
+  },
+  {
+    "id": 13,
+    "question": "Which is an advantage of spoken communication?",
+    "options": [
+      "It always creates a permanent record",
+      "It can allow immediate response and clarification",
+      "It cannot be misunderstood",
+      "It does not require a receiver"
+    ],
+    "answer": 1,
+    "explanation": "Spoken communication often allows the receiver to respond immediately and ask for clarification."
+  },
+  {
+    "id": 14,
+    "question": "Which is an important advantage of written communication?",
+    "options": [
+      "It always produces immediate feedback",
+      "It provides a record for future reference",
+      "It never requires careful wording",
+      "It cannot be formal"
+    ],
+    "answer": 1,
+    "explanation": "Written communication is useful when information needs to be recorded and referred to later."
+  },
+  {
+    "id": 15,
+    "question": "Which of the following is an example of formal communication?",
+    "options": [
+      "Chatting with a friend",
+      "An official notice from the college",
+      "A casual conversation during lunch",
+      "Talking about a movie with classmates"
+    ],
+    "answer": 1,
+    "explanation": "An official college notice follows a formal organizational purpose and channel."
+  },
+  {
+    "id": 16,
     "question": "Which of the following is an example of informal communication?",
     "options": [
-      "Official circular",
-      "Business report",
-      "Official email",
-      "Casual conversation with a friend"
+      "An official circular",
+      "A formal report",
+      "A casual conversation between colleagues",
+      "An official appointment letter"
     ],
-    "correctAnswer": 3,
-    "explanation": "Casual conversations with friends are informal because they do not normally follow official rules or a fixed communication path."
+    "answer": 2,
+    "explanation": "Casual conversations between colleagues generally do not follow formal organizational channels."
   },
   {
-    "question": "Which of the following is an important quality of an effective business communicator?",
+    "id": 17,
+    "question": "Formal communication generally follows:",
     "options": [
-      "Confusion",
-      "Courtesy",
-      "Carelessness",
-      "Incomplete information"
+      "Random personal relationships",
+      "The organization's formal structure or channels",
+      "Only social media",
+      "No recognizable purpose"
     ],
-    "correctAnswer": 1,
-    "explanation": "Courtesy means using polite and respectful language, which is an important quality in professional communication."
+    "answer": 1,
+    "explanation": "Formal communication normally follows established organizational structures and official channels."
   },
   {
-    "question": "Communication between a manager and an employee about an official work task is generally an example of which type?",
+    "id": 18,
+    "question": "Which of the following is a likely example of informal communication?",
     "options": [
-      "Formal communication",
-      "Informal communication",
+      "Official examination notice",
+      "Employee appointment letter",
+      "A casual WhatsApp conversation between friends",
+      "Departmental circular"
+    ],
+    "answer": 2,
+    "explanation": "A casual conversation between friends is informal communication."
+  },
+  {
+    "id": 19,
+    "question": "Personal communication mainly concerns:",
+    "options": [
+      "Personal needs, thoughts or relationships",
+      "Only company policies",
+      "Only government notices",
+      "Only advertisements"
+    ],
+    "answer": 0,
+    "explanation": "Personal communication is related to an individual's personal life, needs, thoughts and relationships."
+  },
+  {
+    "id": 20,
+    "question": "Which situation is an example of social communication?",
+    "options": [
+      "Submitting a company report",
+      "Discussing a family or community event with others",
+      "Writing a job application",
+      "Sending an official office memo"
+    ],
+    "answer": 1,
+    "explanation": "Social communication takes place to interact with others in social or community situations."
+  },
+  {
+    "id": 21,
+    "question": "Business communication is mainly concerned with:",
+    "options": [
+      "Organizational and professional activities",
+      "Only family relationships",
+      "Only entertainment",
+      "Only personal diaries"
+    ],
+    "answer": 0,
+    "explanation": "Business communication supports professional and organizational activities such as coordination, customers, employees and decision-making."
+  },
+  {
+    "id": 22,
+    "question": "Communication between a company and its customers is an example of:",
+    "options": [
       "Intra-personal communication",
-      "Non-verbal communication"
+      "External business communication",
+      "Personal communication",
+      "Self-communication"
     ],
-    "correctAnswer": 0,
-    "explanation": "Communication about official work through an organizational relationship is generally formal communication."
+    "answer": 1,
+    "explanation": "Communication with customers outside the organization is external business communication."
   },
   {
-    "question": "Which level of communication involves three or more people?",
+    "id": 23,
+    "question": "A barrier to communication is:",
     "options": [
-      "Intra-personal communication",
-      "Inter-personal communication",
-      "Group communication",
-      "Personal communication"
+      "Anything that helps understanding",
+      "Anything that interferes with the effective transmission or understanding of a message",
+      "Only physical distance",
+      "Only a language difference"
     ],
-    "correctAnswer": 2,
-    "explanation": "Group communication takes place among three or more people, such as in a classroom discussion or team meeting."
+    "answer": 1,
+    "explanation": "A communication barrier is anything that interferes with sending, receiving or understanding a message."
   },
   {
-    "question": "Which of the following best describes Personal Communication?",
+    "id": 24,
+    "question": "Poor internet connectivity during an online class is an example of a:",
     "options": [
-      "Communication in one's private and family life, based on emotional closeness",
-      "Communication strictly used in offices",
-      "Communication sent to millions of people at once",
-      "Communication that always uses official letters"
+      "Physical or technical barrier",
+      "Language barrier",
+      "Personal relationship",
+      "Social communication"
     ],
-    "correctAnswer": 0,
-    "explanation": "Personal communication takes place in a person's private and family life, generally with people close to them, such as family or close friends."
+    "answer": 0,
+    "explanation": "Poor internet connectivity can physically or technically interrupt communication."
   },
   {
-    "question": "Discussing a local festival with neighbours in a community WhatsApp group is an example of:",
+    "id": 25,
+    "question": "Using too many technical terms that the receiver does not understand creates a:",
     "options": [
-      "Business Communication",
-      "Social Communication",
-      "Intra-personal Communication",
-      "Mass Communication"
+      "Language barrier",
+      "Physical barrier",
+      "Visual advantage",
+      "Feedback loop"
     ],
-    "correctAnswer": 1,
-    "explanation": "Social communication takes place within a wider community or social circle, beyond close family and friends, such as discussing a community event."
+    "answer": 0,
+    "explanation": "Unfamiliar words, jargon or technical language can create a language barrier."
   },
   {
-    "question": "A company sending an email to a customer about a new product is an example of:",
+    "id": 26,
+    "question": "Which is an effective way to overcome a language barrier?",
     "options": [
-      "Internal Business Communication",
-      "External Business Communication",
-      "Informal Communication",
-      "Intra-personal Communication"
+      "Use unnecessarily complicated words",
+      "Use clear and simple language",
+      "Speak without considering the receiver",
+      "Avoid explaining unfamiliar terms"
     ],
-    "correctAnswer": 1,
-    "explanation": "External communication takes place between an organization and people outside it, such as customers, suppliers, or the general public."
+    "answer": 1,
+    "explanation": "Using clear, simple language and explaining unfamiliar terms can reduce language barriers."
   },
   {
-    "question": "Which of the following is an example of a Social and Cultural barrier to communication?",
+    "id": 27,
+    "question": "A difference in cultural expectations between two people may create a:",
+    "options": [
+      "Social or cultural barrier",
+      "Written record",
+      "Formal channel",
+      "Physical medium"
+    ],
+    "answer": 0,
+    "explanation": "Differences in culture, values, customs or social expectations can create social or cultural barriers."
+  },
+  {
+    "id": 28,
+    "question": "Which situation is an example of a thinking or attitude barrier?",
     "options": [
       "Poor internet connection",
-      "A generation gap between young and old people",
-      "Ego problems between speaker and listener",
-      "Fear of talking to a senior at work"
+      "A noisy classroom",
+      "Rejecting a message before listening because of prejudice",
+      "Using a microphone"
     ],
-    "correctAnswer": 1,
-    "explanation": "Social and cultural barriers arise from differences in background, language, customs, or age — such as the generation gap."
+    "answer": 2,
+    "explanation": "Prejudice, assumptions, selective listening and negative attitudes can interfere with understanding."
   },
   {
-    "question": "An important official message getting changed as it passes through many people in an office is an example of which barrier?",
+    "id": 29,
+    "question": "Which action can help overcome communication barriers?",
     "options": [
-      "Physical barrier",
-      "Language barrier",
-      "Workplace (business) barrier",
-      "Thinking/attitude barrier"
+      "Ignore the receiver's response",
+      "Use clear language and ask for feedback",
+      "Assume everyone understands",
+      "Avoid clarification"
     ],
-    "correctAnswer": 2,
-    "explanation": "This is a workplace barrier — it happens specifically within organizations when messages get distorted as they pass through many people."
+    "answer": 1,
+    "explanation": "Clear language and feedback help identify and reduce misunderstandings."
   },
   {
-    "question": "Judging a person before knowing them fully, or hearing only what we want to hear, is an example of which type of barrier?",
+    "id": 30,
+    "question": "Clarity in communication means:",
     "options": [
-      "Physical barrier",
-      "Thinking or attitude barrier",
-      "Language barrier",
-      "Social barrier"
+      "Using complicated language",
+      "Making the message easy to understand",
+      "Giving as much information as possible",
+      "Speaking as quickly as possible"
     ],
-    "correctAnswer": 1,
-    "explanation": "Thinking or attitude barriers come from how a person interprets or judges information, including pre-judging others or selective hearing."
+    "answer": 1,
+    "explanation": "Clarity means expressing the message in a way that the receiver can understand easily."
   },
   {
-    "question": "Which of the following is a recommended strategy for overcoming communication barriers?",
+    "id": 31,
+    "question": "Why is adequacy or completeness important in communication?",
     "options": [
-      "Give the receiver no opportunity to ask questions",
-      "Assume the listener has understood without checking",
-      "Explain complicated information in small parts, step by step",
-      "Avoid all feedback"
+      "It ensures that enough relevant information is provided",
+      "It makes every message very long",
+      "It removes the need for feedback",
+      "It guarantees agreement"
     ],
-    "correctAnswer": 2,
-    "explanation": "Breaking down complicated information into smaller parts makes it easier for the receiver to understand, which helps overcome barriers."
+    "answer": 0,
+    "explanation": "Adequacy or completeness means providing enough relevant information for the receiver to understand and act on the message."
   },
   {
-    "question": "In the principles of effective communication, what does 'Clarity' primarily ensure?",
+    "id": 32,
+    "question": "What does feedback help the sender determine?",
     "options": [
-      "That the message is as long as possible",
-      "That the sender's idea is simple and unambiguous, so decoding does not fail",
-      "That the message is always written, never spoken",
-      "That the receiver never asks questions"
+      "Whether the message has been understood",
+      "Whether the receiver must always agree",
+      "Whether communication can happen without a receiver",
+      "Whether the message should always be longer"
     ],
-    "correctAnswer": 1,
-    "explanation": "Clarity means the message should be clear and easy to understand, so the receiver can decode it correctly."
+    "answer": 0,
+    "explanation": "Feedback helps the sender determine whether the message has been understood and whether clarification is needed."
   },
   {
-    "question": "What role does body language play in effective communication?",
-    "options": [
-      "It has no effect on how a message is understood",
-      "It reinforces the spoken message and can reveal a speaker's true feelings",
-      "It replaces the need for feedback entirely",
-      "It is only useful in written communication"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Body language reinforces spoken words, often reveals true feelings, and provides instant feedback to the speaker through expressions and gestures."
-  },
-  {
-    "question": "Which of the following is one of the '7 Cs' of effective communication mentioned alongside Clarity?",
+    "id": 33,
+    "question": "Which of the following is one of the commonly discussed 7 Cs of communication?",
     "options": [
       "Confusion",
       "Conciseness",
-      "Complexity",
-      "Carelessness"
+      "Complication",
+      "Contradiction"
     ],
-    "correctAnswer": 1,
-    "explanation": "Conciseness — keeping the message short and to the point — is one of the 7 Cs of effective communication, along with Clarity, Correctness, Courtesy, and Completeness."
+    "answer": 1,
+    "explanation": "Conciseness is commonly included among the 7 Cs of effective communication."
   },
   {
-    "question": "A person's tone of voice being loud, soft, fast, or friendly is an example of which type of non-verbal communication?",
+    "id": 34,
+    "question": "Which statement about body language is correct?",
     "options": [
-      "Voice Tone",
-      "Touch",
-      "Space and Distance",
-      "Time"
+      "It has no effect on communication",
+      "It can support or influence the interpretation of spoken words",
+      "It is always more important than words",
+      "It is used only in public speaking"
     ],
-    "correctAnswer": 0,
-    "explanation": "Voice tone refers to how something is said — loud, soft, fast, slow, friendly, or angry — rather than the words themselves."
+    "answer": 1,
+    "explanation": "Body language can support, reinforce or influence how spoken communication is interpreted."
   },
   {
-    "question": "Maintaining a greater physical distance from a stranger than from a close friend is an example of which non-verbal cue?",
+    "id": 35,
+    "question": "Communication with oneself, such as thinking or self-reflection, is called:",
     "options": [
-      "Silence",
-      "Space and Distance",
-      "Looks and Dressing",
-      "Voice Tone"
+      "Inter-personal communication",
+      "Group communication",
+      "Intra-personal communication",
+      "Mass communication"
     ],
-    "correctAnswer": 1,
-    "explanation": "Space and distance between people can communicate comfort, respect, familiarity, or formality depending on the relationship."
+    "answer": 2,
+    "explanation": "Intra-personal communication takes place within an individual."
   },
   {
-    "question": "Coming late to a meeting repeatedly can non-verbally communicate:",
+    "id": 36,
+    "question": "Communication between two people is called:",
     "options": [
-      "Confidence",
-      "A lack of seriousness or punctuality",
-      "Formal dressing",
-      "High voice tone"
+      "Intra-personal communication",
+      "Inter-personal communication",
+      "Mass communication",
+      "Group communication"
     ],
-    "correctAnswer": 1,
-    "explanation": "The way a person uses time communicates a message — repeated lateness can suggest a lack of seriousness or respect for others' time."
+    "answer": 1,
+    "explanation": "Inter-personal communication takes place between two or more individuals, commonly referring to direct interaction between people."
   },
   {
-    "question": "A conversation between a teacher and a single student after class is an example of:",
+    "id": 37,
+    "question": "A discussion involving several students working together is an example of:",
     "options": [
-      "Intra-personal Communication",
-      "Inter-personal Communication",
-      "Group Communication",
-      "Mass Communication"
+      "Intra-personal communication",
+      "Group communication",
+      "Personal communication only",
+      "Self-communication"
     ],
-    "correctAnswer": 1,
-    "explanation": "Inter-personal communication is communication between exactly two people, such as a teacher speaking with one student."
+    "answer": 1,
+    "explanation": "Communication among members of a group for discussion or a common purpose is group communication."
   },
   {
-    "question": "Thinking through how to respond to a difficult situation, inside your own mind, is an example of:",
+    "id": 38,
+    "question": "A teacher explaining a concept to a student individually is primarily an example of:",
     "options": [
-      "Inter-personal Communication",
-      "Group Communication",
-      "Intra-personal Communication",
-      "Social Communication"
+      "Inter-personal communication",
+      "Mass communication",
+      "Intra-personal communication",
+      "Public communication"
     ],
-    "correctAnswer": 2,
-    "explanation": "Intra-personal communication is communication within one's own mind, such as thinking or planning before acting."
+    "answer": 0,
+    "explanation": "Direct communication between a teacher and an individual student is inter-personal communication."
   },
   {
-    "question": "Which of the following is an advantage of spoken (oral) verbal communication over written communication?",
+    "id": 39,
+    "question": "Which situation best demonstrates effective use of rate, volume and pause?",
     "options": [
-      "It creates a permanent record",
-      "It allows the receiver to ask questions and get an immediate reply",
-      "It is always more polite",
-      "It never requires a common language"
+      "Speaking rapidly and loudly throughout the entire presentation",
+      "Speaking at a suitable pace, increasing volume when necessary and pausing before an important point",
+      "Speaking very softly so the audience must concentrate harder",
+      "Using the same speed and volume regardless of the situation"
     ],
-    "correctAnswer": 1,
-    "explanation": "One major advantage of spoken communication is that the receiver can often respond immediately, allowing doubts to be cleared quickly."
+    "answer": 1,
+    "explanation": "Effective speakers adjust rate, volume and pauses according to the audience, situation and importance of the message."
+  },
+  {
+    "id": 40,
+    "question": "If a speaker's words say 'I am fine' but their facial expression and tone suggest sadness, what should the listener understand?",
+    "options": [
+      "Non-verbal cues can provide additional clues about the speaker's feelings",
+      "Words can never communicate feelings",
+      "Facial expressions are always more truthful than words",
+      "Tone has no role in communication"
+    ],
+    "answer": 0,
+    "explanation": "Non-verbal cues can provide clues about feelings and attitudes and may sometimes conflict with spoken words."
   }
-    ]
+]
