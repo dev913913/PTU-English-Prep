@@ -66,8 +66,9 @@ export default function UnitPage() {
 
   const parts = getUnitParts(track, unitId)
   const notes = getNotes(track, unitId)
+  const mcqs = getMcqs(track, unitId)
 
-  // --- Parts-based unit (e.g. Lab Unit 1): intro + part cards, no single long page ---
+  // --- Parts-based unit: intro + part cards + unit-level quiz ---
   if (parts && parts.length > 0) {
     return (
       <div className="max-w-3xl mx-auto px-5 py-10">
@@ -82,6 +83,12 @@ export default function UnitPage() {
             <div className="notes-content">
               <ReactMarkdown remarkPlugins={[remarkGfm]}>{notes}</ReactMarkdown>
             </div>
+          </div>
+        )}
+
+        {mcqs.length > 0 && (
+          <div className="mt-6">
+            <QuizCallout track={track} unitId={unitId} count={mcqs.length} />
           </div>
         )}
 
@@ -108,13 +115,17 @@ export default function UnitPage() {
             )
           })}
         </div>
+
+        {mcqs.length > 0 && (
+          <div className="mt-8">
+            <QuizCallout track={track} unitId={unitId} count={mcqs.length} />
+          </div>
+        )}
       </div>
     )
   }
 
-  // --- Standard unit (e.g. Theory units): full notes page with quiz above and below ---
-  const mcqs = getMcqs(track, unitId)
-
+  // --- Standard unit: full notes page with quiz above and below ---
   return (
     <div className="max-w-3xl mx-auto px-5 py-10">
       <Breadcrumb items={crumbs} />
