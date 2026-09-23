@@ -65,7 +65,7 @@ export const labUnits = [
     number: 3,
     title: 'Formal Speaking',
     topics: ['Formal Presentations', 'Monologue'],
-    status: 'soon',
+    status: 'available',
   },
   {
     id: 'unit4',
