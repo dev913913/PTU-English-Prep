@@ -6,6 +6,7 @@ import { theoryUnits, labUnits } from '../content/syllabus'
 import { getUnitParts, getPartContent, getPartMcqs } from '../lib/content'
 import Breadcrumb from '../components/Breadcrumb'
 import QuizWidget from '../components/QuizWidget'
+import SelfIntroductionBuilder from '../components/SelfIntroductionBuilder'
 
 const TRACK_LABELS = { theory: 'Theory', lab: 'Lab / Practical' }
 
@@ -48,6 +49,10 @@ export default function LabPartPage() {
           </ReactMarkdown>
         </div>
       </div>
+
+      {track === 'lab' && unitId === 'unit1' && partId === 'self-introduction' && (
+        <SelfIntroductionBuilder />
+      )}
 
       {mcqs.length > 0 && (
         <QuizWidget
