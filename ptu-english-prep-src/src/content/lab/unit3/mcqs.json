@@ -1,0 +1,343 @@
+[
+  {
+    "question": "What is a formal presentation?",
+    "options": [
+      "An unplanned private conversation",
+      "A planned and organised speech for an audience",
+      "A written examination",
+      "A casual text message"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A formal presentation is a planned and organised spoken presentation for an audience."
+  },
+  {
+    "question": "Which is normally the first major part of a presentation?",
+    "options": [
+      "Conclusion",
+      "Opening and introduction",
+      "Question paper",
+      "Appendix"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A presentation normally begins with an opening and introduction."
+  },
+  {
+    "question": "What should the introduction of a presentation mainly do?",
+    "options": [
+      "Introduce the topic and purpose",
+      "Give every detail immediately",
+      "Repeat the conclusion",
+      "Avoid addressing the audience"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The introduction should tell the audience what the presentation is about and, where useful, its purpose or outline."
+  },
+  {
+    "question": "Which part develops the main ideas of a presentation?",
+    "options": [
+      "Opening",
+      "Main body",
+      "Greeting",
+      "Title only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The main body contains the main points, explanations, examples, and supporting information."
+  },
+  {
+    "question": "What is the main purpose of a conclusion?",
+    "options": [
+      "Introduce several new major topics",
+      "Briefly reinforce the main message",
+      "Start a completely new presentation",
+      "Read the title again"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The conclusion brings the presentation to a clear close and reinforces the main message."
+  },
+  {
+    "question": "Which is a suitable opening technique for a presentation?",
+    "options": [
+      "Asking a relevant question",
+      "Apologising repeatedly",
+      "Reading every slide word for word",
+      "Starting with unrelated information"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A relevant question can attract attention and connect the audience to the topic."
+  },
+  {
+    "question": "If an important point is difficult to understand, the speaker should generally:",
+    "options": [
+      "Speak even faster",
+      "Slow down and explain clearly",
+      "Stop making eye contact",
+      "Whisper"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Slowing down can give the audience more time to understand an important or difficult idea."
+  },
+  {
+    "question": "What does a pause help a speaker do?",
+    "options": [
+      "Make every sentence unclear",
+      "Create emphasis and give listeners time to process information",
+      "Avoid preparing",
+      "Replace the conclusion"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A well-placed pause can create emphasis and allow listeners to process an important point."
+  },
+  {
+    "question": "Which is a suitable use of volume in a presentation?",
+    "options": [
+      "Always shouting",
+      "Speaking loudly enough for the audience to hear",
+      "Always whispering",
+      "Changing volume randomly"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The speaker should use enough volume for the audience to hear without shouting."
+  },
+  {
+    "question": "Why should a speaker maintain suitable eye contact?",
+    "options": [
+      "To avoid the audience",
+      "To support engagement and connection",
+      "To memorise the slides",
+      "To speak faster"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Suitable eye contact helps the speaker connect with and engage the audience."
+  },
+  {
+    "question": "Which is an example of a visual aid?",
+    "options": [
+      "A chart",
+      "A handshake",
+      "A pause",
+      "A greeting"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Charts, diagrams, pictures, and slides can be used as visual aids."
+  },
+  {
+    "question": "A visual aid should primarily:",
+    "options": [
+      "Replace the speaker completely",
+      "Support the speaker's explanation",
+      "Contain as much text as possible",
+      "Distract the audience"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Visual aids should support and clarify the speaker's message."
+  },
+  {
+    "question": "Which is a common presentation mistake?",
+    "options": [
+      "Using clear transitions",
+      "Reading every word from the slides",
+      "Practising beforehand",
+      "Speaking clearly"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Reading every word from the slides can reduce audience engagement and make the presentation less natural."
+  },
+  {
+    "question": "What is a monologue?",
+    "options": [
+      "An exchange between two speakers",
+      "An extended speech by one person",
+      "A written notice",
+      "A group discussion only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A monologue is an extended speech by one person."
+  },
+  {
+    "question": "What is the main difference between a monologue and a dialogue?",
+    "options": [
+      "A monologue has one extended speaker; a dialogue involves an exchange of turns",
+      "A monologue is always written",
+      "A dialogue has no audience",
+      "There is no difference"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A monologue focuses on one person's continuous speech, while dialogue involves speakers responding to one another."
+  },
+  {
+    "question": "Which is a useful structure for a short monologue?",
+    "options": [
+      "Opening → Development → Ending",
+      "Title → Marks → Result",
+      "Greeting → Exam → Attendance",
+      "Question → Answer → Silence"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A clear opening, development, and ending gives a short monologue a logical structure."
+  },
+  {
+    "question": "Which sequence is useful for a personal-experience monologue?",
+    "options": [
+      "Situation → Event → Reaction → Learning",
+      "Ending → Title → Greeting → Silence",
+      "Question → Marks → Attendance → Result",
+      "Random ideas only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This sequence helps the speaker develop an experience logically and finish with a meaningful reflection."
+  },
+  {
+    "question": "Why is memorising every sentence of a monologue not always useful?",
+    "options": [
+      "It can make delivery less natural and make recovery difficult after forgetting a line",
+      "It guarantees better expression",
+      "It removes the need to practise",
+      "It makes the topic clearer automatically"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Preparing key points rather than every sentence can make speaking more natural and easier to recover from small mistakes."
+  },
+  {
+    "question": "Which voice technique can make a monologue more expressive?",
+    "options": [
+      "Using suitable changes in pitch, rate, volume, and pauses",
+      "Speaking in exactly the same way throughout",
+      "Always shouting",
+      "Never pausing"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Natural variation in voice helps communicate meaning, emotion, and emphasis."
+  },
+  {
+    "question": "A speaker who suddenly talks about unrelated topics is mainly failing to:",
+    "options": [
+      "Stay on topic",
+      "Use a greeting",
+      "Use a microphone",
+      "Write notes"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A good monologue develops one clear idea or experience and avoids unnecessary unrelated material."
+  },
+  {
+    "question": "Which is an appropriate monologue practice topic?",
+    "options": [
+      "A day without the internet",
+      "Only the answer sheet",
+      "A list of attendance numbers",
+      "A random collection of words"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A topic such as 'A day without the internet' allows students to develop an idea continuously."
+  },
+  {
+    "question": "In a presentation, transitions such as 'First' and 'Finally' help the audience to:",
+    "options": [
+      "Follow the organisation of ideas",
+      "Forget the topic",
+      "Avoid listening",
+      "Replace the conclusion"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Transitions show relationships between points and help the audience follow the structure."
+  },
+  {
+    "question": "Which statement about presentation language is most appropriate?",
+    "options": [
+      "Use difficult words whenever possible",
+      "Use clear, correct, and audience-appropriate language",
+      "Use slang in every formal situation",
+      "Avoid examples"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Formal speaking should use language that is clear, correct, and appropriate for the audience and situation."
+  },
+  {
+    "question": "If a speaker is presenting to a large classroom, the speaker should primarily make sure that:",
+    "options": [
+      "The audience can hear the speaker clearly",
+      "The speaker whispers",
+      "The speaker never changes volume",
+      "The speaker looks only at the floor"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Adequate volume is necessary so that the audience can hear the presentation clearly."
+  },
+  {
+    "question": "Which behaviour can distract an audience during a presentation?",
+    "options": [
+      "Natural hand gestures",
+      "Constant unnecessary movement",
+      "Suitable eye contact",
+      "Clear pauses"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Constant unnecessary movement can distract the audience from the message."
+  },
+  {
+    "question": "What should a speaker generally prepare before a presentation?",
+    "options": [
+      "Only the last sentence",
+      "The main message, structure, and key points",
+      "Nothing at all",
+      "Every audience member's speech"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Knowing the main message, structure, and key points helps the speaker present naturally and confidently."
+  },
+  {
+    "question": "A monologue that tells a story should generally have:",
+    "options": [
+      "A situation or beginning, development, and a meaningful ending",
+      "Only a list of names",
+      "No sequence",
+      "Only one sentence"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A story becomes easier to follow when events develop in a clear sequence and lead to an ending."
+  },
+  {
+    "question": "Which is an example of an imaginative monologue activity?",
+    "options": [
+      "Speaking as if you are a mobile phone",
+      "Copying a textbook paragraph silently",
+      "Filling an attendance sheet",
+      "Reading a timetable"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Speaking as an object is an imaginative monologue activity that practises creativity and expression."
+  },
+  {
+    "question": "What is the best reason to practise a presentation before delivering it?",
+    "options": [
+      "To improve timing, clarity, and confidence",
+      "To guarantee that no one asks questions",
+      "To avoid understanding the topic",
+      "To memorise every gesture"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Practice helps the speaker improve delivery, timing, organisation, and confidence."
+  },
+  {
+    "question": "A speaker notices that the audience looks confused. What is a useful response?",
+    "options": [
+      "Speak faster",
+      "Clarify the point and adjust the pace if needed",
+      "Ignore the audience completely",
+      "End without a conclusion"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Audience response can help a speaker recognise when clarification or a change of pace is needed."
+  },
+  {
+    "question": "Which statement best describes effective formal speaking?",
+    "options": [
+      "Speaking continuously without considering the audience",
+      "Organising a clear message and delivering it appropriately to the audience",
+      "Using the longest possible words",
+      "Reading every sentence from notes"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Effective formal speaking combines organised content, appropriate language, delivery skills, and audience awareness."
+  }
+]
