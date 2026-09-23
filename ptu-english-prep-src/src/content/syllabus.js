@@ -72,6 +72,6 @@ export const labUnits = [
     number: 4,
     title: 'Effective Communication',
     topics: ['Effective Communication / Mis-Communication', 'Public Speaking'],
-    status: 'soon',
+    status: 'available',
   },
 ]
