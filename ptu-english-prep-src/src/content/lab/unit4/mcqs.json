@@ -1,0 +1,343 @@
+[
+  {
+    "question": "What is effective communication?",
+    "options": [
+      "Speaking for a long time",
+      "Making a reasonable effort to ensure the intended meaning is understood",
+      "Using difficult vocabulary",
+      "Talking without listening"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Effective communication involves clear expression, understanding, feedback, and appropriate communication choices."
+  },
+  {
+    "question": "Which principle mainly means expressing a message clearly and precisely?",
+    "options": [
+      "Clarity",
+      "Silence",
+      "Speed",
+      "Informality"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Clarity means making the message easy to understand."
+  },
+  {
+    "question": "Which message is more complete?",
+    "options": [
+      "Meet me tomorrow.",
+      "Meet me in Room 204 at 10 a.m. tomorrow.",
+      "Come there.",
+      "Submit it soon."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The second message gives specific information about place and time."
+  },
+  {
+    "question": "What does feedback help the sender determine?",
+    "options": [
+      "Whether the message has been understood and needs clarification",
+      "Whether the receiver agrees with everything",
+      "Whether the conversation must always end",
+      "Whether the sender should speak louder"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Feedback helps the sender understand how the receiver has responded and whether clarification is needed."
+  },
+  {
+    "question": "Which is an example of courteous communication?",
+    "options": [
+      "Correcting someone respectfully",
+      "Insulting the receiver",
+      "Interrupting constantly",
+      "Using an angry tone unnecessarily"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Courtesy means communicating respectfully, even when correcting or disagreeing."
+  },
+  {
+    "question": "What is mis-communication?",
+    "options": [
+      "When a message is understood exactly as intended",
+      "When a message is misunderstood or interpreted differently from the sender's intention",
+      "When two people agree",
+      "When a message is written down"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mis-communication occurs when the intended meaning is not understood correctly."
+  },
+  {
+    "question": "A teacher says 'Submit it soon' without giving a date. Which problem is most likely?",
+    "options": [
+      "Lack of clarity or completeness",
+      "Too much feedback",
+      "Perfect communication",
+      "Excessive courtesy"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The word 'soon' is vague, so the instruction may be interpreted differently."
+  },
+  {
+    "question": "Which is a useful response when you do not understand an instruction?",
+    "options": [
+      "Guess silently",
+      "Ask for clarification",
+      "Ignore it",
+      "Change the topic"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Asking for clarification reduces the chance of acting on a wrong assumption."
+  },
+  {
+    "question": "Which can cause mis-communication?",
+    "options": [
+      "Poor listening",
+      "Clear instructions",
+      "Relevant feedback",
+      "Appropriate language"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Poor listening can cause the receiver to miss or misunderstand the intended message."
+  },
+  {
+    "question": "Which is an example of a physical or technical communication problem?",
+    "options": [
+      "Poor internet connection during an online class",
+      "Respectful feedback",
+      "Clear pronunciation",
+      "A well-organised presentation"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Technical problems such as poor internet can interfere with communication."
+  },
+  {
+    "question": "Why is choosing the right communication medium important?",
+    "options": [
+      "The same method is always best",
+      "The purpose, audience, urgency, and complexity can affect the suitable medium",
+      "Written communication is always better",
+      "Speaking is always better"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Different situations may require different communication methods."
+  },
+  {
+    "question": "Which is a good listening habit?",
+    "options": [
+      "Interrupting before the speaker finishes",
+      "Paying attention and asking questions when something is unclear",
+      "Checking your phone constantly",
+      "Assuming the meaning immediately"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Active attention and clarification support better understanding."
+  },
+  {
+    "question": "What is public speaking?",
+    "options": [
+      "Only speaking to hundreds of people",
+      "Speaking to an audience in a planned or organised way",
+      "Only talking to a close friend",
+      "Writing a private diary"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Public speaking includes organised speaking to an audience, including a classroom."
+  },
+  {
+    "question": "What is a useful basic structure for a short speech?",
+    "options": [
+      "Opening → Body → Conclusion",
+      "Conclusion → Random ideas → Title",
+      "Question paper → Marks → Result",
+      "Greeting only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A clear opening, development of ideas, and conclusion gives a speech a logical structure."
+  },
+  {
+    "question": "Which can be an effective opening technique?",
+    "options": [
+      "A relevant question",
+      "An unrelated story",
+      "A long apology",
+      "Reading every note immediately"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A relevant question can gain attention and connect the audience to the topic."
+  },
+  {
+    "question": "Why should a speaker consider the audience?",
+    "options": [
+      "To choose suitable language and explanations",
+      "To avoid preparing",
+      "To make the speech longer",
+      "To use difficult words"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Audience knowledge and needs affect the language, examples, and level of explanation used."
+  },
+  {
+    "question": "What should the body of a speech mainly contain?",
+    "options": [
+      "The main points and supporting explanations or examples",
+      "Only the greeting",
+      "Only the final thank-you",
+      "Unrelated information"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The body develops the main ideas of the speech."
+  },
+  {
+    "question": "What is the main purpose of a conclusion?",
+    "options": [
+      "Introduce several unrelated ideas",
+      "Summarise or reinforce the main message and end clearly",
+      "Start the speech again",
+      "Avoid giving a final thought"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A conclusion brings the speech to a clear and meaningful close."
+  },
+  {
+    "question": "If an important idea is difficult, the speaker should generally:",
+    "options": [
+      "Speak faster",
+      "Slow down and explain clearly",
+      "Whisper",
+      "Skip every example"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Slowing down gives the audience more time to process an important or difficult idea."
+  },
+  {
+    "question": "What can a pause do during public speaking?",
+    "options": [
+      "Create emphasis and give the audience time to process information",
+      "Always make the speech confusing",
+      "Replace the whole conclusion",
+      "Show that the speaker has not prepared"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A well-placed pause can emphasise a point and improve understanding."
+  },
+  {
+    "question": "Which is appropriate use of volume?",
+    "options": [
+      "Always shouting",
+      "Speaking loudly enough for the audience to hear",
+      "Always whispering",
+      "Changing volume randomly"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The speaker should be audible without shouting."
+  },
+  {
+    "question": "Which is a useful way to handle nervousness before a speech?",
+    "options": [
+      "Practise aloud and prepare the opening",
+      "Avoid knowing the topic",
+      "Speak as fast as possible",
+      "Never breathe deeply"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Practice and a prepared opening can make it easier to begin and manage nervousness."
+  },
+  {
+    "question": "If a speaker forgets a point, what is a sensible response?",
+    "options": [
+      "Panic and leave",
+      "Pause briefly, check a keyword, and continue",
+      "Apologise for several minutes",
+      "End the speech immediately"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A short pause and keyword reminder can help the speaker recover naturally."
+  },
+  {
+    "question": "Which is good public-speaking body language?",
+    "options": [
+      "Suitable eye contact and natural gestures",
+      "Constantly looking at the floor",
+      "Turning your back to the audience",
+      "Repeated distracting movements"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Suitable eye contact, posture, and natural gestures support audience connection."
+  },
+  {
+    "question": "Why should a speaker avoid reading every sentence from notes?",
+    "options": [
+      "It can make delivery less natural and reduce audience engagement",
+      "Notes are never useful",
+      "Reading makes the topic automatically wrong",
+      "The audience cannot understand spoken English"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Keyword notes can support the speaker while allowing more natural delivery."
+  },
+  {
+    "question": "Which statement about public-speaking language is most appropriate?",
+    "options": [
+      "Use the most difficult words possible",
+      "Use clear, correct, and audience-appropriate language",
+      "Use slang in every situation",
+      "Avoid examples"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Good public speaking uses language that the intended audience can understand easily."
+  },
+  {
+    "question": "A speaker talks so quickly that words become unclear. Which delivery aspect needs improvement?",
+    "options": [
+      "Rate",
+      "Topic",
+      "Conclusion",
+      "Visual aid"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Rate refers to how quickly a person speaks."
+  },
+  {
+    "question": "Which practice best develops impromptu speaking?",
+    "options": [
+      "Speaking for 30 seconds on a randomly chosen simple topic",
+      "Memorising one speech forever",
+      "Reading silently",
+      "Avoiding unfamiliar topics"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Short spontaneous speaking activities help develop the ability to organise thoughts while speaking."
+  },
+  {
+    "question": "A speaker uses exactly the same pitch, rate, and volume throughout a speech. What may happen?",
+    "options": [
+      "The delivery may become flat and less engaging",
+      "The speech automatically becomes clearer",
+      "The audience will always understand more",
+      "The speaker no longer needs to pause"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Natural variation in voice can help communicate emphasis, emotion, and meaning."
+  },
+  {
+    "question": "Which combination best supports effective public speaking?",
+    "options": [
+      "Clear structure, suitable language, voice control, body language, and audience awareness",
+      "Fast speech, difficult vocabulary, and no preparation",
+      "Reading every word and avoiding eye contact",
+      "Speaking loudly throughout"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Effective public speaking combines organised content with appropriate delivery and audience awareness."
+  },
+  {
+    "question": "A student asks, 'Do you mean I should submit the printed copy today?' This is an example of:",
+    "options": [
+      "Clarification through feedback",
+      "Noise",
+      "Public speaking",
+      "A visual aid"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The student's response checks the intended meaning and helps prevent mis-communication."
+  }
+]
