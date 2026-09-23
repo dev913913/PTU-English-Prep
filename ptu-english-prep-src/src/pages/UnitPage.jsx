@@ -32,7 +32,7 @@ export default function UnitPage() {
   const trackLabel = TRACK_LABELS[track]
 
   const crumbs = [
-    { label: 'Home', to: '/' },
+    { label: 'Home', to: `/${track}` },
     { label: trackLabel, to: `/${track}` },
     { label: unit ? `Unit ${unit.number}` : 'Unit' },
   ]
@@ -83,12 +83,6 @@ export default function UnitPage() {
             <div className="notes-content">
               <ReactMarkdown remarkPlugins={[remarkGfm]}>{notes}</ReactMarkdown>
             </div>
-          </div>
-        )}
-
-        {mcqs.length > 0 && (
-          <div className="mt-6">
-            <QuizCallout track={track} unitId={unitId} count={mcqs.length} />
           </div>
         )}
 
