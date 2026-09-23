@@ -36,7 +36,7 @@ For example, a person may smile to show happiness, nod their head to show agreem
 
 Non-verbal communication often works together with verbal communication and helps us express our message more completely.
 
-## Types of Non-Verbal Communication
+## Main Types of Non-Verbal Communication
 
 ### 1. Body Movements
 
@@ -73,16 +73,34 @@ Appropriate eye contact can make communication more effective and can show that 
 
 ### 4. Voice Tone
 
-Voice tone refers to how we speak, rather than simply the words we use.
+Tone of voice means **how something is said**, not just the words used. It is influenced by **pitch, volume, rate of speech and pauses**.
 
-A person's voice may be:
+* **Pitch:** How high or low the voice sounds.
 
-- Loud or soft
-- Fast or slow
-- Happy or sad
-- Friendly or angry
+  * Slightly **higher** → excitement, enthusiasm, surprise.
+  * Slightly **lower** → seriousness, calmness, confidence.
 
-The same sentence can sometimes have a different meaning depending on the speaker's tone.
+* **Volume:** How loud or soft the voice is.
+
+  * **Louder** → large audience or emphasis.
+  * **Softer** → personal, calm or sensitive conversation.
+  * Avoid shouting or speaking so softly that people cannot hear.
+
+* **Rate:** How fast or slowly we speak.
+
+  * **Faster** → excitement or familiar information.
+  * **Slower** → difficult ideas, instructions or important points.
+  * Avoid speaking so fast that listeners cannot follow.
+
+* **Pause:** A short break in speech.
+
+  * Use before or after an important point, between ideas, or when you need time to think.
+  * A well-used pause can create emphasis and make speech clearer.
+
+**Example:** The words *“That’s great!”* can sound happy, surprised, doubtful or sarcastic depending on the speaker’s tone.
+
+> **Remember:** Good communication is not always loud, fast or slow. Change your voice according to the **situation, audience and purpose**.
+
 
 ### 5. Space and Distance
 
@@ -135,7 +153,7 @@ Therefore, communication does not always require spoken words.
 
 Non-verbal communication is important because:
 
-1. It can show our true feelings, even when our words say something different.
+1. It can provide clues about a person's feelings and attitudes, even when their words suggest something different.
 2. It helps people understand our attitude and emotions.
 3. It supports and strengthens verbal communication.
 4. It can help people communicate even when they speak different languages.
@@ -313,7 +331,7 @@ It is mainly used in:
 
 1. It follows a proper communication channel.
 2. It uses polite and correct language.
-3. It is often written and kept as a record.
+3. Important formal communication is often documented or recorded for future reference, although formal communication may also be oral.
 4. It may take more time because it often requires proper planning and preparation.
 5. It is generally used for official and professional matters.
 
@@ -321,7 +339,7 @@ It is mainly used in:
 
 ## What is Informal Communication?
 
-Informal communication is casual communication that does not follow any fixed rule or official path.
+Informal communication is casual communication that does not necessarily follow any fixed rule or official path.
 
 It is commonly used with:
 
@@ -574,6 +592,14 @@ These barriers come from the way people think, understand, interpret, or judge i
 - Ego problems between the speaker and listener
 
 A person's attitude can strongly influence how they understand another person's message.
+
+### Note on the Categories of Barriers
+
+These categories are useful for understanding different communication problems, but they are **not completely separate**. A single communication problem may involve more than one type of barrier.
+
+**Example:** If a student does not understand a technical term because it is unfamiliar in their language or cultural background, the problem may involve both a **language barrier** and a **social/cultural barrier**.
+
+Therefore, focus on understanding **why communication is being affected**, rather than trying to force every problem into only one category.
 
 ## How to Overcome Communication Barriers (Strategies)
 
