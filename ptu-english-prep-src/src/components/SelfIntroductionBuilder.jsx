@@ -25,6 +25,16 @@ function capitalize(value) {
   return text ? text.charAt(0).toUpperCase() + text.slice(1) : ''
 }
 
+function formatName(value) {
+  const text = clean(value)
+  if (!text) return ''
+  if (/^[A-Z .'-]+$/.test(text)) return text
+  return text
+    .split(' ')
+    .map((word) => word ? word.charAt(0).toUpperCase() + word.slice(1).toLowerCase() : '')
+    .join(' ')
+}
+
 function lowerInitial(value) {
   const text = clean(value)
   if (!text) return ''
@@ -33,6 +43,19 @@ function lowerInitial(value) {
 }
 
 const CANONICAL_NAMES = {
+  'bca': 'BCA',
+  'bca-it': 'BCA-IT',
+  'mca': 'MCA',
+  'bba': 'BBA',
+  'b.com': 'B.Com',
+  'bcom': 'B.Com',
+  'b.sc': 'B.Sc',
+  'bsc': 'B.Sc',
+  'm.com': 'M.Com',
+  'mcom': 'M.Com',
+  'msc': 'M.Sc',
+  'm.sc': 'M.Sc',
+  'mba': 'MBA',
   'kms college': 'KMS College of IT and Management',
   'kms college of it and management': 'KMS College of IT and Management',
   'kms': 'KMS College of IT and Management',
@@ -57,6 +80,20 @@ const COMMON_PHRASES = [
   [/\\breading\\s+book\\b/gi, 'reading books'],
   [/\\buse\\s+social\\s+media\\b/gi, 'using social media'],
   [/\\busing\\s+social\\s+media\\b/gi, 'using social media'],
+  [/\\bdance\\b/gi, 'dancing'],
+  [/\\bsing\\b/gi, 'singing'],
+  [/\\bdraw\\b/gi, 'drawing'],
+  [/\\btravel\\b/gi, 'travelling'],
+  [/\\btravelling\\b/gi, 'travelling'],
+  [/\\btraveling\\b/gi, 'travelling'],
+  [/\\bplay\\s+chess\\b/gi, 'playing chess'],
+  [/\\bplay\\s+games\\b/gi, 'playing games'],
+  [/\\bplay\\b/gi, 'playing'],
+  [/\\bread\\b/gi, 'reading'],
+  [/\\bcook\\b/gi, 'cooking'],
+  [/\\bgarden\\b/gi, 'gardening'],
+  [/\\bcycle\\b/gi, 'cycling'],
+  [/\\bcode\\b/gi, 'coding'],
 ]
 
 function normalizeKnownName(value) {
@@ -119,7 +156,11 @@ function formatExperience(value) {
 }
 
   if (experience) {
-    sentences.push(`I have ${experience} of experience.`)
+    if (/\\bexperience\\b/i.test(experience)) {
+      sentences.push(`I have ${experience}.`)
+    } else {
+      sentences.push(`I have ${experience} experience.`)
+    }
   }
 
   if (hobbies) {
@@ -266,7 +307,7 @@ function formatExperience(value) {
 
 function buildIntroduction(data) {
   const sentences = []
-  const name = clean(data.name)
+  const name = formatName(data.name)
   const location = clean(data.location)
   const course = clean(data.course)
   const college = clean(data.college)
