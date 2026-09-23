@@ -56,9 +56,9 @@ Communication is not just talking — it is a full process with many steps. Thes
 
 Sender → Encodes Message → Sends through Channel → Receiver Decodes Message → Gives Feedback → back to Sender
 
-### When is Communication Complete?
+### When is Communication Effective?
 
-Communication is only complete when the receiver understands the message correctly and gives feedback. Without feedback, the sender cannot know if the message reached properly.
+Communication becomes more effective when the receiver understands the message as intended. Feedback helps the sender confirm whether the message has been understood and allows clarification when necessary. Thus, feedback makes communication an interactive process.
 
 ### Principles That Make the Theory Work in Practice
 
@@ -66,7 +66,7 @@ The eight-step process above describes *what happens* during communication. A cl
 
 - **Clarity** — the sender's message (step 2–3 above) must be simple and unambiguous, or decoding fails.
 - **Adequacy (Completeness)** — the message must carry enough information for the receiver to act on, neither too little nor too much.
-- **Feedback** — as step 7 already shows, feedback is what confirms the loop is complete; without it, the sender never knows whether communication actually succeeded.
+- **Feedback** — the receiver's response helps the sender know whether the message has been understood and whether any clarification is needed.
 
 > For the full version of this answer — including the role of body language — see **Unit 2, Q6 (Principles of Effective Communication)**, since that question is usually asked together with non-verbal communication.
 
@@ -101,7 +101,7 @@ This means communication without words, using body actions and signs.
 - Touch (handshake, pat on the back)
 - Space and distance between people
 - Dressing and appearance
-- It often shows true feelings better than words
+- It can express feelings and attitudes and can support, reinforce, or sometimes contradict spoken words.
 
 ### Category 2: Based on Number of People Involved
 
@@ -132,7 +132,7 @@ This is communication sent to a very large number of people at the same time.
 This follows official rules and a fixed path. It is used in schools, colleges, offices, and businesses.
 - Examples: official letters, meetings, notices, reports
 - Uses polite and correct language
-- Usually written and kept as record
+- It may be oral or written, and important formal communication is often documented for future reference.
 
 **8. Informal Communication**
 This is casual communication without any fixed rules. It is used with friends and family.
@@ -177,7 +177,7 @@ Communication types can be grouped into five easy categories — based on words,
 
 ## Q3. What are the Modes of Communication? Explain each mode with examples.
 
-> **Types vs. Modes — why they look similar:** "Types" classify communication by *characteristic* (how many people are involved, how formal it is, whether words are used at all). "Modes" classify communication by the *channel or medium* actually used to carry the message. This is why "Verbal Communication" appears as a type in Q2, while its two channels — "Oral" and "Written" — appear again here as modes. This overlap is expected and correct; PTU papers ask about it from both angles.
+> **Types vs. Modes — Types vs. Modes — why they look similar: “Types” classify communication according to characteristics such as the use of words, number of people, level of formality, or direction. “Modes” describe the way or form through which a message is communicated, such as oral, written, visual, or audio-visual communication. This is why “Verbal Communication” appears as a type in Q2, while “Oral” and “Written” appear as modes in Q3. This overlap is expected and correct; PTU papers ask about it from both angles.
 
 ### Introduction
 
