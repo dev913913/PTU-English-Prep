@@ -163,5 +163,181 @@
     ],
     "correctAnswer": 2,
     "explanation": "Group communication takes place among three or more people, such as in a classroom discussion or team meeting."
+  },
+  {
+    "question": "Which of the following best describes Personal Communication?",
+    "options": [
+      "Communication in one's private and family life, based on emotional closeness",
+      "Communication strictly used in offices",
+      "Communication sent to millions of people at once",
+      "Communication that always uses official letters"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Personal communication takes place in a person's private and family life, generally with people close to them, such as family or close friends."
+  },
+  {
+    "question": "Discussing a local festival with neighbours in a community WhatsApp group is an example of:",
+    "options": [
+      "Business Communication",
+      "Social Communication",
+      "Intra-personal Communication",
+      "Mass Communication"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Social communication takes place within a wider community or social circle, beyond close family and friends, such as discussing a community event."
+  },
+  {
+    "question": "A company sending an email to a customer about a new product is an example of:",
+    "options": [
+      "Internal Business Communication",
+      "External Business Communication",
+      "Informal Communication",
+      "Intra-personal Communication"
+    ],
+    "correctAnswer": 1,
+    "explanation": "External communication takes place between an organization and people outside it, such as customers, suppliers, or the general public."
+  },
+  {
+    "question": "Which of the following is an example of a Social and Cultural barrier to communication?",
+    "options": [
+      "Poor internet connection",
+      "A generation gap between young and old people",
+      "Ego problems between speaker and listener",
+      "Fear of talking to a senior at work"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Social and cultural barriers arise from differences in background, language, customs, or age — such as the generation gap."
+  },
+  {
+    "question": "An important official message getting changed as it passes through many people in an office is an example of which barrier?",
+    "options": [
+      "Physical barrier",
+      "Language barrier",
+      "Workplace (business) barrier",
+      "Thinking/attitude barrier"
+    ],
+    "correctAnswer": 2,
+    "explanation": "This is a workplace barrier — it happens specifically within organizations when messages get distorted as they pass through many people."
+  },
+  {
+    "question": "Judging a person before knowing them fully, or hearing only what we want to hear, is an example of which type of barrier?",
+    "options": [
+      "Physical barrier",
+      "Thinking or attitude barrier",
+      "Language barrier",
+      "Social barrier"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Thinking or attitude barriers come from how a person interprets or judges information, including pre-judging others or selective hearing."
+  },
+  {
+    "question": "Which of the following is a recommended strategy for overcoming communication barriers?",
+    "options": [
+      "Give the receiver no opportunity to ask questions",
+      "Assume the listener has understood without checking",
+      "Explain complicated information in small parts, step by step",
+      "Avoid all feedback"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Breaking down complicated information into smaller parts makes it easier for the receiver to understand, which helps overcome barriers."
+  },
+  {
+    "question": "In the principles of effective communication, what does 'Clarity' primarily ensure?",
+    "options": [
+      "That the message is as long as possible",
+      "That the sender's idea is simple and unambiguous, so decoding does not fail",
+      "That the message is always written, never spoken",
+      "That the receiver never asks questions"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Clarity means the message should be clear and easy to understand, so the receiver can decode it correctly."
+  },
+  {
+    "question": "What role does body language play in effective communication?",
+    "options": [
+      "It has no effect on how a message is understood",
+      "It reinforces the spoken message and can reveal a speaker's true feelings",
+      "It replaces the need for feedback entirely",
+      "It is only useful in written communication"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Body language reinforces spoken words, often reveals true feelings, and provides instant feedback to the speaker through expressions and gestures."
+  },
+  {
+    "question": "Which of the following is one of the '7 Cs' of effective communication mentioned alongside Clarity?",
+    "options": [
+      "Confusion",
+      "Conciseness",
+      "Complexity",
+      "Carelessness"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Conciseness — keeping the message short and to the point — is one of the 7 Cs of effective communication, along with Clarity, Correctness, Courtesy, and Completeness."
+  },
+  {
+    "question": "A person's tone of voice being loud, soft, fast, or friendly is an example of which type of non-verbal communication?",
+    "options": [
+      "Voice Tone",
+      "Touch",
+      "Space and Distance",
+      "Time"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Voice tone refers to how something is said — loud, soft, fast, slow, friendly, or angry — rather than the words themselves."
+  },
+  {
+    "question": "Maintaining a greater physical distance from a stranger than from a close friend is an example of which non-verbal cue?",
+    "options": [
+      "Silence",
+      "Space and Distance",
+      "Looks and Dressing",
+      "Voice Tone"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Space and distance between people can communicate comfort, respect, familiarity, or formality depending on the relationship."
+  },
+  {
+    "question": "Coming late to a meeting repeatedly can non-verbally communicate:",
+    "options": [
+      "Confidence",
+      "A lack of seriousness or punctuality",
+      "Formal dressing",
+      "High voice tone"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The way a person uses time communicates a message — repeated lateness can suggest a lack of seriousness or respect for others' time."
+  },
+  {
+    "question": "A conversation between a teacher and a single student after class is an example of:",
+    "options": [
+      "Intra-personal Communication",
+      "Inter-personal Communication",
+      "Group Communication",
+      "Mass Communication"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Inter-personal communication is communication between exactly two people, such as a teacher speaking with one student."
+  },
+  {
+    "question": "Thinking through how to respond to a difficult situation, inside your own mind, is an example of:",
+    "options": [
+      "Inter-personal Communication",
+      "Group Communication",
+      "Intra-personal Communication",
+      "Social Communication"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Intra-personal communication is communication within one's own mind, such as thinking or planning before acting."
+  },
+  {
+    "question": "Which of the following is an advantage of spoken (oral) verbal communication over written communication?",
+    "options": [
+      "It creates a permanent record",
+      "It allows the receiver to ask questions and get an immediate reply",
+      "It is always more polite",
+      "It never requires a common language"
+    ],
+    "correctAnswer": 1,
+    "explanation": "One major advantage of spoken communication is that the receiver can often respond immediately, allowing doubts to be cleared quickly."
   }
     ]
