@@ -29,16 +29,13 @@ function formatName(value) {
   const text = clean(value)
   if (!text) return ''
   if (/^[A-Z .'-]+$/.test(text)) return text
-  return text
-    .split(' ')
-    .map((word) => word ? word.charAt(0).toUpperCase() + word.slice(1).toLowerCase() : '')
-    .join(' ')
+  return text.split(' ').map((word) => word ? word.charAt(0).toUpperCase() + word.slice(1).toLowerCase() : '').join(' ')
 }
 
 function lowerInitial(value) {
   const text = clean(value)
   if (!text) return ''
-  if (/^[A-Z]{2,}(\\b|\\W)/.test(text)) return text
+  if (/^[A-Z]{2,}(\b|\W)/.test(text)) return text
   return text.charAt(0).toLowerCase() + text.slice(1)
 }
 
@@ -66,34 +63,31 @@ const CANONICAL_NAMES = {
 }
 
 const COMMON_PHRASES = [
-  [/\\blistening\\s+(?:to\\s+)?music\\b/gi, 'listening to music'],
-  [/\\blisten\\s+(?:to\\s+)?music\\b/gi, 'listening to music'],
-  [/\\blistening\\s+(?:to\\s+)?songs\\b/gi, 'listening to songs'],
-  [/\\blisten\\s+(?:to\\s+)?songs\\b/gi, 'listening to songs'],
-  [/\\bwatch\\s+movies\\b/gi, 'watching movies'],
-  [/\\bwatch(?:ing)?\\s+youtube\\b/gi, 'watching YouTube'],
-  [/\\bplay\\s+cricket\\b/gi, 'playing cricket'],
-  [/\\bplay\\s+football\\b/gi, 'playing football'],
-  [/\\bplay\\s+badminton\\b/gi, 'playing badminton'],
-  [/\\bplay\\s+volleyball\\b/gi, 'playing volleyball'],
-  [/\\bread\\s+books\\b/gi, 'reading books'],
-  [/\\breading\\s+book\\b/gi, 'reading books'],
-  [/\\buse\\s+social\\s+media\\b/gi, 'using social media'],
-  [/\\busing\\s+social\\s+media\\b/gi, 'using social media'],
-  [/\\bdance\\b/gi, 'dancing'],
-  [/\\bsing\\b/gi, 'singing'],
-  [/\\bdraw\\b/gi, 'drawing'],
-  [/\\btravel\\b/gi, 'travelling'],
-  [/\\btravelling\\b/gi, 'travelling'],
-  [/\\btraveling\\b/gi, 'travelling'],
-  [/\\bplay\\s+chess\\b/gi, 'playing chess'],
-  [/\\bplay\\s+games\\b/gi, 'playing games'],
-  [/\\bplay\\b/gi, 'playing'],
-  [/\\bread\\b/gi, 'reading'],
-  [/\\bcook\\b/gi, 'cooking'],
-  [/\\bgarden\\b/gi, 'gardening'],
-  [/\\bcycle\\b/gi, 'cycling'],
-  [/\\bcode\\b/gi, 'coding'],
+  [/\blistening\s+(?:to\s+)?music\b/gi, 'listening to music'],
+  [/\blisten\s+(?:to\s+)?music\b/gi, 'listening to music'],
+  [/\blistening\s+(?:to\s+)?songs\b/gi, 'listening to songs'],
+  [/\blisten\s+(?:to\s+)?songs\b/gi, 'listening to songs'],
+  [/\bwatch(?:ing)?\s+movies\b/gi, 'watching movies'],
+  [/\bwatch(?:ing)?\s+youtube\b/gi, 'watching YouTube'],
+  [/\bplay\s+cricket\b/gi, 'playing cricket'],
+  [/\bplay\s+football\b/gi, 'playing football'],
+  [/\bplay\s+badminton\b/gi, 'playing badminton'],
+  [/\bplay\s+volleyball\b/gi, 'playing volleyball'],
+  [/\bread\s+books\b/gi, 'reading books'],
+  [/\breading\s+book\b/gi, 'reading books'],
+  [/\buse\s+social\s+media\b/gi, 'using social media'],
+  [/\busing\s+social\s+media\b/gi, 'using social media'],
+  [/\bdance\b/gi, 'dancing'],
+  [/\bsing\b/gi, 'singing'],
+  [/\bdraw\b/gi, 'drawing'],
+  [/\btravel(?:l?ing)?\b/gi, 'travelling'],
+  [/\bplay\s+chess\b/gi, 'playing chess'],
+  [/\bplay\s+games\b/gi, 'playing games'],
+  [/\bread\b/gi, 'reading'],
+  [/\bcook\b/gi, 'cooking'],
+  [/\bgarden\b/gi, 'gardening'],
+  [/\bcycle\b/gi, 'cycling'],
+  [/\bcode\b/gi, 'coding'],
 ]
 
 function normalizeKnownName(value) {
@@ -110,6 +104,32 @@ function improveCommonPhrases(value) {
 }
 
 function formatList(value) {
+  const items = improveCommonPhrases(value).split(',').map(clean).filter(Boolean)
+  if (items.length <= 1) return items[0] || ''
+  if (items.length === 2) return items.join(' and ')
+  return items.slice(0, -1).join(', ') + ', and ' + items[items.length - 1]
+}
+
+function formatGoal(value) {
+  const text = improveCommonPhrases(value).replace(/^[.!?]+/, '').replace(/^to\s+/i, '').replace(/[.!?]+$/, '').trim()
+  return lowerInitial(text)
+}
+
+function formatStrength(value) {
+  const text = improveCommonPhrases(value)
+  if (!text) return ''
+  if (/^i am\s+/i.test(text)) return text.replace(/^i am\s+/i, '')
+  if (/^i (consider|believe|think)\b/i.test(text)) return text
+  return text
+}
+
+function formatExperience(value) {
+  const text = improveCommonPhrases(value).replace(/[.!?]+$/, '').trim()
+  if (!text || /^(no|none|nil)$/i.test(text)) return ''
+  return text
+}
+
+function formatList(value) {
   const items = improveCommonPhrases(value)
     .split(',')
     .map(clean)
@@ -118,45 +138,43 @@ function formatList(value) {
   if (items.length <= 1) return items[0] || ''
   if (items.length === 2) return items.join(' and ')
 
-  return items.slice(0, -1).join(', ') + ', and ' + items[items.length - 1]
+  return `${items.slice(0, -1).join(', ')}, and ${items[items.length - 1]}`
 }
 
-function formatGoal(value) {
-  let text = improveCommonPhrases(value)
-    .replace(/^[.!?]+/, '')
-    .replace(/^to\\s+/i, '')
-    .replace(/[.!?]+$/, '')
-    .trim()
+function buildIntroduction(data) {
+  const sentences = []
+  const name = formatName(data.name)
+  const location = normalizeKnownName(data.location)
+  const qualification = normalizeKnownName(data.qualification)
+  const course = normalizeKnownName(data.course)
+  const college = normalizeKnownName(data.college)
+  const hobbies = formatList(data.hobbies)
+  const skills = formatList(data.skills)
+  const strength = formatStrength(data.strength)
+  const experience = formatExperience(data.experience)
+  const goal = formatGoal(data.goal)
+  const extra = improveCommonPhrases(data.extra)
 
-  return lowerInitial(text)
-}
+  sentences.push(name ? `Hello everyone. My name is ${capitalize(name)}.` : 'Hello everyone.')
 
-function formatStrength(value) {
-  const text = improveCommonPhrases(value)
-  if (!text) return ''
-
-  if (/^i am\\s+/i.test(text)) {
-    return text.replace(/^i am\\s+/i, '')
+  if (location) {
+    sentences.push(`I am from ${capitalize(location)}.`)
   }
 
-  if (/^i (consider|believe|think)\\b/i.test(text)) {
-    return text
+  if (qualification) {
+    sentences.push(`I have completed ${qualification}.`)
   }
 
-  return text
-}
-
-function formatExperience(value) {
-  const text = improveCommonPhrases(value)
-    .replace(/[.!?]+$/, '')
-    .trim()
-
-  if (!text || /^(no|none|nil)$/i.test(text)) return ''
-  return text
-}
+  if (course && college) {
+    sentences.push(`I am currently pursuing ${capitalize(course)} at ${capitalize(college)}.`)
+  } else if (course) {
+    sentences.push(`I am currently pursuing ${capitalize(course)}.`)
+  } else if (college) {
+    sentences.push(`I am currently studying at ${capitalize(college)}.`)
+  }
 
   if (experience) {
-    if (/\\bexperience\\b/i.test(experience)) {
+    if (/\bexperience\b/i.test(experience)) {
       sentences.push(`I have ${experience}.`)
     } else {
       sentences.push(`I have ${experience} experience.`)
@@ -172,9 +190,9 @@ function formatExperience(value) {
   }
 
   if (strength) {
-    if (/^i (consider|believe|think)\\b/i.test(strength)) {
+    if (/^i (consider|believe|think)\b/i.test(strength)) {
       sentences.push(`${capitalize(strength)}.`)
-    } else if (/^i am\\s+/i.test(data.strength)) {
+    } else if (/^i am\s+/i.test(data.strength)) {
       sentences.push(`I consider myself ${strength}.`)
     } else {
       sentences.push(`One of my strengths is ${strength}.`)
@@ -183,174 +201,6 @@ function formatExperience(value) {
 
   if (goal) {
     sentences.push(`My career goal is to ${goal}.`)
-  }
-
-mport { useEffect, useMemo, useState } from 'react'
-
-const STORAGE_KEY = 'ptu-self-introduction-builder'
-
-const INITIAL_DATA = {
-  name: '',
-  location: '',
-  qualification: '',
-  course: '',
-  college: '',
-  hobbies: '',
-  skills: '',
-  strength: '',
-  experience: '',
-  goal: '',
-  extra: '',
-}
-
-function clean(value) {
-  return value.trim().replace(/\s+/g, ' ').replace(/\s+([,.!?])/g, '$1')
-}
-
-function capitalize(value) {
-  const text = clean(value)
-  return text ? text.charAt(0).toUpperCase() + text.slice(1) : ''
-}
-
-function lowerInitial(value) {
-  const text = clean(value)
-  if (!text) return ''
-  if (/^[A-Z]{2,}(\\b|\\W)/.test(text)) return text
-  return text.charAt(0).toLowerCase() + text.slice(1)
-}
-
-const CANONICAL_NAMES = {
-  'kms college': 'KMS College of IT and Management',
-  'kms college of it and management': 'KMS College of IT and Management',
-  'kms': 'KMS College of IT and Management',
-  'ptu': 'I.K. Gujral Punjab Technical University (IKGPTU)',
-  'ikgptu': 'I.K. Gujral Punjab Technical University (IKGPTU)',
-  'gndu': 'Guru Nanak Dev University (GNDU)',
-  'guru nanak dev university': 'Guru Nanak Dev University (GNDU)',
-}
-
-const COMMON_PHRASES = [
-  [/\\blistening\\s+(?:to\\s+)?music\\b/gi, 'listening to music'],
-  [/\\blisten\\s+(?:to\\s+)?music\\b/gi, 'listening to music'],
-  [/\\blistening\\s+(?:to\\s+)?songs\\b/gi, 'listening to songs'],
-  [/\\blisten\\s+(?:to\\s+)?songs\\b/gi, 'listening to songs'],
-  [/\\bwatch\\s+movies\\b/gi, 'watching movies'],
-  [/\\bwatch(?:ing)?\\s+youtube\\b/gi, 'watching YouTube'],
-  [/\\bplay\\s+cricket\\b/gi, 'playing cricket'],
-  [/\\bplay\\s+football\\b/gi, 'playing football'],
-  [/\\bplay\\s+badminton\\b/gi, 'playing badminton'],
-  [/\\bplay\\s+volleyball\\b/gi, 'playing volleyball'],
-  [/\\bread\\s+books\\b/gi, 'reading books'],
-  [/\\breading\\s+book\\b/gi, 'reading books'],
-  [/\\buse\\s+social\\s+media\\b/gi, 'using social media'],
-  [/\\busing\\s+social\\s+media\\b/gi, 'using social media'],
-]
-
-function normalizeKnownName(value) {
-  const text = clean(value)
-  return CANONICAL_NAMES[text.toLowerCase()] || capitalize(text)
-}
-
-function improveCommonPhrases(value) {
-  let text = clean(value)
-  for (const [pattern, replacement] of COMMON_PHRASES) {
-    text = text.replace(pattern, replacement)
-  }
-  return text
-}
-
-function formatList(value) {
-  const items = improveCommonPhrases(value)
-    .split(',')
-    .map(clean)
-    .filter(Boolean)
-
-  if (items.length <= 1) return items[0] || ''
-  if (items.length === 2) return items.join(' and ')
-
-  return items.slice(0, -1).join(', ') + ', and ' + items[items.length - 1]
-}
-
-function formatGoal(value) {
-  let text = improveCommonPhrases(value)
-    .replace(/^[.!?]+/, '')
-    .replace(/^to\\s+/i, '')
-    .replace(/[.!?]+$/, '')
-    .trim()
-
-  return lowerInitial(text)
-}
-
-function formatStrength(value) {
-  const text = improveCommonPhrases(value)
-  if (!text) return ''
-
-  if (/^i am\\s+/i.test(text)) {
-    return text.replace(/^i am\\s+/i, '')
-  }
-
-  if (/^i (consider|believe|think)\\b/i.test(text)) {
-    return text
-  }
-
-  return text
-}
-
-function formatExperience(value) {
-  const text = improveCommonPhrases(value)
-    .replace(/[.!?]+$/, '')
-    .trim()
-
-  if (!text || /^(no|none|nil)$/i.test(text)) return ''
-  return text
-}
-
-function buildIntroduction(data) {
-  const sentences = []
-  const name = formatName(data.name)
-  const location = clean(data.location)
-  const course = clean(data.course)
-  const college = clean(data.college)
-  const hobbies = formatList(data.hobbies)
-  const strength = improveCommonPhrases(data.strength)
-  const goal = improveCommonPhrases(data.goal)
-  const extra = clean(data.extra)
-
-  sentences.push(name ? `Hello everyone. My name is ${capitalize(name)}.` : 'Hello everyone.')
-
-  if (location) {
-    sentences.push(`I am from ${capitalize(location)}.`)
-  }
-
-  if (course && college) {
-    sentences.push(`I am currently pursuing ${capitalize(course)} at ${capitalize(college)}.`)
-  } else if (course) {
-    sentences.push(`I am currently pursuing ${capitalize(course)}.`)
-  } else if (college) {
-    sentences.push(`I am currently studying at ${capitalize(college)}.`)
-  }
-
-  if (hobbies) {
-    sentences.push(`In my free time, I enjoy ${hobbies}.`)
-  }
-
-  if (strength) {
-    if (/^i am\s+/i.test(strength)) {
-      sentences.push(`I consider myself ${strength.replace(/^i am\s+/i, '')}.`)
-    } else if (/^i (consider|believe|think)\b/i.test(strength)) {
-      sentences.push(`${capitalize(strength)}.`)
-    } else {
-      sentences.push(`One of my strengths is being ${strength.replace(/^a\s+/i, 'a ')}.`)
-    }
-  }
-
-  if (goal) {
-    let goalText = goal.replace(/^to\s+/i, '')
-    if (/^(become|work|build|learn|develop|start|pursue|get)\b/i.test(goalText)) {
-      sentences.push(`My career goal is to ${goalText}.`)
-    } else {
-      sentences.push(`My career goal is to become a ${goalText}.`)
-    }
   }
 
   if (extra) {
