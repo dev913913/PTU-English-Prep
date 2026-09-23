@@ -104,32 +104,6 @@ function improveCommonPhrases(value) {
 }
 
 function formatList(value) {
-  const items = improveCommonPhrases(value).split(',').map(clean).filter(Boolean)
-  if (items.length <= 1) return items[0] || ''
-  if (items.length === 2) return items.join(' and ')
-  return items.slice(0, -1).join(', ') + ', and ' + items[items.length - 1]
-}
-
-function formatGoal(value) {
-  const text = improveCommonPhrases(value).replace(/^[.!?]+/, '').replace(/^to\s+/i, '').replace(/[.!?]+$/, '').trim()
-  return lowerInitial(text)
-}
-
-function formatStrength(value) {
-  const text = improveCommonPhrases(value)
-  if (!text) return ''
-  if (/^i am\s+/i.test(text)) return text.replace(/^i am\s+/i, '')
-  if (/^i (consider|believe|think)\b/i.test(text)) return text
-  return text
-}
-
-function formatExperience(value) {
-  const text = improveCommonPhrases(value).replace(/[.!?]+$/, '').trim()
-  if (!text || /^(no|none|nil)$/i.test(text)) return ''
-  return text
-}
-
-function formatList(value) {
   const items = improveCommonPhrases(value)
     .split(',')
     .map(clean)
