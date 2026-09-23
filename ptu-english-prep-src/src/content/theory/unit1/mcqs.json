@@ -96,7 +96,7 @@
     "question": "A road sign or an infographic is an example of which category of communication?",
     "options": ["Verbal Communication", "Visual Communication", "Formal Communication", "Mass Communication"],
     "correctAnswer": 1,
-    "explanation": "Visual communication uses pictures, charts, symbols, or images \u2014 like road signs and infographics \u2014 to share information."
+    "explanation": "Visual communication uses pictures, charts, symbols, or images — like road signs and infographics — to share information."
   },
   {
     "question": "Casual WhatsApp messages between friends are an example of:",
@@ -114,5 +114,78 @@
     ],
     "correctAnswer": 1,
     "explanation": "Different situations need different modes; using the wrong one (like texting a formal complaint) can cause confusion."
+  },
+  {
+    "question": "Which of the following best describes Upward communication?",
+    "options": [
+      "Communication from senior to junior",
+      "Communication from an employee/junior to a boss/senior",
+      "Communication between two departments of equal rank",
+      "Communication with the general public"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Upward communication flows from an employee/junior to a boss/senior, such as giving a report or feedback."
+  },
+  {
+    "question": "Which of these is an example of Horizontal communication?",
+    "options": [
+      "A CEO announcing a new policy to all staff",
+      "Two department heads of equal rank coordinating on a joint task",
+      "A student thinking through an exam answer before writing it",
+      "A company's advertisement broadcast on television"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Horizontal communication happens between people at the same level in an organization, such as two department heads."
+  },
+  {
+    "question": "A teacher using an educational video with narration to explain a topic is best classified as which mode of communication?",
+    "options": ["Oral Mode", "Visual Mode", "Audio-Visual Mode", "Written Mode"],
+    "correctAnswer": 2,
+    "explanation": "Audio-visual communication combines sound and visuals together, such as an educational video with narration."
+  },
+  {
+    "question": "Which of the following is NOT one of the reasons communication is described as important?",
+    "options": [
+      "It helps build relationships",
+      "It helps solve problems and misunderstandings",
+      "It guarantees the receiver will always agree with the sender",
+      "It helps in learning new things from others"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Communication helps build relationships, solve problems, and share learning — but it does not guarantee agreement; the receiver may still understand the message and disagree with it."
+  },
+  {
+    "question": "In the 'clarity, adequacy, and feedback' principles of communication, what does 'adequacy' mean?",
+    "options": [
+      "Speaking as loudly as possible",
+      "The message contains sufficient information — neither too little nor too much",
+      "Using only formal language",
+      "Repeating the message multiple times"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Adequacy (completeness) means the message carries enough information for the receiver to act on, without being incomplete or overloaded with unnecessary detail."
+  },
+  {
+    "question": "Why can 'Verbal Communication' appear both as a type of communication and be split into two separate modes?",
+    "options": [
+      "Because types and modes are exactly the same classification with different names",
+      "Because 'types' classify by characteristic, like whether words are used at all, while 'modes' classify by the actual channel used — oral or written",
+      "Because verbal communication has no modes",
+      "Because non-verbal communication is the same as verbal communication"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Types classify communication by characteristic — whether words are used at all. Modes classify by the actual channel used to carry the message — so 'Verbal' as a type splits into 'Oral' and 'Written' as modes."
+  },
+  {
+    "question": "A pie chart used in a report to show sales data is an example of which type of communication, based on medium used?",
+    "options": ["Audio-Visual Communication", "Visual Communication", "Mass Communication", "Informal Communication"],
+    "correctAnswer": 1,
+    "explanation": "Visual communication uses pictures, charts, symbols, or diagrams — like a pie chart — to present information clearly."
+  },
+  {
+    "question": "According to the communication process, what comes immediately after 'Decoding'?",
+    "options": ["Encoding", "Channel", "Feedback", "Noise"],
+    "correctAnswer": 2,
+    "explanation": "After the receiver decodes (understands) the message, they give feedback, which tells the sender whether the message was understood correctly."
   }
-]
+    ]
