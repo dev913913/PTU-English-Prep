@@ -9,6 +9,24 @@ import QuizWidget from '../components/QuizWidget'
 
 const TRACK_LABELS = { theory: 'Theory', lab: 'Lab / Practical' }
 
+function SelfIntroductionBuilderCallout({ track, unitId, partId }) {
+  return (
+    <div className="bg-board rounded-lg p-6 flex items-center justify-between flex-wrap gap-4 mb-8">
+      <div>
+        <p className="text-paper font-display text-lg font-semibold">Want help creating your own self-introduction?</p>
+        <p className="text-paper/60 text-sm font-mono mt-1">Writing practice · build your introduction from your own ideas</p>
+      </div>
+      <Link
+        to={'/' + track + '/' + unitId + '/' + partId + '/builder'}
+        className="bg-highlight text-board font-semibold px-5 py-2.5 rounded-md hover:bg-highlight-soft transition-colors shrink-0"
+      >
+        Build yours
+      </Link>
+    </div>
+  )
+}
+
+
 export default function LabPartPage() {
   const { track, unitId, partId } = useParams()
   const units = track === 'theory' ? theoryUnits : labUnits
@@ -40,6 +58,10 @@ export default function LabPartPage() {
       <Breadcrumb items={crumbs} />
       <p className="font-mono text-xs text-rule tracking-widest mb-1">PART {part.number}</p>
       <h1 className="font-display text-3xl font-semibold text-board">{part.title}</h1>
+
+      {track === 'lab' && unitId === 'unit1' && partId === 'self-introduction' && (
+        <SelfIntroductionBuilderCallout track={track} unitId={unitId} partId={partId} />
+      )}
 
       <div className="notebook-page mt-6">
         <div className="notes-content">
