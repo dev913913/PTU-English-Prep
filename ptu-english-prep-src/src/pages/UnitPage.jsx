@@ -8,20 +8,6 @@ import Breadcrumb from '../components/Breadcrumb'
 
 const TRACK_LABELS = { theory: 'Theory', lab: 'Lab / Practical' }
 
-function SelfIntroductionCallout({ track, unitId }) {
-  return (
-    <div className="bg-board rounded-lg p-6 flex items-center justify-between flex-wrap gap-4">
-      <div>
-        <p className="text-paper font-display text-lg font-semibold">Build your self-introduction</p>
-        <p className="text-paper/60 text-sm font-mono mt-1">Writing practice · create your own introduction</p>
-      </div>
-      <Link to={'/' + track + '/' + unitId + '/self-introduction'} className="bg-highlight text-board font-semibold px-5 py-2.5 rounded-md hover:bg-highlight-soft transition-colors shrink-0">
-        Start writing
-      </Link>
-    </div>
-  )
-}
-
 function QuizCallout({ track, unitId, count }) {
   return (
     <div className="bg-board rounded-lg p-6 flex items-center justify-between flex-wrap gap-4">
@@ -100,12 +86,6 @@ export default function UnitPage() {
           </div>
         )}
 
-        {track === 'lab' && unitId === 'unit1' && (
-          <div className="mt-8">
-            <SelfIntroductionCallout track={track} unitId={unitId} />
-          </div>
-        )}
-
         <div className="grid gap-4 mt-8">
           {parts.map((part) => {
             const href = part.type === 'listening'
@@ -129,12 +109,6 @@ export default function UnitPage() {
             )
           })}
         </div>
-
-        {track === 'lab' && unitId === 'unit1' && (
-          <div className="mt-8">
-            <SelfIntroductionCallout track={track} unitId={unitId} />
-          </div>
-        )}
 
         {mcqs.length > 0 && (
           <div className="mt-8">
