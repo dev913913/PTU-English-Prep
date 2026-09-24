@@ -9,6 +9,7 @@ import ListeningHub from './pages/ListeningHub'
 import ListeningExercisePage from './pages/ListeningExercisePage'
 import LabPartPage from './pages/LabPartPage'
 import PyqPage from './pages/PyqPage'
+import SelfIntroductionBuilder from './components/SelfIntroductionBuilder'
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/:track" element={<TrackPage />} />
         <Route path="/:track/:unitId" element={<UnitPage />} />
         <Route path="/:track/:unitId/quiz" element={<QuizPage />} />
+        <Route path="/:track/:unitId/:partId/builder" element={<SelfIntroductionBuilder />} />
         <Route path="/:track/:unitId/listening" element={<ListeningHub />} />
         <Route path="/:track/:unitId/listening/:exerciseId" element={<ListeningExercisePage />} />
         <Route path="/:track/:unitId/:partId" element={<LabPartPage />} />
