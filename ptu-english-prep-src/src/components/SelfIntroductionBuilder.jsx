@@ -180,7 +180,8 @@ export default function SelfIntroductionBuilder() {
     { label: 'Home', to: '/' + track },
     { label: track === 'lab' ? 'Lab / Practical' : 'Theory', to: '/' + track },
     { label: 'Unit 1', to: '/' + track + '/' + unitId },
-    { label: 'Self-Introduction Builder' },
+    { label: 'Self-Introduction', to: '/' + track + '/' + unitId + '/self-introduction' },
+    { label: 'Builder' },
   ]
 
   return (
@@ -241,7 +242,7 @@ export default function SelfIntroductionBuilder() {
       </div>
 
       <div className="mt-8">
-        <Link to={'/' + track + '/' + unitId} className="text-rule font-medium hover:underline">← Back to Unit 1</Link>
+        <Link to={'/' + track + '/' + unitId + '/self-introduction'} className="text-rule font-medium hover:underline">← Back to Self-Introduction</Link>
       </div>
     </div>
   )
