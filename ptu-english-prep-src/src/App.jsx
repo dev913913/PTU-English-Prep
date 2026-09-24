@@ -21,7 +21,7 @@ export default function App() {
         <Route path="/:track" element={<TrackPage />} />
         <Route path="/:track/:unitId" element={<UnitPage />} />
         <Route path="/:track/:unitId/quiz" element={<QuizPage />} />
-        <Route path="/lab/unit1/self-introduction/builder" element={<SelfIntroductionBuilder />} />
+        <Route path="/:track/:unitId/:partId/builder" element={<SelfIntroductionBuilder />} />
         <Route path="/:track/:unitId/listening" element={<ListeningHub />} />
         <Route path="/:track/:unitId/listening/:exerciseId" element={<ListeningExercisePage />} />
         <Route path="/:track/:unitId/:partId" element={<LabPartPage />} />
