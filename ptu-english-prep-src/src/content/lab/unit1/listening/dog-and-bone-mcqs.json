@@ -1,0 +1,167 @@
+[
+  {
+    "question": "Where does the dog find the bone?",
+    "options": [
+      "In a park",
+      "In a trash can",
+      "At the train station",
+      "Under a bridge"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The dog sees a bone in a trash can."
+  },
+  {
+    "question": "What does the dog do after getting the bone?",
+    "options": [
+      "He eats it immediately",
+      "He hides it",
+      "He happily runs home",
+      "He gives it to another dog"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The dog grabs the bone and happily runs home."
+  },
+  {
+    "question": "Which two places does the dog run past?",
+    "options": [
+      "A shop and a river",
+      "A train station and a school",
+      "A park and a hospital",
+      "A school and a bridge"
+    ],
+    "correctAnswer": 1,
+    "explanation": "He runs past the train station and the school."
+  },
+  {
+    "question": "What does the dog see in the water?",
+    "options": [
+      "A fish",
+      "A bridge",
+      "Another dog with a bone",
+      "A person"
+    ],
+    "correctAnswer": 2,
+    "explanation": "He sees another dog with a bone in its mouth."
+  },
+  {
+    "question": "Why does the dog want the other dog's bone?",
+    "options": [
+      "It smells better",
+      "It is cleaner",
+      "It is bigger than his bone",
+      "He has lost his bone"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The dog thinks the other dog's bone is bigger than his."
+  },
+  {
+    "question": "What does the greedy dog decide to do?",
+    "options": [
+      "Share his bone",
+      "Steal the other dog's bone",
+      "Go home",
+      "Cross another bridge"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The greedy dog decides to steal the other dog's bone."
+  },
+  {
+    "question": "What happens when the dog jumps into the water?",
+    "options": [
+      "He catches the other dog",
+      "The other dog disappears",
+      "He finds another bone",
+      "The bridge breaks"
+    ],
+    "correctAnswer": 1,
+    "explanation": "As soon as he hits the water, the other dog disappears."
+  },
+  {
+    "question": "What was the other dog actually?",
+    "options": [
+      "A real dog",
+      "A statue",
+      "His own reflection",
+      "A dog swimming underwater"
+    ],
+    "correctAnswer": 2,
+    "explanation": "There was never another dog; it was his own reflection."
+  },
+  {
+    "question": "What made the dog see a reflection?",
+    "options": [
+      "The deep, still water",
+      "The sunlight",
+      "The bridge",
+      "The rain"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The dog sees his reflection in the deep, still water."
+  },
+  {
+    "question": "What happens when the dog barks for help?",
+    "options": [
+      "He reaches the shore",
+      "His bone drops from his mouth",
+      "The other dog returns",
+      "The water becomes shallow"
+    ],
+    "correctAnswer": 1,
+    "explanation": "When he barks, his bone drops from his mouth."
+  },
+  {
+    "question": "Where does the dog's bone go?",
+    "options": [
+      "It floats away",
+      "It stays on the bridge",
+      "It sinks to the bottom of the water",
+      "He carries it to shore"
+    ],
+    "correctAnswer": 2,
+    "explanation": "His bone sinks to the bottom of the water."
+  },
+  {
+    "question": "What does the dog do after losing his bone?",
+    "options": [
+      "He swims to shore",
+      "He jumps back onto the bridge",
+      "He searches the park",
+      "He waits for the other dog"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The dog swims to shore."
+  },
+  {
+    "question": "How does the dog feel after reaching the shore?",
+    "options": [
+      "Dry and warm",
+      "Wet and cold",
+      "Happy and excited",
+      "Angry and strong"
+    ],
+    "correctAnswer": 1,
+    "explanation": "He is wet and cold."
+  },
+  {
+    "question": "What does the dog have at the end of the story?",
+    "options": [
+      "A bigger bone",
+      "His original bone",
+      "No bone at all",
+      "Two bones"
+    ],
+    "correctAnswer": 2,
+    "explanation": "At the end, the dog has no bone at all."
+  },
+  {
+    "question": "What is the moral of the story?",
+    "options": [
+      "Always run across bridges",
+      "Be happy with what you have",
+      "Never go near water",
+      "Dogs should share everything"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The story teaches us to be happy with what we have and warns that greed can make us lose everything."
+  }
+]
