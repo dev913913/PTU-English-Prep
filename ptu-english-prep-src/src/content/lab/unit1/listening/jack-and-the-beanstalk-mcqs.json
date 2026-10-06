@@ -1,0 +1,167 @@
+[
+  {
+    "question": "Why does Jack's mother ask him to sell Bess?",
+    "options": [
+      "They want to buy a new cow",
+      "They need money to fix their house",
+      "Jack wants to buy magic beans",
+      "They want to move to the mountains"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Jack's mother needs money to repair the roof, windows, and front door before winter."
+  },
+  {
+    "question": "What does Jack's mother say Bess is worth?",
+    "options": [
+      "Three gold coins",
+      "Four gold coins",
+      "Five gold coins",
+      "Ten gold coins"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Jack's mother tells him that Bess is worth at least five gold coins."
+  },
+  {
+    "question": "What does the old man offer Jack in exchange for Bess?",
+    "options": [
+      "Five gold coins",
+      "A golden hen",
+      "Five black beans",
+      "A magic harp"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The old man offers Jack five black beans and says they are magic beans."
+  },
+  {
+    "question": "Why does Jack agree to trade Bess for the beans?",
+    "options": [
+      "He wants to become famous",
+      "He thinks the beans can make his family rich",
+      "He does not like Bess",
+      "His mother tells him to accept the deal"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Jack imagines becoming rich and being able to fix the house and make his mother happy."
+  },
+  {
+    "question": "How does Jack's mother react when she sees the beans?",
+    "options": [
+      "She is very happy",
+      "She is surprised but calm",
+      "She becomes furious",
+      "She immediately plants them"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Jack's mother is furious because he traded their only cow for a handful of beans."
+  },
+  {
+    "question": "What grows from the beans the next morning?",
+    "options": [
+      "A giant tree",
+      "A giant green beanstalk",
+      "A golden plant",
+      "A field of flowers"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Jack sees a giant green beanstalk stretching from the ground to the clouds."
+  },
+  {
+    "question": "Why does Jack climb the beanstalk?",
+    "options": [
+      "He wants to find his cow",
+      "He wants to meet the old man",
+      "He wants to look for the riches the old man described",
+      "His mother tells him to climb it"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Jack climbs the beanstalk hoping to find riches and make his mother happy."
+  },
+  {
+    "question": "Who gives Jack vegetable stew at the castle?",
+    "options": [
+      "The giant",
+      "The old man",
+      "The giantess",
+      "Jack's mother"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The kind giantess welcomes Jack and gives him vegetable stew."
+  },
+  {
+    "question": "Where does Jack hide when the giant comes home?",
+    "options": [
+      "Under the bed",
+      "Behind the door",
+      "In the pantry",
+      "Under the kitchen table"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Jack hides in the pantry when he hears the giant approaching."
+  },
+  {
+    "question": "What does Jack steal first from the giant?",
+    "options": [
+      "A golden hen",
+      "A magic harp",
+      "Five gold coins",
+      "A bag of beans"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Jack first steals the five gold coins that the giant takes out and counts."
+  },
+  {
+    "question": "What special thing can the golden hen do?",
+    "options": [
+      "Sing beautiful songs",
+      "Lay golden eggs",
+      "Find gold coins",
+      "Talk to humans"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The golden hen can lay golden eggs."
+  },
+  {
+    "question": "Why does the magic harp reveal Jack's presence?",
+    "options": [
+      "It starts playing loudly",
+      "It falls to the ground",
+      "It screams for help",
+      "It wakes the giantess"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The magic harp screams, 'Help me, master!' when Jack tries to steal it."
+  },
+  {
+    "question": "How does Jack escape from the giant?",
+    "options": [
+      "He hides in the castle",
+      "He runs down the beanstalk",
+      "The giantess helps him",
+      "He flies away with the harp"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Jack reaches the beanstalk first and slides down to the ground."
+  },
+  {
+    "question": "What does Jack use to cut down the beanstalk?",
+    "options": [
+      "A sword",
+      "A knife",
+      "An axe",
+      "A hammer"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Jack runs into his house, grabs an axe, and chops down the beanstalk."
+  },
+  {
+    "question": "Why does Jack feel sad and guilty later in his life?",
+    "options": [
+      "He lost all his treasures",
+      "He misses his mother",
+      "He remembers the giant and the giantess",
+      "He wishes he had kept Bess"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Jack feels guilty because he took the giants' treasures and caused the giant to lose his way back to the castle."
+  }
+]
