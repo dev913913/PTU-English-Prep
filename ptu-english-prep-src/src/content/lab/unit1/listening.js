@@ -6,4 +6,5 @@ export const listeningExercises = [
   { id: 'fox-crow', title: 'Listening Exercise 2: The Fox and the Crow' },
   { id: 'frightened-lion', title: 'Listening Exercise 3: The Frightened Lion' },
   { id: 'dog-and-bone', title: 'Listening Exercise 4: The Dog and his Bone' },
+  { id: 'jack-and-the-beanstalk', title: 'Listening Exercise 5: Jack and the Beanstalk' },
 ]
