@@ -62,33 +62,35 @@ export default function ListeningExercisePage() {
       Choose a video version:
     </p>
 
-    <div className="flex flex-wrap gap-3 mb-4">
-       <button
-        type="button"
-        onClick={() => setGiftVideo('voa')}
-        aria-pressed={giftVideo === 'voa'}
-        className={`px-4 py-2 rounded-lg border ${
-          giftVideo === 'voa'
-            ? 'bg-board text-white border-board'
-            : 'border-ink/20 hover:bg-board/5'
-        }`}
-      >
-        VOA Narration
-      </button>
-    </div>
+    
+<div className="flex flex-wrap gap-3 mb-4">
+  <button
+    type="button"
+    onClick={() => setGiftVideo('voa')}
+    aria-pressed={giftVideo === 'voa'}
+    className={`px-4 py-2 rounded-lg border ${
+      giftVideo === 'voa'
+        ? 'bg-board text-white border-board'
+        : 'border-ink/20 hover:bg-board/5'
+    }`}
+  >
+    VOA Narration
+  </button>
 
-    <button
-        type="button"
-        onClick={() => setGiftVideo('animated')}
-        aria-pressed={giftVideo === 'animated'}
-        className={`px-4 py-2 rounded-lg border ${
-          giftVideo === 'animated'
-            ? 'bg-board text-white border-board'
-            : 'border-ink/20 hover:bg-board/5'
-        }`}
-      >
-        Animated Story
-      </button>
+  <button
+    type="button"
+    onClick={() => setGiftVideo('animated')}
+    aria-pressed={giftVideo === 'animated'}
+    className={`px-4 py-2 rounded-lg border ${
+      giftVideo === 'animated'
+        ? 'bg-board text-white border-board'
+        : 'border-ink/20 hover:bg-board/5'
+    }`}
+  >
+    Animated Story
+  </button>
+</div>
+
 
     <div className="video-embed">
       {giftVideo === 'animated' ? (
