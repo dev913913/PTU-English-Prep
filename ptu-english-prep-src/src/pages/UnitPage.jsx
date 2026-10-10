@@ -32,7 +32,7 @@ export default function UnitPage() {
   const trackLabel = TRACK_LABELS[track]
 
   const crumbs = [
-    { label: 'Home', to: `/${track}` },
+    { label: 'Home', to: `/` },
     { label: trackLabel, to: `/${track}` },
     { label: unit ? `Unit ${unit.number}` : 'Unit' },
   ]
