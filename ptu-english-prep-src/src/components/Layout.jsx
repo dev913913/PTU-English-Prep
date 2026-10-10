@@ -4,7 +4,9 @@ export default function Layout({ children }) {
   const location = useLocation()
 
   const navLink = (to, label) => {
-    const active = location.pathname === to
+    const active =
+  location.pathname === to ||
+  (to !== '/' && location.pathname.startsWith(`${to}/`))
     return (
       <Link
         to={to}
