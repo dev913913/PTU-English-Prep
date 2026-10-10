@@ -99,15 +99,23 @@ export default function ListeningExercisePage() {
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
         />
-      ) : (
-        <iframe
-          src="https://learningenglish.voanews.com/embed/player/0/2569693.html?type=video"
-          title="The Gift of the Magi — VOA Learning English"
-          frameBorder="0"
-          scrolling="no"
-          allowFullScreen
-        />
-      )}
+     
+) : (
+  <video
+    controls
+    playsInline
+    preload="metadata"
+    className="w-full aspect-video"
+    title="The Gift of the Magi — VOA Learning English"
+  >
+    <source
+      src="https://voa-video-ns.akamaized.net/pangeavideo/2014/12/3/36/36fb8ef4-a6ec-4ed7-a573-0924aaa83d0d_mobile.mp4?cb=ecc3616be&download=1"
+      type="video/mp4"
+    />
+    Your browser does not support this video.
+  </video>
+)}
+
     </div>
   </div>
 ) : (
