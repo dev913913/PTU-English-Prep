@@ -12,7 +12,7 @@ const TRACK_LABELS = { theory: 'Theory', lab: 'Lab / Practical' }
 
 export default function ListeningExercisePage() {
   const { track, unitId, exerciseId } = useParams()
-  const [giftVideo, setGiftVideo] = useState('animated')
+  const [giftVideo, setGiftVideo] = useState('voa')
 
   const isGiftOfTheMagi =
   track === 'lab' &&
