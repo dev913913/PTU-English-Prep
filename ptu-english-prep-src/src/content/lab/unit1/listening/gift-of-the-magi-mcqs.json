@@ -1,168 +1,167 @@
-
 [
   {
     "question": "When does the story take place?",
     "options": [
-      "One day before Christmas",
       "On New Year's Eve",
-      "During the summer holidays",
-      "On Jim's birthday"
-    ],
-    "correctAnswer": 0,
-    "explanation": "The story begins by saying that Christmas was only one day away."
-  },
-  {
-    "question": "How much money did Della have?",
-    "options": [
-      "$5.20",
-      "$1.87",
-      "$20.00",
-      "$10.50"
+      "One day before Christmas",
+      "On Christmas Day",
+      "On Thanksgiving Day"
     ],
     "correctAnswer": 1,
-    "explanation": "Della counted her savings and found that she had only $1.87."
+    "explanation": "The story takes place on Christmas Eve, the day before Christmas."
   },
   {
-    "question": "Why was Della worried about buying a gift?",
+    "question": "How much money did Della have after saving for a long time?",
     "options": [
-      "Jim did not like Christmas",
-      "The shops were closed",
-      "She did not have enough money",
-      "Jim had already bought her a gift"
+      "$1.87",
+      "$5.00",
+      "$10.00",
+      "$20.00"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Della had saved only $1.87, which was not enough to buy a good Christmas present for Jim."
+  },
+  {
+    "question": "Why was Della worried at the beginning of the story?",
+    "options": [
+      "Jim had lost his job",
+      "She had forgotten to buy food",
+      "She did not have enough money to buy Jim a Christmas present",
+      "She had lost her own watch"
     ],
     "correctAnswer": 2,
-    "explanation": "Money was scarce, and Della wanted to buy Jim a special gift."
+    "explanation": "Della wanted to buy Jim a special Christmas present, but she had very little money."
   },
   {
-    "question": "What were Jim and Della's two most treasured possessions?",
+    "question": "Which possessions were especially precious to Jim and Della?",
     "options": [
-      "A gold ring and a necklace",
-      "A beautiful dress and a coat",
-      "A silver chain and a bracelet",
-      "Jim's gold watch and Della's beautiful hair"
+      "Their house and furniture",
+      "Jim's gold watch and Della's beautiful long hair",
+      "Their clothes and books",
+      "A necklace and a pair of earrings"
     ],
-    "correctAnswer": 3,
-    "explanation": "The narration identifies Jim's gold watch and Della's magnificent hair as their most precious possessions."
+    "correctAnswer": 1,
+    "explanation": "Jim treasured his gold watch, while Della treasured her beautiful long hair."
   },
   {
     "question": "Where did Della go to sell her hair?",
     "options": [
-      "A shop that bought and sold human hair",
       "A jewellery shop",
-      "A clothing store",
-      "A beauty salon that sold wigs only"
+      "A department store",
+      "A shop that bought and sold human hair",
+      "A beauty salon that offered free haircuts"
     ],
-    "correctAnswer": 0,
-    "explanation": "Della entered a shop that bought and sold human hair."
+    "correctAnswer": 2,
+    "explanation": "Della went to a shop that bought and sold human hair so she could get money for Jim's present."
   },
   {
     "question": "How much money did Della receive for her hair?",
     "options": [
+      "$5",
       "$10",
-      "$20",
-      "$25",
-      "$30"
+      "$15",
+      "$20"
     ],
-    "correctAnswer": 1,
-    "explanation": "The shopkeeper offered Della $20 for her hair."
+    "correctAnswer": 3,
+    "explanation": "Della received $20 for her hair and used the money to buy Jim's present."
   },
   {
     "question": "What did Della buy for Jim?",
     "options": [
       "A gold ring",
       "A new watch",
-      "A platinum chain for his watch",
+      "A chain for his watch",
       "A set of combs"
     ],
     "correctAnswer": 2,
-    "explanation": "Della bought a beautiful platinum chain for Jim's precious watch."
+    "explanation": "Della bought a chain for Jim's gold watch. The wording avoids specifying the material because the versions describe it differently."
   },
   {
-    "question": "Why did Della spend every cent she had?",
+    "question": "Why did Della spend nearly all her money on Jim's present?",
     "options": [
-      "She wanted to buy food for a party",
       "She wanted to impress her neighbours",
-      "She wanted to purchase new clothes",
-      "She wanted to give Jim a gift worthy of him"
-    ],
-    "correctAnswer": 3,
-    "explanation": "Della wanted to make Jim happy and believed he deserved a special gift."
-  },
-  {
-    "question": "What worried Della after she returned home?",
-    "options": [
-      "How Jim would react to her short hair",
-      "Whether Jim would come home",
-      "Whether the dinner would be ready",
-      "Whether she had lost the gift"
-    ],
-    "correctAnswer": 0,
-    "explanation": "Della wondered what Jim would think when he saw that she had sold her hair."
-  },
-  {
-    "question": "What was Jim's first reaction when he saw Della?",
-    "options": [
-      "He laughed loudly",
-      "He stared silently at her short hair",
-      "He immediately left the apartment",
-      "He began opening his gift"
+      "She wanted to buy something worthy of Jim",
+      "Jim had told her what to buy",
+      "She wanted to replace her own jewellery"
     ],
     "correctAnswer": 1,
-    "explanation": "Jim stared silently at Della's short hair when he arrived home."
+    "explanation": "Della wanted to give Jim a special present that showed how much she loved him."
   },
   {
-    "question": "What gift did Jim give Della?",
+    "question": "Why was Della worried after returning home?",
     "options": [
-      "A gold necklace",
-      "A platinum chain",
-      "A set of combs",
-      "A beautiful dress"
+      "She had lost the present",
+      "She had spent too much money on food",
+      "She was afraid Jim might be unhappy about her short hair",
+      "She had forgotten where she bought the chain"
     ],
     "correctAnswer": 2,
-    "explanation": "Jim gave Della the set of combs she had admired for a long time."
+    "explanation": "Della worried about how Jim would react to her short hair."
   },
   {
-    "question": "Why could Della not use Jim's gift as intended?",
+    "question": "How did Jim react when he first saw Della's short hair?",
+    "options": [
+      "He immediately became angry",
+      "He laughed at her",
+      "He stared at her silently in surprise",
+      "He left the house without speaking"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Jim was surprised when he saw Della's short hair and initially stared at her without speaking."
+  },
+  {
+    "question": "What present had Jim bought for Della?",
+    "options": [
+      "A necklace",
+      "A set of beautiful combs for her hair",
+      "A new dress",
+      "A silver bracelet"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Jim had bought Della a set of beautiful combs for her long hair."
+  },
+  {
+    "question": "Why could Della not use the combs as she had intended?",
     "options": [
       "The combs were broken",
-      "She had lost the combs",
-      "The combs belonged to someone else",
+      "She had given them away",
+      "Jim had bought the wrong kind",
       "She had sold her long hair"
     ],
     "correctAnswer": 3,
-    "explanation": "Della had sold her hair to buy Jim's present, so she could not use the combs on her long hair."
+    "explanation": "Della had sold her long hair to buy Jim's present, so she could not use the combs as she had intended."
   },
   {
-    "question": "Why could Jim not use Della's gift as intended?",
+    "question": "Why could Jim not use the gift Della bought for him?",
     "options": [
-      "He had sold his watch",
       "The chain was too short",
-      "He did not like the chain",
-      "The chain was damaged"
-    ],
-    "correctAnswer": 0,
-    "explanation": "Jim had sold his watch to buy Della's combs."
-  },
-  {
-    "question": "What is ironic about the couple's gifts?",
-    "options": [
-      "They forgot to buy gifts for each other",
-      "Each sold the possession needed to use the other's gift",
-      "They bought exactly the same gift",
-      "They exchanged gifts before Christmas"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Della sold her hair to buy the chain, while Jim sold his watch to buy the combs."
-  },
-  {
-    "question": "What do Jim and Della's sacrifices mainly demonstrate?",
-    "options": [
-      "The importance of becoming wealthy",
-      "The need to buy expensive presents",
-      "Their deep love and willingness to sacrifice for each other",
-      "The importance of keeping possessions secret"
+      "He did not like the gift",
+      "He had sold his gold watch",
+      "The chain was broken"
     ],
     "correctAnswer": 2,
-    "explanation": "Although their gifts could not be used as intended, both showed how deeply they loved each other."
+    "explanation": "Jim had sold his gold watch to buy Della's combs, so he could not use the chain with his watch."
+  },
+  {
+    "question": "What is the main irony at the end of the story?",
+    "options": [
+      "Both presents were too expensive",
+      "Each had sold the very possession needed to use the other's gift",
+      "Neither of them wanted a Christmas present",
+      "They had bought exactly the same gift"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Della sold her hair to buy Jim a chain, while Jim sold his watch to buy Della combs. As a result, neither could use the gift as originally intended."
+  },
+  {
+    "question": "What do Jim and Della's sacrifices teach us about love?",
+    "options": [
+      "Expensive gifts are the most important",
+      "People should never sell their possessions",
+      "Love is shown through generosity and selfless sacrifice",
+      "Christmas presents should always be practical"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Their sacrifices show that love is expressed through generosity, thoughtfulness and putting another person's happiness first."
   }
 ]
