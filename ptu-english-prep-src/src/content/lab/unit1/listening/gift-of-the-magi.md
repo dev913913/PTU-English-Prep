@@ -8,4 +8,6 @@ Listen to the fuller narration for a more emotional experience of O. Henry's cla
 
 Choose the animated story instead. Its visuals can help you follow the plot and understand what happens.
 
+**Source credit:** The VOA narration is provided by [VOA Learning English](https://learningenglish.voanews.com/). Story by O. Henry.
+
 After listening to either version, complete the quiz below.
