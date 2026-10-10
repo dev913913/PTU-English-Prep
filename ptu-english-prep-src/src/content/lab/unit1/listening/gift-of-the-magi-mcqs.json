@@ -1,0 +1,168 @@
+
+[
+  {
+    "question": "When does the story take place?",
+    "options": [
+      "One day before Christmas",
+      "On New Year's Eve",
+      "During the summer holidays",
+      "On Jim's birthday"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The story begins by saying that Christmas was only one day away."
+  },
+  {
+    "question": "How much money did Della have?",
+    "options": [
+      "$5.20",
+      "$1.87",
+      "$20.00",
+      "$10.50"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Della counted her savings and found that she had only $1.87."
+  },
+  {
+    "question": "Why was Della worried about buying a gift?",
+    "options": [
+      "Jim did not like Christmas",
+      "The shops were closed",
+      "She did not have enough money",
+      "Jim had already bought her a gift"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Money was scarce, and Della wanted to buy Jim a special gift."
+  },
+  {
+    "question": "What were Jim and Della's two most treasured possessions?",
+    "options": [
+      "A gold ring and a necklace",
+      "A beautiful dress and a coat",
+      "A silver chain and a bracelet",
+      "Jim's gold watch and Della's beautiful hair"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The narration identifies Jim's gold watch and Della's magnificent hair as their most precious possessions."
+  },
+  {
+    "question": "Where did Della go to sell her hair?",
+    "options": [
+      "A shop that bought and sold human hair",
+      "A jewellery shop",
+      "A clothing store",
+      "A beauty salon that sold wigs only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Della entered a shop that bought and sold human hair."
+  },
+  {
+    "question": "How much money did Della receive for her hair?",
+    "options": [
+      "$10",
+      "$20",
+      "$25",
+      "$30"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The shopkeeper offered Della $20 for her hair."
+  },
+  {
+    "question": "What did Della buy for Jim?",
+    "options": [
+      "A gold ring",
+      "A new watch",
+      "A platinum chain for his watch",
+      "A set of combs"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Della bought a beautiful platinum chain for Jim's precious watch."
+  },
+  {
+    "question": "Why did Della spend every cent she had?",
+    "options": [
+      "She wanted to buy food for a party",
+      "She wanted to impress her neighbours",
+      "She wanted to purchase new clothes",
+      "She wanted to give Jim a gift worthy of him"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Della wanted to make Jim happy and believed he deserved a special gift."
+  },
+  {
+    "question": "What worried Della after she returned home?",
+    "options": [
+      "How Jim would react to her short hair",
+      "Whether Jim would come home",
+      "Whether the dinner would be ready",
+      "Whether she had lost the gift"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Della wondered what Jim would think when he saw that she had sold her hair."
+  },
+  {
+    "question": "What was Jim's first reaction when he saw Della?",
+    "options": [
+      "He laughed loudly",
+      "He stared silently at her short hair",
+      "He immediately left the apartment",
+      "He began opening his gift"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Jim stared silently at Della's short hair when he arrived home."
+  },
+  {
+    "question": "What gift did Jim give Della?",
+    "options": [
+      "A gold necklace",
+      "A platinum chain",
+      "A set of combs",
+      "A beautiful dress"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Jim gave Della the set of combs she had admired for a long time."
+  },
+  {
+    "question": "Why could Della not use Jim's gift as intended?",
+    "options": [
+      "The combs were broken",
+      "She had lost the combs",
+      "The combs belonged to someone else",
+      "She had sold her long hair"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Della had sold her hair to buy Jim's present, so she could not use the combs on her long hair."
+  },
+  {
+    "question": "Why could Jim not use Della's gift as intended?",
+    "options": [
+      "He had sold his watch",
+      "The chain was too short",
+      "He did not like the chain",
+      "The chain was damaged"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Jim had sold his watch to buy Della's combs."
+  },
+  {
+    "question": "What is ironic about the couple's gifts?",
+    "options": [
+      "They forgot to buy gifts for each other",
+      "Each sold the possession needed to use the other's gift",
+      "They bought exactly the same gift",
+      "They exchanged gifts before Christmas"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Della sold her hair to buy the chain, while Jim sold his watch to buy the combs."
+  },
+  {
+    "question": "What do Jim and Della's sacrifices mainly demonstrate?",
+    "options": [
+      "The importance of becoming wealthy",
+      "The need to buy expensive presents",
+      "Their deep love and willingness to sacrifice for each other",
+      "The importance of keeping possessions secret"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Although their gifts could not be used as intended, both showed how deeply they loved each other."
+  }
+]
