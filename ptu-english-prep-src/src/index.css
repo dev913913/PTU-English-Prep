@@ -160,7 +160,8 @@ body {
   border-radius: 8px;
   overflow: hidden;
 }
-.notes-content .video-embed iframe {
+.notes-content .video-embed iframe, 
+.notes-content .video-embed video {
   position: absolute;
   top: 0;
   left: 0;
