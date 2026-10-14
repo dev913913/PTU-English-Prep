@@ -50,5 +50,12 @@ export const pyqPapers = [
   session: 'June 2026',
   date: '2026-06-13',
   file: '/pyq/english-june-2026.pdf',
+},
+  {
+  id: 'nov-2026-english-guess-papers',
+  subject: 'Guess Papers: English (AECC) — BTHU103-18',
+  session: 'November 2026',
+  date: '2026-11',
+  file: '/pyq/BTHU-103-18_English_Guess_Papers_for_Nov_2026_End_Sem_Exams.pdf',
 }
 ]
