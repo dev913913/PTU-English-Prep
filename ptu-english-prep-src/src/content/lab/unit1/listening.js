@@ -1,11 +1,33 @@
-// List of listening exercises for this unit — add a new entry here whenever you add a new exercise file.
-// The "id" must match the .md filename (without .md) in the listening/ folder.
+// List of listening exercises for this unit.
+// The id must match the .md filename in the listening/ folder.
 
 export const listeningExercises = [
-  { id: 'city-mouse', title: 'Listening Exercise 1: The City Mouse and the Country Mouse' },
-  { id: 'fox-crow', title: 'Listening Exercise 2: The Fox and the Crow' },
-  { id: 'frightened-lion', title: 'Listening Exercise 3: The Frightened Lion' },
-  { id: 'dog-and-bone', title: 'Listening Exercise 4: The Dog and his Bone' },
-  { id: 'jack-and-the-beanstalk', title: 'Listening Exercise 5: Jack and the Beanstalk' },
-  { id: 'gift-of-the-magi', title: 'Listening Exercise 6: The Gift of the Magi' }
+  {
+    id: 'city-mouse',
+    title: 'Listening Exercise 1: The City Mouse and the Country Mouse'
+  },
+  {
+    id: 'fox-crow',
+    title: 'Listening Exercise 2: The Fox and the Crow'
+  },
+  {
+    id: 'frightened-lion',
+    title: 'Listening Exercise 3: The Frightened Lion'
+  },
+  {
+    id: 'dog-and-bone',
+    title: 'Listening Exercise 4: The Dog and his Bone'
+  },
+  {
+    id: 'jack-and-the-beanstalk',
+    title: 'Listening Exercise 5: Jack and the Beanstalk'
+  },
+  {
+    id: 'gift-of-the-magi',
+    title: 'Listening Exercise 6: The Gift of the Magi'
+  },
+  {
+    id: 'last-leaf',
+    title: 'Listening Exercise 7: The Last Leaf'
+  }
 ]
