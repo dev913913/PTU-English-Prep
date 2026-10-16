@@ -73,7 +73,7 @@ export default function useSwipeNavigation() {
       start = null
 
       if (elapsed > MAX_DURATION) return
-      if (Math.abs(dx) < MIN_DISTANCE) return
+      if (Math.abs(dx) < window.innerWidth * MIN_DISTANCE_FRACTION) return
       if (Math.abs(dx) < Math.abs(dy) * DIRECTION_RATIO) return
       // Student was selecting text, not swiping
       const selection = window.getSelection()
