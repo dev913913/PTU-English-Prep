@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
+import ShareButton from ‘./ShareButton’
 
 export default function Layout({ children }) {
   const location = useLocation()
@@ -34,6 +35,7 @@ export default function Layout({ children }) {
             {navLink('/theory', 'Theory')}
             {navLink('/lab', 'Lab')}
             {navLink('/pyq', 'PYQ')}
+            <ShareButton />
           </nav>
         </div>
       </header>
