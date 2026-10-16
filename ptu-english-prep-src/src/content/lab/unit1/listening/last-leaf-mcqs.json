@@ -1,0 +1,112 @@
+[
+  {
+    "question": "Where do Sue and Johnsy live?",
+    "options": [
+      "In a village in Italy",
+      "In the Greenwich Village area of New York",
+      "In a small town in England",
+      "In a farmhouse outside New York"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sue and Johnsy share a studio apartment in the Greenwich Village area of New York."
+  },
+  {
+    "question": "What illness does Johnsy suffer from?",
+    "options": [
+      "Tuberculosis",
+      "Influenza",
+      "Pneumonia",
+      "Malaria"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Johnsy becomes seriously ill with pneumonia."
+  },
+  {
+    "question": "What does Johnsy believe will happen when the last ivy leaf falls?",
+    "options": [
+      "She will recover completely",
+      "Sue will leave her",
+      "The doctor will stop visiting",
+      "She will die"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Johnsy connects the falling leaves with her own life and believes she will die when the last leaf falls."
+  },
+  {
+    "question": "What does the doctor say Johnsy needs in order to recover?",
+    "options": [
+      "A warmer apartment only",
+      "A stronger desire to live",
+      "A trip to Italy",
+      "A different artist to care for her"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The doctor believes Johnsy's willingness to live is an important factor in her recovery."
+  },
+  {
+    "question": "What does Johnsy dream of painting someday?",
+    "options": [
+      "The streets of New York",
+      "A portrait of Sue",
+      "The Bay of Naples in Italy",
+      "A large ivy vine"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Johnsy hopes to paint the Bay of Naples in Italy someday."
+  },
+  {
+    "question": "Who is Behrman?",
+    "options": [
+      "A doctor who treats Johnsy",
+      "A magazine editor",
+      "A wealthy art collector",
+      "An elderly painter who lives downstairs"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Behrman is an elderly painter who lives on the ground floor of the building."
+  },
+  {
+    "question": "What happens to the last ivy leaf after the storm?",
+    "options": [
+      "It remains on the vine",
+      "It falls into the yard",
+      "It changes completely to yellow",
+      "Sue removes it from the wall"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The last leaf remains on the vine even after a night of strong wind and rain."
+  },
+  {
+    "question": "How does the last leaf affect Johnsy?",
+    "options": [
+      "It makes her more frightened",
+      "It encourages her to regain the will to live",
+      "It convinces her to leave New York",
+      "It makes her angry with Sue"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Seeing the leaf survive the storm changes Johnsy's outlook and helps her regain hope."
+  },
+  {
+    "question": "What does Sue discover about Behrman at the end of the story?",
+    "options": [
+      "He has moved to another city",
+      "He has sold his paintings",
+      "He has died of pneumonia",
+      "He has become a famous artist"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Behrman dies of pneumonia after the terrible night when he creates his masterpiece."
+  },
+  {
+    "question": "Why is Behrman's final painting called his masterpiece?",
+    "options": [
+      "It wins an international art competition",
+      "It is the most expensive painting in New York",
+      "It is the first painting he sells",
+      "It gives Johnsy hope and helps her choose to live"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Behrman paints a realistic-looking leaf on the wall during the storm. His sacrifice gives Johnsy hope, making the painting his masterpiece."
+  }
+    ]
