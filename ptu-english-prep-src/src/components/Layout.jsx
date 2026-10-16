@@ -1,8 +1,10 @@
 import { Link, useLocation } from 'react-router-dom'
 import ShareButton from './ShareButton'
+import useSwipeNavigation from '../hooks/useSwipeNavigation'
 
 export default function Layout({ children }) {
   const location = useLocation()
+  useSwipeNavigation()
 
   const navLink = (to, label) => {
     const active =
