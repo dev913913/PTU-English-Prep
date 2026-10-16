@@ -6,7 +6,7 @@
   <iframe
     src="https://learningenglish.voanews.org/embed/player/0/3135629.html?type=video"
     title="The Last Leaf — VOA Learning English"
-    width="100%"
+    width="640"
     height="360"
     frameborder="0"
     scrolling="no"
