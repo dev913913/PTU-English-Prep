@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 
-const SHARE_TEXT = ‘PTU English Prep by Mr. Dev Kumar — free notes, quizzes and previous year papers for AECC English (Theory & Lab).’
+const SHARE_TEXT = 'PTU English Prep by Mr. Dev Kumar — free notes, quizzes and previous year papers for AECC English (Theory & Lab).'
 
 function copyText(text) {
   if (navigator.clipboard && window.isSecureContext) {
