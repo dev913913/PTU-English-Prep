@@ -197,7 +197,7 @@ export default function QuizWidget({ mcqs, title, storageKey }) {
   }
 
   return (
-    <div className="mt-8 bg-white/40 border border-ink/10 rounded-lg p-6">
+       <div data-no-swipe className="mt-8 bg-white/40 border border-ink/10 rounded-lg p-6">
       <div className="mb-3 flex items-start justify-between gap-3">
         <div>
           <p className="font-mono text-xs text-ink-soft">Question {current + 1} of {safeMcqs.length}</p>
