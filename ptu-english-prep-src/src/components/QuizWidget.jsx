@@ -145,7 +145,7 @@ export default function QuizWidget({ mcqs, title, storageKey }) {
 
   if (finished) {
     return (
-      <div className="mt-8">
+      <div data-no-swipe className="mt-8">
         <div className="bg-white/60 border border-ink/10 rounded-lg p-8 text-center">
           <p className="font-mono text-xs text-rule tracking-widest mb-2">QUIZ COMPLETE</p>
           <p className="font-display text-4xl font-semibold text-board">
