@@ -4,9 +4,9 @@ import { useLocation, useNavigate } from 'react-router-dom'
 // Forward order for swiping left. Swiping right goes the other way.
 const SECTIONS = ['/', '/theory', '/lab', '/pyq']
 
-const MIN_DISTANCE = 60   // px the finger must travel sideways
-const MAX_DURATION = 600  // ms - slow drags are not swipes
-const DIRECTION_RATIO = 1.8 // sideways movement must beat vertical by this much
+ const MIN_DISTANCE_FRACTION = 0.35 // finger must travel this share of the screen width sideways
+const MAX_DURATION = 500  // ms - slow drags are not swipes
+const DIRECTION_RATIO = 3 // sideways movement must beat vertical by this much
 const EDGE_ZONE = 24      // px - ignore swipes starting at screen edges (browser Back gesture)
 
 /** Which main section a path belongs to: 0 Home, 1 Theory, 2 Lab, 3 PYQ, -1 unknown. */
