@@ -18,12 +18,14 @@
 
 html {
   scroll-behavior: smooth;
+  
 }
 
 body {
   background-color: var(--color-paper);
   color: var(--color-ink);
   font-family: var(--font-body);
+  overflow-x: clip;
 }
 
 ::selection {
@@ -119,7 +121,9 @@ body {
   margin: 2rem 0;
 }
 .notes-content table {
-  width: 100%;
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
   border-collapse: collapse;
   margin: 1rem 0 1.5rem;
   font-size: 0.95rem;
