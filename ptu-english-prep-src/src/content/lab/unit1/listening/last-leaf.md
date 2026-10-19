@@ -4,7 +4,7 @@
 
 <div class="video-embed">
   <iframe
-    src="https://learningenglish.voanews.org/embed/player/0/3135629.html?type=video"
+    src="https://learningenglish.voanews.com/embed/player/0/3135629.html?type=video"
     title="The Last Leaf — VOA Learning English"
     width="640"
     height="360"
