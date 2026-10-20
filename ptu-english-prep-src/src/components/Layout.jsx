@@ -2,7 +2,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import ShareButton from './ShareButton'
 import useSwipeNavigation from '../hooks/useSwipeNavigation'
-
+import usePageMeta from '../hooks/usePageMeta'
 const TABS = [
   { to: '/', label: 'Home' },
   { to: '/theory', label: 'Theory' },
@@ -13,7 +13,7 @@ const TABS = [
 export default function Layout({ children }) {
   const location = useLocation()
   useSwipeNavigation()
-
+usePageMeta()
   const navRef = useRef(null)
   const linkRefs = useRef({})
   const [pill, setPill] = useState({ left: 0, top: 0, width: 0, height: 0, visible: false })
