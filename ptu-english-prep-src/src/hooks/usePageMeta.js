@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
 import { theoryUnits, labUnits } from '../content/syllabus'
 import { getUnitParts, getListeningExercises } from '../lib/content'
@@ -16,7 +16,11 @@ const HOME = {
     'Free PTU (IKGPTU) AECC English notes, quizzes, listening practice and previous year question papers for Theory BTHU103 and Lab BTHU104, by Dev Kumar.',
 }
 
-/** Works out the title, description and breadcrumb trail for a path. */
+/** Makes sure a line ends with sentence punctuation. */
+function sentence(text) {
+  const t = text.trim()
+  return /[.!?]$/.test(t) ? t : `${t}.`
+}
 function describePath(pathname) {
   const path = pathname.length > 1 ? pathname.replace(/\/+$/, '') : pathname
   const seg = path.split('/').filter(Boolean)
@@ -103,7 +107,7 @@ function describePath(pathname) {
   if (part && seg.length === 3) {
     return {
       title: `${part.title} — ${unitName} — ${SITE}`,
-      description: `${part.blurb || `Notes on ${part.title}`} Free PTU AECC English ${unitName}.`,
+      description: `${sentence(part.blurb || `Notes on ${part.title}`)} Free PTU AECC English ${unitName}.',
       path,
       crumbs: [...crumbs, trackCrumb, unitCrumb, { name: part.title, path }],
     }
@@ -130,11 +134,18 @@ const makeMeta = (attr, key) => () => {
 
 /** Keeps the page title, description, canonical link and breadcrumb data in step with the route. */
 export default function usePageMeta() {
-  const { pathname } = useLocation()
+  const { pathname, search, hash } = useLocation()
+  const navigate = useNavigate()
 
   useEffect(() => {
+    // All real addresses are lowercase: send mixed-case ones to the lowercase version
+    const lower = pathname.toLowerCase()
+    if (lower !== pathname) {
+      navigate(`${lower}${search}${hash}`, { replace: true })
+      return
+    }
+
     const info = describePath(pathname)
-    const url = `${BASE_URL}${info.path === '/' ? '/' : info.path}`
 
     document.title = info.title
     setMeta('meta[name="description"]', makeMeta('name', 'description'), info.description)
@@ -186,5 +197,5 @@ export default function usePageMeta() {
     } else if (script) {
       script.remove()
     }
-  }, [pathname])
+  }, [pathname, search, hash, navigate])
 }
