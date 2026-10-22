@@ -1,10 +1,26 @@
 // Vercel serverless function: marks a student's written answers with a free AI.
-// Gemini is tried first, Groq second. If both fail the student gets model
+// Gemini models are tried first, then Groq. If all fail the student gets model
 // answers and key points, but NO marks (we never guess a mark).
 import { KEYS } from './_keys/index.js'
 
 const MAX_ANSWER_CHARS = 600
-const PROVIDER_TIMEOUT_MS = 12000
+const PER_CALL_TIMEOUT_MS = 10000
+const TOTAL_BUDGET_MS = 24000 // must stay under maxDuration (30s) in vercel.json
+
+// Tried in this order. These names worked in Dev's earlier project (RPD = free requests per day).
+// Override without touching code: GEMINI_MODELS="modelA,modelB" and GROQ_MODELS="modelA,modelB".
+const DEFAULT_GEMINI_MODELS = [
+  'gemini-3.1-flash-lite-preview', // 500 RPD
+  'gemini-3-flash-preview', // 20 RPD
+  'gemini-2.5-flash-lite', // 20 RPD
+  'gemma-3-27b-it', // 14,400 RPD, last resort
+]
+const DEFAULT_GROQ_MODELS = ['llama-3.3-70b-versatile', 'llama3-8b-8192']
+
+function modelList(envName, defaults) {
+  const fromEnv = (process.env[envName] || '').split(',').map((m) => m.trim()).filter(Boolean)
+  return fromEnv.length ? fromEnv : defaults
+}
 const RATE_LIMIT = { windowMs: 10 * 60 * 1000, perIp: 6, globalPerHour: 300 }
 
 // ---- tiny in-memory rate limit (best effort: each server instance keeps its own count) ----
@@ -63,9 +79,11 @@ Include exactly one result for each question shown above.`
 }
 
 // ---- provider calls ----
-async function fetchWithTimeout(url, options) {
+async function fetchWithTimeout(url, options, deadline) {
+  const remaining = deadline - Date.now()
+  if (remaining < 1500) throw new Error('out of time')
   const controller = new AbortController()
-  const timer = setTimeout(() => controller.abort(), PROVIDER_TIMEOUT_MS)
+  const timer = setTimeout(() => controller.abort(), Math.min(PER_CALL_TIMEOUT_MS, remaining))
   try {
     return await fetch(url, { ...options, signal: controller.signal })
   } finally {
@@ -73,47 +91,50 @@ async function fetchWithTimeout(url, options) {
   }
 }
 
-async function askGemini(prompt) {
+async function askGemini(model, prompt, deadline) {
   const apiKey = process.env.GEMINI_API_KEY
   if (!apiKey) throw new Error('gemini key not set')
-  const model = process.env.GEMINI_MODEL || 'gemini-2.5-flash'
+  // Gemma models reject JSON mode, so ask for JSON only through the prompt there.
+  const generationConfig = { temperature: 0, maxOutputTokens: 1500 }
+  if (!/^gemma/i.test(model)) generationConfig.responseMimeType = 'application/json'
   const res = await fetchWithTimeout(
-    `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`,
+    `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent?key=${apiKey}`,
     {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'x-goog-api-key': apiKey },
-      body: JSON.stringify({
-        contents: [{ role: 'user', parts: [{ text: prompt }] }],
-        generationConfig: { temperature: 0, responseMimeType: 'application/json', maxOutputTokens: 1500 },
-      }),
-    }
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ contents: [{ role: 'user', parts: [{ text: prompt }] }], generationConfig }),
+    },
+    deadline
   )
-  if (!res.ok) throw new Error(`gemini http ${res.status}`)
+  if (!res.ok) throw new Error(`gemini ${model} http ${res.status}`)
   const data = await res.json()
   const text = data?.candidates?.[0]?.content?.parts?.map((p) => p.text || '').join('') || ''
-  if (!text) throw new Error('gemini empty')
+  if (!text) throw new Error(`gemini ${model} empty`)
   return text
 }
 
-async function askGroq(prompt) {
+async function askGroq(model, prompt, deadline) {
   const apiKey = process.env.GROQ_API_KEY
   if (!apiKey) throw new Error('groq key not set')
-  const model = process.env.GROQ_MODEL || 'llama-3.3-70b-versatile'
-  const res = await fetchWithTimeout('https://api.groq.com/openai/v1/chat/completions', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
-    body: JSON.stringify({
-      model,
-      temperature: 0,
-      max_tokens: 1500,
-      response_format: { type: 'json_object' },
-      messages: [{ role: 'user', content: prompt }],
-    }),
-  })
-  if (!res.ok) throw new Error(`groq http ${res.status}`)
+  const res = await fetchWithTimeout(
+    'https://api.groq.com/openai/v1/chat/completions',
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
+      body: JSON.stringify({
+        model,
+        temperature: 0,
+        max_tokens: 1500,
+        response_format: { type: 'json_object' },
+        messages: [{ role: 'user', content: prompt }],
+      }),
+    },
+    deadline
+  )
+  if (!res.ok) throw new Error(`groq ${model} http ${res.status}`)
   const data = await res.json()
   const text = data?.choices?.[0]?.message?.content || ''
-  if (!text) throw new Error('groq empty')
+  if (!text) throw new Error(`groq ${model} empty`)
   return text
 }
 
@@ -190,15 +211,21 @@ export default async function handler(req, res) {
   }
 
   const prompt = buildPrompt(key, answers)
+  const deadline = Date.now() + TOTAL_BUDGET_MS
+  const attempts = []
+  if (process.env.GEMINI_API_KEY) for (const m of modelList('GEMINI_MODELS', DEFAULT_GEMINI_MODELS)) attempts.push(['gemini', m, askGemini])
+  if (process.env.GROQ_API_KEY) for (const m of modelList('GROQ_MODELS', DEFAULT_GROQ_MODELS)) attempts.push(['groq', m, askGroq])
+
   let marking = null
   let provider = ''
-  for (const [name, ask] of [['gemini', askGemini], ['groq', askGroq]]) {
+  for (const [name, model, ask] of attempts) {
+    if (Date.now() > deadline - 1500) break
     try {
-      marking = validateMarking(await ask(prompt), key, answeredIds)
-      provider = name
+      marking = validateMarking(await ask(model, prompt, deadline), key, answeredIds)
+      provider = `${name}:${model}`
       break
     } catch {
-      // try the next provider
+      // try the next model
     }
   }
 
