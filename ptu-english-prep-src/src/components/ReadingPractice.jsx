@@ -30,20 +30,41 @@ function saveDraft(key, value) {
   }
 }
 
-// Only trust a reply that has the shape we expect.
+const isText = (v) => typeof v === 'string'
+
+// Only trust a reply that has the shape we expect. Everything that gets shown on screen
+// is checked and copied into plain strings and numbers, so a strange reply can never
+// crash the page.
 function readReply(data, questions) {
   if (!data || typeof data !== 'object' || !Array.isArray(data.results)) return null
+  if (data.status !== 'evaluated' && data.status !== 'unavailable') return null
+  const evaluated = data.status === 'evaluated'
+
   const byId = {}
-  for (const r of data.results) {
-    if (r && typeof r.id === 'string') byId[r.id] = r
+  for (const q of questions) {
+    const r = data.results.find((x) => x && x.id === q.id)
+    if (!r || !isText(r.modelAnswer)) return null
+    if (!Array.isArray(r.keyPoints) || !r.keyPoints.every(isText)) return null
+    const clean = { modelAnswer: r.modelAnswer, keyPoints: r.keyPoints }
+    if (evaluated) {
+      if (!Number.isInteger(r.marks) || !Number.isInteger(r.max) || r.max < 1 || r.marks < 0 || r.marks > r.max) return null
+      clean.marks = r.marks
+      clean.max = r.max
+      clean.feedback = isText(r.feedback) ? r.feedback : ''
+    }
+    byId[q.id] = clean
   }
-  if (!questions.every((q) => byId[q.id])) return null
-  if (data.status === 'evaluated') {
-    const ok = questions.every((q) => Number.isInteger(byId[q.id].marks))
-    return ok ? { ...data, byId } : null
+
+  if (evaluated) {
+    if (!Number.isInteger(data.total) || !Number.isInteger(data.max) || data.total < 0 || data.total > data.max) return null
+    return { status: 'evaluated', total: data.total, max: data.max, byId }
   }
-  if (data.status === 'unavailable') return { ...data, byId }
-  return null
+  return {
+    status: 'unavailable',
+    message: isText(data.message) ? data.message : 'Automatic marking is not available right now.',
+    reasons: Array.isArray(data.reasons) ? data.reasons.filter(isText) : [],
+    byId,
+  }
 }
 
 export default function ReadingPractice({ exercise, exerciseId }) {
