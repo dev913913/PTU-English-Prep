@@ -1,0 +1,12 @@
+{
+  "title": "Reading Practice: The Value of Listening",
+  "maxMarksPerQuestion": 2,
+  "passage": "Most people think that good communication means speaking well. In reality, listening is at least as important. A good listener does not simply wait for his turn to talk; he pays full attention, notices the speaker's tone, and asks questions when something is unclear. This habit prevents misunderstandings that often waste time in offices and classrooms. It also makes the speaker feel respected, which builds trust. Poor listeners, on the other hand, interrupt, check their phones, and answer before the speaker has finished. Such behaviour sends a message that the other person is not worth the time. Fortunately, listening can be practised. A person can begin by making eye contact, summarising what was heard, and resisting the urge to interrupt.",
+  "questions": [
+    { "id": "q1", "text": "According to the passage, why is listening at least as important as speaking?" },
+    { "id": "q2", "text": "What does a good listener do?" },
+    { "id": "q3", "text": "Name two habits of a poor listener." },
+    { "id": "q4", "text": "What message does poor listening send to the speaker?" },
+    { "id": "q5", "text": "How can a person improve their listening skills?" }
+  ]
+}
