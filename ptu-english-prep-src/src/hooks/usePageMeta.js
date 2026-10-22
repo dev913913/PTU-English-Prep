@@ -1,5 +1,5 @@
+import { useEffect } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-import { useLocation } from 'react-router-dom'
 import { theoryUnits, labUnits } from '../content/syllabus'
 import { getUnitParts, getListeningExercises } from '../lib/content'
 
@@ -21,6 +21,8 @@ function sentence(text) {
   const t = text.trim()
   return /[.!?]$/.test(t) ? t : `${t}.`
 }
+
+/** Works out the title, description and breadcrumb trail for a path. */
 function describePath(pathname) {
   const path = pathname.length > 1 ? pathname.replace(/\/+$/, '') : pathname
   const seg = path.split('/').filter(Boolean)
@@ -107,7 +109,7 @@ function describePath(pathname) {
   if (part && seg.length === 3) {
     return {
       title: `${part.title} — ${unitName} — ${SITE}`,
-      description: `${sentence(part.blurb || `Notes on ${part.title}`)} Free PTU AECC English ${unitName}.',
+      description: `${sentence(part.blurb || `Notes on ${part.title}`)} Free PTU AECC English ${unitName}.`,
       path,
       crumbs: [...crumbs, trackCrumb, unitCrumb, { name: part.title, path }],
     }
@@ -126,12 +128,6 @@ function setMeta(selector, create, value) {
   else el.setAttribute('content', value)
 }
 
-const makeMeta = (attr, key) => () => {
-  const m = document.createElement('meta')
-  m.setAttribute(attr, key)
-  return m
-}
-
 /** Keeps the page title, description, canonical link and breadcrumb data in step with the route. */
 export default function usePageMeta() {
   const { pathname, search, hash } = useLocation()
@@ -146,21 +142,14 @@ export default function usePageMeta() {
     }
 
     const info = describePath(pathname)
+    const url = `${BASE_URL}${info.path === '/' ? '/' : info.path}`
 
     document.title = info.title
-    setMeta('meta[name="description"]', makeMeta('name', 'description'), info.description)
-    setMeta('meta[property="og:title"]', makeMeta('property', 'og:title'), info.title)
-    setMeta('meta[property="og:description"]', makeMeta('property', 'og:description'), info.description)
-    setMeta('meta[property="og:url"]', makeMeta('property', 'og:url'), url)
-    setMeta(
-      'link[rel="canonical"]',
-      () => {
-        const l = document.createElement('link')
-        l.setAttribute('rel', 'canonical')
-        return l
-      },
-      url
-    )
+    setMeta('meta[name="description"]', () => Object.assign(document.createElement('meta'), { name: 'description' }), info.description)
+    setMeta('meta[property="og:title"]', () => { const m = document.createElement('meta'); m.setAttribute('property', 'og:title'); return m }, info.title)
+    setMeta('meta[property="og:description"]', () => { const m = document.createElement('meta'); m.setAttribute('property', 'og:description'); return m }, info.description)
+    setMeta('meta[property="og:url"]', () => { const m = document.createElement('meta'); m.setAttribute('property', 'og:url'); return m }, url)
+    setMeta('link[rel="canonical"]', () => { const l = document.createElement('link'); l.setAttribute('rel', 'canonical'); return l }, url)
 
     // Tell search engines not to index made-up addresses
     let robots = document.head.querySelector('meta[name="robots"]')
@@ -175,7 +164,7 @@ export default function usePageMeta() {
       robots.remove()
     }
 
-    // Breadcrumb trail for search results
+    // Breadcrumb trail for search results (same trail the page shows)
     let script = document.head.querySelector('script#page-breadcrumbs')
     if (info.crumbs.length > 1) {
       if (!script) {
