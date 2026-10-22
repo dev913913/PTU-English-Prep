@@ -1,5 +1,5 @@
 // Vercel serverless function: marks a student's written answers with a free AI.
-// Gemini models are tried first, then Groq. If all fail the student gets model
+// Gemini is tried first, Groq second. If both fail the student gets model
 // answers and key points, but NO marks (we never guess a mark).
 import { KEYS } from './_keys/index.js'
 
@@ -79,13 +79,31 @@ Include exactly one result for each question shown above.`
 }
 
 // ---- provider calls ----
-async function fetchWithTimeout(url, options, deadline) {
+// Short, safe description of a failed HTTP call (never includes the API key).
+async function httpFailure(label, res) {
+  let detail = ''
+  try {
+    detail = (await res.text()).replace(/\s+/g, ' ').slice(0, 160)
+  } catch {
+    // ignore
+  }
+  for (const k of [process.env.GEMINI_API_KEY, process.env.GROQ_API_KEY]) {
+    if (k) detail = detail.split(k).join('***')
+  }
+  return new Error(`${label} http ${res.status}${detail ? ': ' + detail : ''}`)
+}
+
+// One timer covers the request AND reading the reply body, so a provider that sends
+// headers and then stalls cannot hang us past the deadline.
+async function fetchJsonWithTimeout(url, options, deadline, label) {
   const remaining = deadline - Date.now()
   if (remaining < 1500) throw new Error('out of time')
   const controller = new AbortController()
   const timer = setTimeout(() => controller.abort(), Math.min(PER_CALL_TIMEOUT_MS, remaining))
   try {
-    return await fetch(url, { ...options, signal: controller.signal })
+    const res = await fetch(url, { ...options, signal: controller.signal })
+    if (!res.ok) throw await httpFailure(label, res)
+    return await res.json()
   } finally {
     clearTimeout(timer)
   }
@@ -97,17 +115,16 @@ async function askGemini(model, prompt, deadline) {
   // Gemma models reject JSON mode, so ask for JSON only through the prompt there.
   const generationConfig = { temperature: 0, maxOutputTokens: 1500 }
   if (!/^gemma/i.test(model)) generationConfig.responseMimeType = 'application/json'
-  const res = await fetchWithTimeout(
+  const data = await fetchJsonWithTimeout(
     `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent?key=${apiKey}`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ contents: [{ role: 'user', parts: [{ text: prompt }] }], generationConfig }),
     },
-    deadline
+    deadline,
+    `gemini ${model}`
   )
-  if (!res.ok) throw new Error(`gemini ${model} http ${res.status}`)
-  const data = await res.json()
   const text = data?.candidates?.[0]?.content?.parts?.map((p) => p.text || '').join('') || ''
   if (!text) throw new Error(`gemini ${model} empty`)
   return text
@@ -116,7 +133,7 @@ async function askGemini(model, prompt, deadline) {
 async function askGroq(model, prompt, deadline) {
   const apiKey = process.env.GROQ_API_KEY
   if (!apiKey) throw new Error('groq key not set')
-  const res = await fetchWithTimeout(
+  const data = await fetchJsonWithTimeout(
     'https://api.groq.com/openai/v1/chat/completions',
     {
       method: 'POST',
@@ -129,10 +146,9 @@ async function askGroq(model, prompt, deadline) {
         messages: [{ role: 'user', content: prompt }],
       }),
     },
-    deadline
+    deadline,
+    `groq ${model}`
   )
-  if (!res.ok) throw new Error(`groq ${model} http ${res.status}`)
-  const data = await res.json()
   const text = data?.choices?.[0]?.message?.content || ''
   if (!text) throw new Error(`groq ${model} empty`)
   return text
@@ -200,9 +216,12 @@ export default async function handler(req, res) {
   const answeredIds = Object.keys(answers)
   if (answeredIds.length === 0) return send(res, 400, { error: 'Write at least one answer.' })
 
+  const wantDebug = body.debug === true
+  const reasons = []
   const fallback = (message) => ({
     status: 'unavailable',
     message,
+    ...(wantDebug ? { reasons } : {}),
     results: key.questions.map((q) => ({ id: q.id, ...publicDetails(key, q) })),
   })
 
@@ -216,6 +235,10 @@ export default async function handler(req, res) {
   if (process.env.GEMINI_API_KEY) for (const m of modelList('GEMINI_MODELS', DEFAULT_GEMINI_MODELS)) attempts.push(['gemini', m, askGemini])
   if (process.env.GROQ_API_KEY) for (const m of modelList('GROQ_MODELS', DEFAULT_GROQ_MODELS)) attempts.push(['groq', m, askGroq])
 
+  if (attempts.length === 0) {
+    reasons.push('No GEMINI_API_KEY or GROQ_API_KEY is set for this deployment (add them in Vercel, then redeploy).')
+  }
+
   let marking = null
   let provider = ''
   for (const [name, model, ask] of attempts) {
@@ -224,8 +247,10 @@ export default async function handler(req, res) {
       marking = validateMarking(await ask(model, prompt, deadline), key, answeredIds)
       provider = `${name}:${model}`
       break
-    } catch {
-      // try the next model
+    } catch (err) {
+      const why = err && err.message ? String(err.message).slice(0, 220) : 'failed'
+      reasons.push(why)
+      console.error('reading marking attempt failed:', why)
     }
   }
 
