@@ -51,6 +51,7 @@ function readReply(data, questions) {
       clean.marks = r.marks
       clean.max = r.max
       clean.feedback = isText(r.feedback) ? r.feedback : ''
+      clean.language = isText(r.language) ? r.language : ''
     }
     byId[q.id] = clean
   }
@@ -97,7 +98,7 @@ export default function ReadingPractice({ exercise, exerciseId }) {
       })
       const data = await res.json().catch(() => null)
       if (!res.ok) {
-        setErrorText((data && data.error) || 'Something went wrong. Please try again.')
+        setErrorText(data && isText(data.error) && data.error ? data.error : 'Something went wrong. Please try again.')
         setPhase('error')
         return
       }
@@ -217,6 +218,12 @@ export default function ReadingPractice({ exercise, exerciseId }) {
                         {r.marks} / {r.max} marks
                       </p>
                       {r.feedback && <p className="mt-1 text-ink">{r.feedback}</p>}
+                      {r.language && (
+                        <p className="mt-2 text-sm text-ink-soft">
+                          <span className="font-semibold text-board">Language check: </span>
+                          {r.language}
+                        </p>
+                      )}
                     </>
                   )}
                   <p className="mt-3 text-sm font-semibold text-board">Model answer</p>
