@@ -3,9 +3,10 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
 import { theoryUnits, labUnits } from '../content/syllabus'
-import { getUnitParts, getPartContent, getPartMcqs } from '../lib/content'
+import { getUnitParts, getPartContent, getPartMcqs, getReadingExercise } from '../lib/content'
 import Breadcrumb from '../components/Breadcrumb'
 import QuizWidget from '../components/QuizWidget'
+import ReadingPractice from '../components/ReadingPractice'
 
 const TRACK_LABELS = { theory: 'Theory', lab: 'Lab / Practical' }
 
@@ -17,6 +18,7 @@ export default function LabPartPage() {
   const part = parts.find((p) => p.id === partId)
   const content = part ? getPartContent(track, unitId, part.id) : null
   const mcqs = part ? getPartMcqs(track, unitId, part.id) : []
+  const reading = part && part.type === 'reading' ? getReadingExercise(track, unitId, part.id) : null
   const trackLabel = TRACK_LABELS[track]
 
   if (!unit || !part) {
@@ -36,18 +38,22 @@ export default function LabPartPage() {
   ]
 
   return (
-    <div className="max-w-2xl mx-auto px-5 py-10">
+    <div className="max-w-2xl mx-auto px-5 py-10" data-no-swipe={reading ? '' : undefined}>
       <Breadcrumb items={crumbs} />
       <p className="font-mono text-xs text-rule tracking-widest mb-1">PART {part.number}</p>
       <h1 className="font-display text-3xl font-semibold text-board">{part.title}</h1>
 
-      <div className="notebook-page mt-6">
-        <div className="notes-content">
-          <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
-            {content || 'Content coming soon.'}
-          </ReactMarkdown>
+      {reading ? (
+        <ReadingPractice exercise={reading} exerciseId={part.id} />
+      ) : (
+        <div className="notebook-page mt-6">
+          <div className="notes-content">
+            <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
+              {content || 'Content coming soon.'}
+            </ReactMarkdown>
+          </div>
         </div>
-      </div>
+      )}
 
       {mcqs.length > 0 && (
         <QuizWidget
