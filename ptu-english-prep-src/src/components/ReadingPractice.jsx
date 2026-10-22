@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 const MAX_CHARS = 600
-const REQUEST_TIMEOUT_MS = 25000
+const REQUEST_TIMEOUT_MS = 28000
 
 function loadDraft(key) {
   try {
