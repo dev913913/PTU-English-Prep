@@ -3,6 +3,15 @@ import { useState } from 'react'
 const MAX_CHARS = 600
 const REQUEST_TIMEOUT_MS = 28000
 
+// Add ?debug=1 to the page address to see why marking failed (for the teacher only).
+function wantDebug() {
+  try {
+    return new URLSearchParams(window.location.search).get('debug') === '1'
+  } catch {
+    return false
+  }
+}
+
 function loadDraft(key) {
   try {
     const raw = sessionStorage.getItem(key)
@@ -62,7 +71,7 @@ export default function ReadingPractice({ exercise, exerciseId }) {
       const res = await fetch('/api/evaluate-reading', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ exerciseId, answers }),
+        body: JSON.stringify({ exerciseId, answers, debug: wantDebug() }),
         signal: controller.signal,
       })
       const data = await res.json().catch(() => null)
@@ -131,6 +140,13 @@ export default function ReadingPractice({ exercise, exerciseId }) {
         <div className="mt-8 bg-white/60 border border-highlight rounded-lg p-5" role="status">
           <p className="font-display text-lg font-semibold text-board">No marks this time</p>
           <p className="text-ink-soft mt-1">{reply.message}</p>
+          {Array.isArray(reply.reasons) && reply.reasons.length > 0 && (
+            <ul className="mt-3 list-disc pl-5 text-xs font-mono text-ink-soft break-words">
+              {reply.reasons.map((r, i) => (
+                <li key={i}>{r}</li>
+              ))}
+            </ul>
+          )}
         </div>
       )}
 
