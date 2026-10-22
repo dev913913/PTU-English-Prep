@@ -39,7 +39,7 @@ function describePath(pathname) {
     }
   }
 
-  const track = TRACKS[seg[0]]
+  const track = Object.hasOwn(TRACKS, seg[0]) ? TRACKS[seg[0]] : undefined
   if (!track) return { title: `Page not found — ${SITE}`, description: HOME.description, path, crumbs: [], notFound: true }
 
   if (seg.length === 1) {
