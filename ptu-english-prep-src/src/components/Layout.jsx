@@ -25,6 +25,10 @@ usePageMeta()
 
   const activeTo = TABS.find((tab) => isActive(tab.to))?.to
 
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location.pathname])
+
   // Measure the active tab and keep the sliding highlight under it
   useLayoutEffect(() => {
     const measure = () => {

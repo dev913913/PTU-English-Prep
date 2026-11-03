@@ -1,32 +1,167 @@
 [
   {
     "question": "According to the passage, a true leader is someone whose position others would want to:",
-    "options": ["avoid", "emulate", "question", "replace"],
+    "options": [
+      "avoid",
+      "emulate",
+      "question",
+      "replace"
+    ],
     "correctAnswer": 1,
     "explanation": "The passage says that a true leader is one whom others would want to emulate, or follow as an example."
   },
   {
     "question": "A sympathetic or democratic leader understands the problems of:",
-    "options": ["competitors", "customers only", "people at the workplace", "government officials"],
+    "options": [
+      "competitors",
+      "customers only",
+      "people at the workplace",
+      "government officials"
+    ],
     "correctAnswer": 2,
     "explanation": "The passage describes such a leader as understanding workplace problems and encouraging colleagues."
   },
   {
     "question": "In today's competitive world, advancement depends mainly on:",
-    "options": ["age", "years served", "actual performance and results", "social position"],
+    "options": [
+      "age",
+      "years served",
+      "actual performance and results",
+      "social position"
+    ],
     "correctAnswer": 2,
     "explanation": "The passage contrasts performance and results with merely completing many years of service."
   },
   {
     "question": "What can make a person a leader in the true sense?",
-    "options": ["Outstanding work", "Popularity", "Wealth", "Long working hours"],
+    "options": [
+      "Outstanding work",
+      "Popularity",
+      "Wealth",
+      "Long working hours"
+    ],
     "correctAnswer": 0,
     "explanation": "Outstanding work raises a person's stature and makes others want to follow their example."
   },
   {
     "question": "How can a person aspire to become a leader according to the passage?",
-    "options": ["By putting effort in the right direction", "By waiting for seniority", "By avoiding responsibility", "By copying every other person"],
+    "options": [
+      "By putting effort in the right direction",
+      "By waiting for seniority",
+      "By avoiding responsibility",
+      "By copying every other person"
+    ],
     "correctAnswer": 0,
     "explanation": "The passage encourages each person to use firm determination and effort in the right direction while following their own path."
+  },
+  {
+    "question": "In 'A habit called reading', the writer compares reading to physical fitness because both:",
+    "options": [
+      "need expensive equipment",
+      "are finished before an examination",
+      "grow slowly through regular practice",
+      "are only for young people"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage says reading is a habit that grows slowly, like physical fitness."
+  },
+  {
+    "question": "According to the passage, what does a student notice after reading for twenty minutes every day?",
+    "options": [
+      "Unfamiliar words become familiar",
+      "Examinations disappear",
+      "Books become shorter",
+      "Writing becomes unnecessary"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The passage says unfamiliar words become familiar, long sentences become easier and ideas begin to connect."
+  },
+  {
+    "question": "Which of these does the reading habit need, according to the passage?",
+    "options": [
+      "A noisy room",
+      "A teacher beside the reader",
+      "Only difficult books",
+      "A fixed time, a quiet place and interesting material"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The writer says the habit needs a fixed time, a quiet place and material that interests the reader."
+  },
+  {
+    "question": "In the passage, 'unconsciously' means:",
+    "options": [
+      "with great effort",
+      "without deliberately noticing",
+      "very loudly",
+      "after an examination"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The reader absorbs how good writers write without trying or noticing it."
+  },
+  {
+    "question": "Which title best suits the passage 'A habit called reading'?",
+    "options": [
+      "Reading: A Habit, Not a Task",
+      "How to Pass Examinations",
+      "The Cost of Books",
+      "Why Writers Should Retire"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A good title covers the whole message: reading is a habit that grows with regular practice."
+  },
+  {
+    "question": "Which question type asks you to find a fact, such as 'Who is a true leader?'",
+    "options": [
+      "Inference",
+      "Fact",
+      "Tone",
+      "Title"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Fact questions ask who, what, when or where, and the answer is stated in the passage."
+  },
+  {
+    "question": "Which is a valid inference from 'A habit called reading'?",
+    "options": [
+      "Students who do not read will certainly fail",
+      "Reading is useful only for English",
+      "Regular readers may find difficult passages less frightening over time",
+      "Books are better than newspapers"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The passage says confidence grows with regular reading. The other options go beyond the text."
+  },
+  {
+    "question": "In the Leadership passage, 'emulate' means:",
+    "options": [
+      "to follow as an example",
+      "to criticise",
+      "to forget",
+      "to command"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A true leader is one whose position others would want to follow as an example."
+  },
+  {
+    "question": "What is the best way to begin an answer to a comprehension question?",
+    "options": [
+      "With your own opinion",
+      "With a long quotation",
+      "With the last line of the passage",
+      "With words from the question"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Starting with the question's words shows the examiner that you have answered what was asked."
+  },
+  {
+    "question": "Which is a common mistake in comprehension answers?",
+    "options": [
+      "Using one or two complete sentences",
+      "Copying whole sentences without choosing the relevant part",
+      "Checking spelling and tense",
+      "Using your own words"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A good answer selects the relevant lines and puts them in your own words."
   }
 ]
