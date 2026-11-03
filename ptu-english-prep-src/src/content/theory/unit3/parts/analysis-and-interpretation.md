@@ -75,13 +75,13 @@ For a literary text, also look at **theme**, **imagery** (words that create pict
 
 > **The Lamp**
 >
-> Each evening, when the street grows still,  
-> An old woman lights a lamp on her sill.  
-> The flame is small, the wind is strong,  
-> Yet she keeps it burning all night long.  
-> Strangers hurry past in the rain;  
-> Her little light guides them home again.  
-> So a simple kindness, steadily shown,  
+> Each evening, when the street grows still,<br />
+> An old woman lights a lamp on her sill.<br />
+> The flame is small, the wind is strong,<br />
+> Yet she keeps it burning all night long.<br />
+> Strangers hurry past in the rain;<br />
+> Her little light guides them home again.<br />
+> So a simple kindness, steadily shown,<br />
 > Brightens a road that is not our own.
 
 ### Questions

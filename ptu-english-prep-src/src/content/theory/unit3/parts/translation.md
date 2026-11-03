@@ -18,16 +18,16 @@ Translation is expressing a message from one language in another without changin
 
 ### Example 1
 
-**Hindi:** स्वच्छता हमारी सामूहिक ज़िम्मेदारी है।  
-*(Swachhata hamari samuhik zimmedari hai.)*  
+**Hindi:** स्वच्छता हमारी सामूहिक ज़िम्मेदारी है।<br />
+*(Swachhata hamari samuhik zimmedari hai.)*<br />
 **English:** Cleanliness is our collective responsibility.
 
 *Samuhik* means collective and *zimmedari* means responsibility. We translate the **meaning** of the phrase.
 
 ### Example 2
 
-**Hindi:** विद्यार्थियों ने समय पर अपना काम पूरा कर लिया।  
-*(Vidyarthiyon ne samay par apna kaam poora kar liya.)*  
+**Hindi:** विद्यार्थियों ने समय पर अपना काम पूरा कर लिया।<br />
+*(Vidyarthiyon ne samay par apna kaam poora kar liya.)*<br />
 **English:** The students completed their work on time.
 
 The action is complete and in the past, so *poora kar liya* becomes **completed**, not *complete*.
@@ -36,16 +36,16 @@ The action is complete and in the past, so *poora kar liya* becomes **completed*
 
 ### Example 3
 
-**Punjabi:** ਸਾਨੂੰ ਪਾਣੀ ਦੀ ਸੰਭਾਲ ਕਰਨੀ ਚਾਹੀਦੀ ਹੈ।  
-*(Sanu paani di sambhaal karni chahidi hai.)*  
+**Punjabi:** ਸਾਨੂੰ ਪਾਣੀ ਦੀ ਸੰਭਾਲ ਕਰਨੀ ਚਾਹੀਦੀ ਹੈ।<br />
+*(Sanu paani di sambhaal karni chahidi hai.)*<br />
 **English:** We should conserve water.
 
 The natural English is **conserve water**, not a word-for-word version such as "do the protection of water".
 
 ### Example 4
 
-**Punjabi:** ਮਿਹਨਤ ਸਫਲਤਾ ਦੀ ਕੁੰਜੀ ਹੈ।  
-*(Mehnat safalta di kunji hai.)*  
+**Punjabi:** ਮਿਹਨਤ ਸਫਲਤਾ ਦੀ ਕੁੰਜੀ ਹੈ।<br />
+*(Mehnat safalta di kunji hai.)*<br />
 **English:** Hard work is the key to success.
 
 Common expressions must be translated as complete ideas, not as separate words.
@@ -55,13 +55,13 @@ Common expressions must be translated as complete ideas, not as separate words.
 ### English to Hindi
 
 **English:** We must respect the environment.  
-**Hindi:** हमें पर्यावरण का सम्मान करना चाहिए।  
+**Hindi:** हमें पर्यावरण का सम्मान करना चाहिए।<br />
 *(Hamein paryavaran ka samman karna chahiye.)*
 
 ### English to Punjabi
 
 **English:** The teacher explained the lesson clearly.  
-**Punjabi:** ਅਧਿਆਪਕ ਨੇ ਪਾਠ ਸਾਫ਼ ਢੰਗ ਨਾਲ ਸਮਝਾਇਆ।  
+**Punjabi:** ਅਧਿਆਪਕ ਨੇ ਪਾਠ ਸਾਫ਼ ਢੰਗ ਨਾਲ ਸਮਝਾਇਆ।<br />
 *(Adhyapak ne paath saaf dhang naal samjhaya.)*
 
 ## Tense pattern at a glance
