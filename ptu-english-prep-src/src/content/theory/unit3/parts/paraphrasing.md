@@ -32,7 +32,7 @@ Use one or more of these together.
 1. *Synonyms:* rapid = fast, heavy pressure = great strain.
 2. *Structure:* make the cities the subject of an active verb.
 
-**Paraphrase:** As cities grow quickly, they place a great strain on homes and transport.
+**Paraphrase:** As cities have grown quickly, they have placed a great strain on homes and transport.
 
 The meaning is the same, but the words and the structure are new.
 
