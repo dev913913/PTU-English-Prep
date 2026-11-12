@@ -1,62 +1,222 @@
 [
   {
     "question": "What is the main purpose of translation?",
-    "options": ["To change the message", "To express the same message in another language", "To translate every word mechanically", "To remove the tone"],
+    "options": [
+      "To change the message",
+      "To express the same message in another language",
+      "To translate every word mechanically",
+      "To remove the tone"
+    ],
     "correctAnswer": 1,
     "explanation": "Translation expresses a message in another language while preserving its meaning, tone, and purpose."
   },
   {
     "question": "What should a student do before translating a sentence?",
-    "options": ["Read only the last word", "Understand the complete sentence", "Ignore the tense", "Change the subject"],
+    "options": [
+      "Read only the last word",
+      "Understand the complete sentence",
+      "Ignore the tense",
+      "Change the subject"
+    ],
     "correctAnswer": 1,
     "explanation": "Understanding the complete sentence prevents changes to the intended meaning."
   },
   {
     "question": "What is the natural translation of 'Swachhata hamari samuhik zimmedari hai'?",
-    "options": ["Cleanliness is our collective responsibility", "Clean is our group answer", "Our responsibility cleans collectively", "Cleanliness was a person"],
+    "options": [
+      "Cleanliness is our collective responsibility",
+      "Clean is our group answer",
+      "Our responsibility cleans collectively",
+      "Cleanliness was a person"
+    ],
     "correctAnswer": 0,
     "explanation": "The sentence means that cleanliness is a responsibility shared by everyone."
   },
   {
     "question": "What is the natural translation of 'Sanu paani di sambhaal karni chahidi hai'?",
-    "options": ["We should conserve water", "We water should do", "Water conserved us", "We should waste water"],
+    "options": [
+      "We should conserve water",
+      "We water should do",
+      "Water conserved us",
+      "We should waste water"
+    ],
     "correctAnswer": 0,
     "explanation": "The Punjabi sentence expresses advice to conserve or use water carefully."
   },
   {
     "question": "Why should idioms not be translated word by word?",
-    "options": ["Their meaning may be different from the individual words", "They have no meaning", "They always become questions", "Their tense disappears"],
+    "options": [
+      "Their meaning may be different from the individual words",
+      "They have no meaning",
+      "They always become questions",
+      "Their tense disappears"
+    ],
     "correctAnswer": 0,
     "explanation": "An idiom communicates a complete expression or idea, so its meaning should be translated naturally."
   },
   {
     "question": "Which grammatical feature must be checked during translation?",
-    "options": ["Tense", "Page colour", "Font size", "Paper weight"],
+    "options": [
+      "Tense",
+      "Page colour",
+      "Font size",
+      "Paper weight"
+    ],
     "correctAnswer": 0,
     "explanation": "Checking tense ensures that present, past, future, and completed actions remain accurate."
   },
   {
     "question": "What does 'Hamein paryavaran ka samman karna chahiye' mean?",
-    "options": ["We must respect the environment", "We should destroy the environment", "The environment respects us", "We visited the environment"],
+    "options": [
+      "We must respect the environment",
+      "We should destroy the environment",
+      "The environment respects us",
+      "We visited the environment"
+    ],
     "correctAnswer": 0,
     "explanation": "The Hindi sentence expresses the duty to respect the environment."
   },
   {
     "question": "Which translation is natural English?",
-    "options": ["The students completed their work on time", "Students their work completed on time did", "The work completed students", "On time their students work"],
+    "options": [
+      "The students completed their work on time",
+      "Students their work completed on time did",
+      "The work completed students",
+      "On time their students work"
+    ],
     "correctAnswer": 0,
     "explanation": "A natural English sentence uses clear subject, verb, object, and time-expression order."
   },
   {
     "question": "What should remain unchanged in a good translation?",
-    "options": ["The original word order only", "The meaning and purpose", "Every individual word", "The original punctuation only"],
+    "options": [
+      "The original word order only",
+      "The meaning and purpose",
+      "Every individual word",
+      "The original punctuation only"
+    ],
     "correctAnswer": 1,
     "explanation": "Word order may change between languages, but the meaning and purpose must remain the same."
   },
   {
     "question": "Which is a common translation difficulty?",
-    "options": ["Different word order between languages", "Identical grammar in every language", "No need to check negatives", "All idioms being literal"],
+    "options": [
+      "Different word order between languages",
+      "Identical grammar in every language",
+      "No need to check negatives",
+      "All idioms being literal"
+    ],
     "correctAnswer": 0,
     "explanation": "Hindi, Punjabi, and English may arrange words differently, so translation requires attention to sentence structure."
+  },
+  {
+    "question": "Which is the natural English translation of 'मेहनत सफलता की कुंजी है'?",
+    "options": [
+      "Hard work is the key to success",
+      "Hard work is success's key",
+      "Work hard key success",
+      "Success is the work of keys"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Common expressions are translated as complete ideas, so the natural English is 'the key to success'."
+  },
+  {
+    "question": "Which is the correct translation of 'ਸਿਹਤ ਸਭ ਤੋਂ ਵੱਡਾ ਧਨ ਹੈ'?",
+    "options": [
+      "Health is a big house",
+      "Wealth is the greatest health",
+      "Health is the greatest wealth",
+      "Money is health"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Punjabi sentence says that health is the greatest wealth."
+  },
+  {
+    "question": "In 'विद्यार्थियों ने समय पर अपना काम पूरा कर लिया', which English tense is used?",
+    "options": [
+      "Future",
+      "Present continuous",
+      "Imperative",
+      "Past (completed action)"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Kar liya' shows a completed action, so the English verb is in the past: 'completed'."
+  },
+  {
+    "question": "Which is the correct translation of 'शिक्षा हर बच्चे का अधिकार है'?",
+    "options": [
+      "Every child is the education of right",
+      "Child education wrong",
+      "Rights teach every child",
+      "Education is the right of every child"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The sentence states that education is a right of every child."
+  },
+  {
+    "question": "Which is the correct Hindi translation of 'Honesty is the best policy'?",
+    "options": [
+      "ईमानदारी सबसे खराब नीति है।",
+      "ईमानदारी सबसे अच्छी नीति है।",
+      "हम कल मिलेंगे।",
+      "खिड़की खोल दीजिए।"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The first option keeps the meaning of the English sentence."
+  },
+  {
+    "question": "Which is the correct Punjabi translation of 'We will meet tomorrow'?",
+    "options": [
+      "ਅਸੀਂ ਕੱਲ੍ਹ ਮਿਲੇ ਸੀ।",
+      "ਉਹ ਕੱਲ੍ਹ ਲਿਖਦਾ ਹੈ।",
+      "ਅਸੀਂ ਕੱਲ੍ਹ ਮਿਲਾਂਗੇ।",
+      "ਸਾਨੂੰ ਪਾਣੀ ਚਾਹੀਦਾ ਹੈ।"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'ਮਿਲਾਂਗੇ' expresses the future tense, matching 'will meet'."
+  },
+  {
+    "question": "Which script should you use for Punjabi in a translation answer?",
+    "options": [
+      "Gurmukhi",
+      "Devanagari",
+      "Roman only",
+      "Urdu only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Punjabi (in India) is written in Gurmukhi, and Hindi is written in Devanagari."
+  },
+  {
+    "question": "Which sentence translates 'वह पत्र लिखेगा' correctly?",
+    "options": [
+      "He wrote a letter",
+      "He is writing a letter",
+      "He will write a letter",
+      "He has written a letter"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Likhega' is the future tense: 'will write'."
+  },
+  {
+    "question": "Why must articles (a, an, the) be checked when translating into English?",
+    "options": [
+      "English does not use them",
+      "They are only for poems",
+      "They change the tense",
+      "Hindi and Punjabi do not always have equivalents"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Hindi and Punjabi do not always mark articles, so they must be added correctly in English."
+  },
+  {
+    "question": "Which is a 'false friend' problem?",
+    "options": [
+      "Words with the same meaning",
+      "A sentence with no verb",
+      "A very short sentence",
+      "Similar-looking words that do not mean the same"
+    ],
+    "correctAnswer": 3,
+    "explanation": "False friends look alike in two languages but have different meanings."
   }
 ]

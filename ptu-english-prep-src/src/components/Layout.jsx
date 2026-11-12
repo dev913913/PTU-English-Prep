@@ -14,6 +14,11 @@ export default function Layout({ children }) {
   const location = useLocation()
   useSwipeNavigation()
 usePageMeta()
+  // Open every new page at the top. Without this, the browser keeps the old scroll position,
+  // so a long part page can open halfway down.
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+  }, [location.pathname])
   const navRef = useRef(null)
   const linkRefs = useRef({})
   const [pill, setPill] = useState({ left: 0, top: 0, width: 0, height: 0, visible: false })

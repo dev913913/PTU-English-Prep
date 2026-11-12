@@ -1,32 +1,167 @@
 [
   {
     "question": "What does analysis do?",
-    "options": ["Breaks a passage into its ideas and evidence", "Removes the central idea", "Copies the title only", "Changes all the facts"],
+    "options": [
+      "Breaks a passage into its ideas and evidence",
+      "Removes the central idea",
+      "Copies the title only",
+      "Changes all the facts"
+    ],
     "correctAnswer": 0,
     "explanation": "Analysis examines the ideas, evidence, structure, and language of a passage."
   },
   {
     "question": "Why is Afghanistan geographically important in the passage?",
-    "options": ["It is isolated from Asia", "It connects several Asian regions and old trade routes", "It has no trade routes", "It is outside Asia"],
+    "options": [
+      "It is isolated from Asia",
+      "It connects several Asian regions and old trade routes",
+      "It has no trade routes",
+      "It is outside Asia"
+    ],
     "correctAnswer": 1,
     "explanation": "The passage places Afghanistan at the junction of Central, South, and East Asia and ancient trading routes."
   },
   {
     "question": "According to the passage, development in Afghanistan is unsustainable without:",
-    "options": ["More traffic", "Peace", "Less cooperation", "Closed borders"],
+    "options": [
+      "More traffic",
+      "Peace",
+      "Less cooperation",
+      "Closed borders"
+    ],
     "correctAnswer": 1,
     "explanation": "The passage states that development cannot be sustainable without peace."
   },
   {
     "question": "What does the passage present as necessary for Afghanistan's future?",
-    "options": ["Regional cooperation", "Avoiding every neighbour", "Stopping trade", "Ignoring terrorism"],
+    "options": [
+      "Regional cooperation",
+      "Avoiding every neighbour",
+      "Stopping trade",
+      "Ignoring terrorism"
+    ],
     "correctAnswer": 0,
     "explanation": "The concluding idea is that the Heart of Asia process is critical for cooperation and Afghanistan's potential as an Asian hub."
   },
   {
     "question": "Which question helps identify a passage's tone?",
-    "options": ["How many letters are in the title?", "Is the writer hopeful, critical, or concerned?", "Who printed the paper?", "How long is each word?"],
+    "options": [
+      "How many letters are in the title?",
+      "Is the writer hopeful, critical, or concerned?",
+      "Who printed the paper?",
+      "How long is each word?"
+    ],
     "correctAnswer": 1,
     "explanation": "Identifying the writer's attitude, such as hopeful or concerned, helps interpret the tone."
+  },
+  {
+    "question": "In 'Why public libraries matter', what is the writer's central argument?",
+    "options": [
+      "The internet is better than libraries",
+      "Libraries should be made smaller",
+      "Libraries are important because they give everyone free access to reliable information",
+      "Only students need libraries"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The writer argues that public libraries remain valuable because they give equal access to knowledge and reliable information."
+  },
+  {
+    "question": "What opposing view does the library passage mention?",
+    "options": [
+      "The internet has made libraries unnecessary",
+      "Libraries are too noisy",
+      "Books are too heavy",
+      "Libraries are only for old people"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The writer mentions that some people think the internet has made libraries unnecessary, and then replies to it."
+  },
+  {
+    "question": "What is the tone of the library passage?",
+    "options": [
+      "Humorous",
+      "Angry",
+      "Indifferent",
+      "Persuasive"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The writer gives reasons and answers an opposing view to convince the reader."
+  },
+  {
+    "question": "In the poem 'The Lamp', the lamp is a symbol of:",
+    "options": [
+      "wealth",
+      "simple, steady kindness",
+      "fear of the dark",
+      "the passing of time"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The woman's small light guides strangers home, so the lamp stands for quiet kindness."
+  },
+  {
+    "question": "Which words in 'The Lamp' show difficult conditions?",
+    "options": [
+      "'The wind is strong' and 'hurry past in the rain'",
+      "'Each evening' and 'old woman'",
+      "'little light' and 'home again'",
+      "'a simple kindness'"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The wind and the rain show the hardship that the light has to face."
+  },
+  {
+    "question": "What does 'a road that is not our own' suggest in the poem?",
+    "options": [
+      "The road is dangerous",
+      "Kindness helps people beyond our own circle",
+      "The poet has lost the way",
+      "Roads belong to strangers"
+    ],
+    "correctAnswer": 1,
+    "explanation": "It suggests that a good deed benefits strangers as well as our own people."
+  },
+  {
+    "question": "In the 'Point, Evidence, Explain' method, what comes after the Point?",
+    "options": [
+      "Your opinion",
+      "A new topic",
+      "Evidence from the passage",
+      "The title"
+    ],
+    "correctAnswer": 2,
+    "explanation": "After stating the point, support it with evidence from the passage, then explain it."
+  },
+  {
+    "question": "Which of these is a literary text focus?",
+    "options": [
+      "Imagery and theme",
+      "Only statistics",
+      "Only the date",
+      "Page numbers"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Literary texts are analysed through theme, imagery, character, setting, tone and message."
+  },
+  {
+    "question": "Interpretation differs from analysis because interpretation:",
+    "options": [
+      "only lists the parts",
+      "copies the passage",
+      "avoids the message",
+      "explains what the parts mean together"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Analysis breaks the text into parts. Interpretation explains their meaning together."
+  },
+  {
+    "question": "Which is a mistake in an interpretation answer?",
+    "options": [
+      "Linking each idea to the text",
+      "Writing an idea that the passage does not support",
+      "Giving a short quotation",
+      "Stating the tone with a reason"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Every interpretation must be tied to something in the passage."
   }
 ]
