@@ -7,6 +7,7 @@ import { getUnitParts, getPartContent, getPartMcqs, getReadingExercise } from '.
 import Breadcrumb from '../components/Breadcrumb'
 import QuizWidget from '../components/QuizWidget'
 import ReadingPractice from '../components/ReadingPractice'
+import BookmarkButton from '../components/BookmarkButton'
 
 const TRACK_LABELS = { theory: 'Theory', lab: 'Lab / Practical' }
 
@@ -63,7 +64,7 @@ export default function LabPartPage() {
           storageKey={`quiz-progress:${track}:${unitId}:part:${part.id}`}
         />
       )}
-
+      <BookmarkButton title={part.title} />
       <Link to={`/${track}/${unitId}`} className="inline-block mt-8 text-rule font-medium hover:underline">
         ← Back to Unit {unit.number}
       </Link>

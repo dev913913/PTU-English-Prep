@@ -44,7 +44,7 @@
     "explanation": "A summary should express the original meaning clearly in the student's own concise language."
   },
   {
-    "question": "What is the suggested length of the practice summary?",
+    "question": "What length does the worked example about big cities ask for?",
     "options": [
       "One word",
       "Two paragraphs",
@@ -52,7 +52,7 @@
       "Ten pages"
     ],
     "correctAnswer": 2,
-    "explanation": "The practice task specifically asks for a summary and paraphrase in four sentences."
+    "explanation": "The worked example about big cities asks for a summary and paraphrase in four sentences."
   },
   {
     "question": "A summary differs from a paraphrase because a summary:",

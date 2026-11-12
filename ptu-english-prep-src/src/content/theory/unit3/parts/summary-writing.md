@@ -17,7 +17,7 @@ A **précis** is a formal summary with a fixed length, often about one-third of 
 ## Steps for writing a summary
 
 1. Read the passage twice and find the central idea.
-2. Underline the key points. Cross out examples, repeated ideas, long descriptions, quotations and opinions.
+2. Underline the key points. Keep the writer's central opinion if it is a key point. Cross out examples, repeated ideas, long descriptions, quotations and minor details.
 3. Combine related points and arrange them in logical order.
 4. Write in your own words, using short sentences and linking words such as *because*, *therefore*, *also* and *however*.
 5. Check the length, then read your summary once more for meaning, spelling and tense.
@@ -83,7 +83,7 @@ This is weak because it copies phrases from the passage, includes a minor detail
 ## Checklist for a good summary
 
 - Does it state the main idea in the first sentence?
-- Does it include only the key points, with no examples or opinions?
+- Does it include only the key points (including the writer's central opinion), with no examples, minor details or opinions of my own?
 - Is it in my own words, and is each sentence connected to the next?
 - Is it within the length asked for?
 

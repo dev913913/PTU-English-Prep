@@ -1,8 +1,10 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { takeResume } from '../lib/bookmarks'
 import ShareButton from './ShareButton'
 import useSwipeNavigation from '../hooks/useSwipeNavigation'
 import usePageMeta from '../hooks/usePageMeta'
+
 const TABS = [
   { to: '/', label: 'Home' },
   { to: '/theory', label: 'Theory' },
@@ -13,12 +15,17 @@ const TABS = [
 export default function Layout({ children }) {
   const location = useLocation()
   useSwipeNavigation()
-usePageMeta()
+  usePageMeta()
+
   // Open every new page at the top. Without this, the browser keeps the old scroll position,
-  // so a long part page can open halfway down.
+  // so a long part page can open halfway down. This also applies to the Back button, so
+  // every page always starts at the top. 'manual' stops the browser restoring an old position.
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+    if ('scrollRestoration' in window.history) window.history.scrollRestoration = 'manual'
+    // Start at the top, unless the reader tapped "Continue" on one of their own bookmarks
+    window.scrollTo({ top: takeResume(location.pathname), left: 0, behavior: 'instant' })
   }, [location.pathname])
+
   const navRef = useRef(null)
   const linkRefs = useRef({})
   const [pill, setPill] = useState({ left: 0, top: 0, width: 0, height: 0, visible: false })

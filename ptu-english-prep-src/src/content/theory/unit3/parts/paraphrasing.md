@@ -2,7 +2,7 @@
 
 ## Meaning
 
-To paraphrase is to express the meaning of a passage in different words and a different sentence structure. A paraphrase may be shorter than the original or about the same length, but it must **not change** the writer's message, facts, tone or order of ideas.
+To paraphrase is to express the meaning of a passage in different words and a different sentence structure. A paraphrase may be shorter than the original or about the same length, but it must **not change** the writer's message, facts, tone or the logical links between ideas.
 
 Paraphrasing is different from summarising. A summary keeps only the main points. A paraphrase keeps **all** the ideas and changes only the wording.
 
@@ -32,7 +32,7 @@ Use one or more of these together.
 1. *Synonyms:* rapid = fast, heavy pressure = great strain.
 2. *Structure:* make the cities the subject of an active verb.
 
-**Paraphrase:** As cities grow quickly, they place a great strain on homes and public transport.
+**Paraphrase:** As cities grow quickly, they place a great strain on homes and transport.
 
 The meaning is the same, but the words and the structure are new.
 
