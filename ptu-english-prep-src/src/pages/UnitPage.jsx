@@ -5,6 +5,7 @@ import rehypeRaw from 'rehype-raw'
 import { theoryUnits, labUnits } from '../content/syllabus'
 import { getNotes, getMcqs, getUnitParts } from '../lib/content'
 import Breadcrumb from '../components/Breadcrumb'
+import ContinueReading from '../components/ContinueReading'
 
 const TRACK_LABELS = { theory: 'Theory', lab: 'Lab / Practical' }
 
@@ -77,6 +78,8 @@ export default function UnitPage() {
           {trackLabel} · UNIT {unit.number}
         </p>
         <h1 className="font-display text-3xl font-semibold text-board">{unit.title}</h1>
+
+        <ContinueReading prefix={`/${track}/${unitId}/`} />
 
         {notes && (
           <div className="notebook-page mt-6">

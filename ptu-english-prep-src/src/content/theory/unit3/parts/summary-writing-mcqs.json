@@ -1,32 +1,167 @@
 [
   {
     "question": "What is the main purpose of a summary?",
-    "options": ["To copy every sentence", "To present the main ideas briefly", "To add personal opinions", "To make the passage longer"],
+    "options": [
+      "To copy every sentence",
+      "To present the main ideas briefly",
+      "To add personal opinions",
+      "To make the passage longer"
+    ],
     "correctAnswer": 1,
     "explanation": "A summary is a brief version of a longer passage that keeps its central ideas and important supporting points."
   },
   {
     "question": "Which detail should normally be removed from a summary?",
-    "options": ["The central idea", "A necessary cause", "Repeated examples", "The main conclusion"],
+    "options": [
+      "The central idea",
+      "A necessary cause",
+      "Repeated examples",
+      "The main conclusion"
+    ],
     "correctAnswer": 2,
     "explanation": "Repeated examples and unnecessary details should be removed to keep the summary concise."
   },
   {
     "question": "Why do some people avoid big cities in the practice passage?",
-    "options": ["They have no roads", "Housing is expensive and city life is crowded", "There are no jobs", "The countryside is more expensive"],
+    "options": [
+      "They have no roads",
+      "Housing is expensive and city life is crowded",
+      "There are no jobs",
+      "The countryside is more expensive"
+    ],
     "correctAnswer": 1,
     "explanation": "The passage mentions expensive housing, traffic, overcrowding, stress, and unsafe areas."
   },
   {
     "question": "A good summary should be written mainly in:",
-    "options": ["The writer's exact sentences", "The student's own words", "Questions only", "Unconnected keywords"],
+    "options": [
+      "The writer's exact sentences",
+      "The student's own words",
+      "Questions only",
+      "Unconnected keywords"
+    ],
     "correctAnswer": 1,
     "explanation": "A summary should express the original meaning clearly in the student's own concise language."
   },
   {
-    "question": "What is the suggested length of the practice summary?",
-    "options": ["One word", "Two paragraphs", "Four sentences", "Ten pages"],
+    "question": "What length does the worked example about big cities ask for?",
+    "options": [
+      "One word",
+      "Two paragraphs",
+      "Four sentences",
+      "Ten pages"
+    ],
     "correctAnswer": 2,
-    "explanation": "The practice task specifically asks for a summary and paraphrase in four sentences."
+    "explanation": "The worked example about big cities asks for a summary and paraphrase in four sentences."
+  },
+  {
+    "question": "A summary differs from a paraphrase because a summary:",
+    "options": [
+      "keeps every idea in new words",
+      "is always longer than the original",
+      "keeps only the main idea and key points",
+      "adds the writer's opinion"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A summary is much shorter and keeps only the main idea and key points. A paraphrase keeps all the ideas."
+  },
+  {
+    "question": "In the four-sentence formula, the first sentence should:",
+    "options": [
+      "state the main idea",
+      "give the conclusion",
+      "give an example",
+      "ask a question"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Sentence 1 states the main idea. Sentences 2 and 3 give key points. Sentence 4 gives the conclusion."
+  },
+  {
+    "question": "A précis is commonly kept to about what length of the original?",
+    "options": [
+      "Double",
+      "The same length",
+      "Ten times longer",
+      "One-third"
+    ],
+    "correctAnswer": 3,
+    "explanation": "One-third is a general guide, but always follow the length given in the question."
+  },
+  {
+    "question": "What is the main idea of the 'plastic bags' passage?",
+    "options": [
+      "Plastic bags are cheap, so everyone should buy more",
+      "A convenient product causes lasting harm, and small habits can reduce it",
+      "Cows should be kept away from towns",
+      "Cloth bags are more expensive than plastic"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The passage shows that plastic bags are convenient but harmful, and that small habits of many people can protect the environment."
+  },
+  {
+    "question": "Which detail would normally be left out of the plastic-bag summary?",
+    "options": [
+      "Shops give bags away by the million",
+      "Bags last for hundreds of years",
+      "Some cities banned thin bags",
+      "Small habits can protect the environment"
+    ],
+    "correctAnswer": 0,
+    "explanation": "How many bags shops give away is a minor detail, while the other points are key ideas."
+  },
+  {
+    "question": "Which linking word suits the idea 'as a result'?",
+    "options": [
+      "although",
+      "therefore",
+      "unless",
+      "meanwhile"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Therefore' shows a result. Linking words help a summary read as one connected paragraph."
+  },
+  {
+    "question": "Why is it a mistake to copy sentences from the original into a summary?",
+    "options": [
+      "Copying makes it shorter",
+      "The examiner prefers long quotations",
+      "A summary should be in your own words and show understanding",
+      "Copying is required for accuracy"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A summary should show that you have understood the passage by expressing it in your own words."
+  },
+  {
+    "question": "Which of these should NOT appear in a summary?",
+    "options": [
+      "Your own opinion on the topic",
+      "The writer's main conclusion",
+      "A key supporting point",
+      "A linking word"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A summary is objective and reports the writer's ideas, not yours."
+  },
+  {
+    "question": "A question asks for a summary 'in three sentences'. What should you do?",
+    "options": [
+      "Write as many sentences as you like",
+      "Write one very long sentence",
+      "Copy the first three sentences of the passage",
+      "Write exactly three sentences"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Follow the length asked for. Count your sentences before you finish."
+  },
+  {
+    "question": "What is the best final check for a summary?",
+    "options": [
+      "Add another example",
+      "Check length, meaning, spelling and tense",
+      "Copy a sentence from the passage",
+      "Delete the first sentence"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A final check for length, meaning, spelling and tense removes avoidable errors."
   }
 ]

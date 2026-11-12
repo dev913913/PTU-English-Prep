@@ -1,32 +1,167 @@
 [
   {
     "question": "What does paraphrasing mean?",
-    "options": ["Changing the meaning", "Expressing the same meaning in different language", "Shortening every passage to one line", "Translating without understanding"],
+    "options": [
+      "Changing the meaning",
+      "Expressing the same meaning in different language",
+      "Shortening every passage to one line",
+      "Translating without understanding"
+    ],
     "correctAnswer": 1,
     "explanation": "A paraphrase uses different words and structures while preserving the original meaning."
   },
   {
     "question": "What must remain unchanged in a correct paraphrase?",
-    "options": ["Every word", "The message and essential facts", "The number of sentences", "The punctuation only"],
+    "options": [
+      "Every word",
+      "The message and essential facts",
+      "The number of sentences",
+      "The punctuation only"
+    ],
     "correctAnswer": 1,
     "explanation": "The message, facts, tone, and essential ideas must not be changed."
   },
   {
     "question": "Which is an example of a sustainable practice from the passage?",
-    "options": ["Increasing waste", "Ignoring energy use", "Recycling and composting", "Using only finite resources"],
+    "options": [
+      "Increasing waste",
+      "Ignoring energy use",
+      "Recycling and composting",
+      "Using only finite resources"
+    ],
     "correctAnswer": 2,
     "explanation": "The passage lists recycling, composting, energy conservation, and eco-friendly transport."
   },
   {
     "question": "Why should a writer understand the whole passage before paraphrasing?",
-    "options": ["To add new arguments", "To preserve its complete meaning", "To make it unrelated", "To avoid reading it twice"],
+    "options": [
+      "To add new arguments",
+      "To preserve its complete meaning",
+      "To make it unrelated",
+      "To avoid reading it twice"
+    ],
     "correctAnswer": 1,
     "explanation": "Understanding the whole passage helps the writer preserve all important ideas accurately."
   },
   {
     "question": "Which method is usually useful when paraphrasing?",
-    "options": ["Changing suitable words and sentence structure", "Replacing every word randomly", "Deleting all facts", "Copying the passage exactly"],
+    "options": [
+      "Changing suitable words and sentence structure",
+      "Replacing every word randomly",
+      "Deleting all facts",
+      "Copying the passage exactly"
+    ],
     "correctAnswer": 0,
     "explanation": "Accurate synonyms and changed sentence structures can express the same idea freshly."
+  },
+  {
+    "question": "Which of these is an example of changing a sentence from active to passive?",
+    "options": [
+      "He ran quickly. → He ran fast.",
+      "She is happy. → She is glad.",
+      "The committee approved the plan. → The plan was approved by the committee.",
+      "The test is hard. → The test is difficult."
+    ],
+    "correctAnswer": 2,
+    "explanation": "In the passive sentence, the receiver of the action becomes the subject."
+  },
+  {
+    "question": "Which replacement for 'because' keeps the same meaning?",
+    "options": [
+      "owing to",
+      "although",
+      "unless",
+      "until"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Owing to' (or 'due to') can replace 'because' when the structure is adjusted."
+  },
+  {
+    "question": "A paraphrase should be:",
+    "options": [
+      "one line long",
+      "full of the writer's opinions",
+      "copied exactly",
+      "about the same length and keep every idea"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A paraphrase keeps all the ideas of the original but changes the wording and structure."
+  },
+  {
+    "question": "Which paraphrase of 'Good sleep is not a luxury but a necessary part of learning' is best?",
+    "options": [
+      "Nice rest is not an extravagance but a required piece of victorious studying.",
+      "Sleeping well is essential for learning and should not be treated as an extra.",
+      "Students need sleep because they get tired.",
+      "Sleep is a luxury."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The best paraphrase uses natural words and keeps the meaning. The others use random synonyms or change the message."
+  },
+  {
+    "question": "Which words should normally stay unchanged in a paraphrase?",
+    "options": [
+      "Names, numbers and technical terms",
+      "Every adjective",
+      "All verbs",
+      "The first sentence"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Names, figures and technical terms should be kept as they are."
+  },
+  {
+    "question": "Which is a way to change the part of speech?",
+    "options": [
+      "He decided quickly. → He decided quickly.",
+      "He decided quickly. → His decision was quick.",
+      "He decided quickly. → He quickly.",
+      "He decided quickly. → Quickly decided."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Changing the verb 'decided' to the noun 'decision' changes the structure while keeping the meaning."
+  },
+  {
+    "question": "Why is word-for-word synonym replacement a poor method of paraphrasing?",
+    "options": [
+      "It makes the passage longer",
+      "It makes the grammar perfect",
+      "It can make the sentence unnatural or change the meaning",
+      "It is not allowed in English"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Random synonyms often sound strange and may change the meaning."
+  },
+  {
+    "question": "In the 'value of sleep' passage, what do scientists say the brain does during sleep?",
+    "options": [
+      "Sorts and stores what it has learned",
+      "Stops working completely",
+      "Forgets everything",
+      "Prepares for examinations"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The passage says sleep is when the brain sorts and stores what it has learned during the day."
+  },
+  {
+    "question": "Which is a good final step in paraphrasing?",
+    "options": [
+      "Add a new argument",
+      "Remove all numbers",
+      "Translate it into Hindi",
+      "Compare with the original to check that no idea is added or missing"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Comparing the two versions confirms that the meaning is unchanged."
+  },
+  {
+    "question": "Which of these is NOT a paraphrase technique?",
+    "options": [
+      "Using accurate synonyms",
+      "Changing the writer's message",
+      "Changing the sentence structure",
+      "Changing the voice"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A paraphrase must never change the writer's message."
   }
 ]
