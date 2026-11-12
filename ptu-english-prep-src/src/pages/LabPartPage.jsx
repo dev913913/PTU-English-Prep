@@ -57,14 +57,18 @@ export default function LabPartPage() {
       )}
 
       {mcqs.length > 0 && (
-        <QuizWidget
-          key={`quiz-progress:${track}:${unitId}:part:${part.id}`}
-          mcqs={mcqs}
-          title={`${unit.title}: ${part.title}`}
-          storageKey={`quiz-progress:${track}:${unitId}:part:${part.id}`}
-        />
+        <div data-bookmark-hide="">
+          <QuizWidget
+            key={`quiz-progress:${track}:${unitId}:part:${part.id}`}
+            mcqs={mcqs}
+            title={`${unit.title}: ${part.title}`}
+            storageKey={`quiz-progress:${track}:${unitId}:part:${part.id}`}
+          />
+        </div>
       )}
+
       <BookmarkButton title={part.title} />
+
       <Link to={`/${track}/${unitId}`} className="inline-block mt-8 text-rule font-medium hover:underline">
         ← Back to Unit {unit.number}
       </Link>

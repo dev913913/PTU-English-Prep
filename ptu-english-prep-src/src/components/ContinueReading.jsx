@@ -7,6 +7,13 @@ export default function ContinueReading({ prefix }) {
   const [items, setItems] = useState(() => listBookmarks(prefix))
   if (items.length === 0) return null
 
+  // Only a plain click opens the lesson in this tab. Ctrl/Cmd/Shift/middle clicks open a
+  // new tab or window, so they must not leave a jump waiting in this tab.
+  const handleClick = (e, b) => {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
+    setResume(b.path, b.y, b.open)
+  }
+
   return (
     <div className="mt-6 bg-highlight/20 border border-highlight rounded-lg p-4">
       <p className="font-mono text-xs text-board tracking-widest mb-2">YOUR BOOKMARKS</p>
@@ -15,7 +22,7 @@ export default function ContinueReading({ prefix }) {
           <li key={b.path} className="flex items-center justify-between gap-3">
             <Link
               to={b.path}
-              onClick={() => setResume(b.path, b.y)}
+              onClick={(e) => handleClick(e, b)}
               className="text-board font-medium underline"
             >
               Continue: {b.title}
